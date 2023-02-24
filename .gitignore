@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Core.Algorithms/SimulatedAnnealing/bin/Debug
+/.vs
+/Core.Algorithms/SimulatedAnnealing/.vs
+/Core.Algorithms/SimulatedAnnealing/obj
+/Core.NeuralNetwork/bin/Debug
+/Core.NeuralNetwork/obj
+/Core.TestWindow/bin/Debug
+/Core.TestWindow/obj
+/Core.UnitTests/bin/Release
+/Core.UnitTests/obj
+/x86-x64/.vs/Core
+/x86-x64/bin/Debug
+/x86-x64/obj
