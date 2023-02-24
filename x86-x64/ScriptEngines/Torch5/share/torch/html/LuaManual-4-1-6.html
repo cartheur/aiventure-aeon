@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_argcheck
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_argcheck</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_argcheck</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLargcheck"></a>
+
+<p>
+
+<p>
+
+<pre>
+void luaL_argcheck (lua_State *L,
+                    int cond,
+                    int narg,
+                    const char *extramsg);
+</pre>
+<p>
+
+<p>
+
+ Checks whether <code>cond</code> is true. If not, raises an error with the following message, where <code>func</code> is retrieved from the call stack:
+<pre>
+     bad argument #<narg> to <func> (<extramsg>)
+</pre>
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-5.html">
+ <code>luaL_addvalue</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-7.html">
+ <code>luaL_argerror</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

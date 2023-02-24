@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_pushstring
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_pushstring</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_pushstring</code></b>
+</div>
+
+<div id="contents">
+<a name="luapushstring"></a>
+
+<p>
+
+<p>
+
+<pre>
+void lua_pushstring (lua_State *L, const char *s);
+</pre>
+<p>
+
+<p>
+
+ Pushes the zero-terminated string pointed to by <code>s</code> onto the stack. Lua makes (or reuses) an internal copy of the given string, so the memory at <code>s</code> can be freed or reused immediately after the function returns. The string cannot contain embedded zeros; it is assumed to end at the first zero.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-52.html">
+ <code>lua_pushnumber</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-54.html">
+ <code>lua_pushthread</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

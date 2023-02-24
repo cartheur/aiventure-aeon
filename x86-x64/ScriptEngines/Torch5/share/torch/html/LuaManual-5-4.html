@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  String Manipulation
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  String Manipulation</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <b>
+  String Manipulation</b>
+</div>
+
+<div id="contents">
+<a name="StringManipulation"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ This library provides generic functions for string manipulation, such as finding and extracting substrings, and pattern matching. When indexing a string in Lua, the first character is at position 1 (not at 0, as in C). Indices are allowed to be negative and are interpreted as indexing backwards, from the end of the string. Thus, the last character is at position -1, and so on.   
+<p>
+
+ The string library provides all its functions inside the table <code>string</code> It also sets a metatable for strings where the <code>__index</code> field points to the <code>string</code> table. Therefore, you can use the string functions in object-oriented style. For instance, <code>string.byte(s, i)</code> can be written as <code>s:byte(i)</code>.   
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="LuaManual-5-4-1.html">
+ <code>string.byte (s [, i [, j]])</code></a></li>
+<li><a href="LuaManual-5-4-2.html">
+ <code>string.char (...)</code></a></li>
+<li><a href="LuaManual-5-4-3.html">
+ <code>string.dump (function)</code></a></li>
+<li><a href="LuaManual-5-4-4.html">
+ <code>string.find (s, pattern [, init [, plain]])</code></a></li>
+<li><a href="LuaManual-5-4-5.html">
+ <code>string.format (formatstring, ...)</code></a></li>
+<li><a href="LuaManual-5-4-6.html">
+ <code>string.gmatch (s, pattern)</code></a></li>
+<li><a href="LuaManual-5-4-7.html">
+ <code>string.gsub (s, pattern, repl [, n])</code></a></li>
+<li><a href="LuaManual-5-4-8.html">
+ <code>string.len (s)</code></a></li>
+<li><a href="LuaManual-5-4-9.html">
+ <code>string.lower (s)</code></a></li>
+<li><a href="LuaManual-5-4-10.html">
+ <code>string.match (s, pattern [, init])</code></a></li>
+<li><a href="LuaManual-5-4-11.html">
+ <code>string.rep (s, n)</code></a></li>
+<li><a href="LuaManual-5-4-12.html">
+ <code>string.reverse (s)</code></a></li>
+<li><a href="LuaManual-5-4-13.html">
+ <code>string.sub (s, i [, j])</code></a></li>
+<li><a href="LuaManual-5-4-14.html">
+ <code>string.upper (s)</code></a></li>
+<li><a href="LuaManual-5-4-15.html">
+  Patterns</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-3.html">
+  Modules</a></div>
+<div id="footer-right"><a href="LuaManual-5-5.html">
+  Table Manipulation</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

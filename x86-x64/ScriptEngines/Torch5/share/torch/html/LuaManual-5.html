@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Standard Libraries
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Standard Libraries</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <b>
+  Standard Libraries</b>
+</div>
+
+<div id="contents">
+<a name="luaopenbase"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ The standard Lua libraries provide useful functions that are implemented directly through the C API. Some of these functions provide essential services to the language (e.g., <a href="LuaManual-5-1-24.html#typev"><code>type (v)</code></a> and <a href="LuaManual-5-1-7.html#getmetatableobject"><code>getmetatable (object)</code></a>); others provide access to "outside" services (e.g., I/O); and others could be implemented in Lua itself, but are quite useful or have critical performance requirements that deserve an implementation in C (e.g., <code>sort</code>).   
+<p>
+
+ All libraries are implemented through the official C API and are provided as separate C modules. Currently, Lua has the following standard libraries:    
+<ul><li>basic library;  
+</li><li>package library;  
+</li><li>string manipulation;  
+</li><li>table manipulation;  
+</li><li>mathematical functions (sin, log, etc.);  
+</li><li>input and output;  
+</li><li>operating system facilities;  
+</li><li>debug facilities.  
+</li></ul><p>
+
+ Except for the basic and package libraries, each library provides all its functions as fields of a global table or as methods of its objects.   
+<p>
+
+ To have access to these libraries, the C host program should call the <a href="LuaManual-4-1-33.html#luaLopenlibs"><code>luaL_openlibs</code></a> function, which opens all standard libraries. Alternatively, it can open them individually by calling <code>luaopen_base</code> (for the basic library), <code>luaopen_package</code> (for the package library), <code>luaopen_string</code> (for the string library), <code>luaopen_table</code> (for the table library), <code>luaopen_math</code> (for the mathematical library), <code>luaopen_io</code> (for the I/O and the Operating System libraries), and <code>luaopen_debug</code> (for the debug library). These functions are declared in <code>lualib.h</code> and should not be called directly: you must call them like any other Lua C function, e.g., by using <a href="#luacall"><code>lua_call</code></a>.    
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="LuaManual-5-1.html">
+  Basic Functions</a></li>
+<li><a href="LuaManual-5-2.html">
+  Coroutine Manipulation</a></li>
+<li><a href="LuaManual-5-3.html">
+  Modules</a></li>
+<li><a href="LuaManual-5-4.html">
+  String Manipulation</a></li>
+<li><a href="LuaManual-5-5.html">
+  Table Manipulation</a></li>
+<li><a href="LuaManual-5-6.html">
+  Mathematical Functions</a></li>
+<li><a href="LuaManual-5-7.html">
+  Input and Output Facilities</a></li>
+<li><a href="LuaManual-5-8.html">
+  Operating System Facilities</a></li>
+<li><a href="LuaManual-5-9.html">
+  The Debug Library</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4.html">
+  The Auxiliary Library</a></div>
+<div id="footer-right"><a href="LuaManual-6.html">
+  Lua Stand-alone</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

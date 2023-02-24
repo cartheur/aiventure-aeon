@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ surface:theEnd()
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ surface:theEnd()</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Portable Graphic Layer Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Drawing Surfaces</a>&nbsp; > &nbsp; <b>
+ surface:theEnd()</b>
+</div>
+
+<div id="contents">
+<a name="surfaceend"></a>
+
+<p>
+
+<p>
+
+Expression <code>surface:theEnd()</code> terminates 
+a segment of Lua code that draws on the surface.
+Calls to <code>surface:begin</code> and <code>surface:theEnd</code> must be balanced.
+Drawings only appear on the surface after 
+the last call to <code>surface:theEnd</code>.
+However you can use <a href="index-2-3.html#surfacerefresh"><code>surface:refresh()</code></a>
+at any time to cause an immediate display of the current drawings
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-1.html">
+ surface:begin()</a></div>
+<div id="footer-right"><a href="index-2-3.html">
+ surface:refresh()</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

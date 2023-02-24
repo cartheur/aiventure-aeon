@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ The luaQ functions 
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ The luaQ functions </h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <b>
+ The <code>luaQ</code> functions </b>
+</div>
+
+<div id="contents">
+<a name="luaQ"></a>
+
+<p>
+
+<p>
+
+The <code>luaQ</code> functions complete the Lua API with
+facilities related to the QtLua interface.
+Some <code>luaQ</code> functions are only meaningful for C++ program.
+The following snipped ensure that all available
+functions are accessible in both C and C++.
+<pre>
+ #include "qtluautils.h"
+ #ifdef __cplusplus
+ # include "qtluaengine.h"
+ #endif
+</pre>
+<p>
+
+<p>
+
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-3-3-1.html">
+ luaopen_qt</a></li>
+<li><a href="index-3-3-2.html">
+ luaQ_call</a></li>
+<li><a href="index-3-3-3.html">
+ luaQ_checkqobject&lt;TYPE&gt;</a></li>
+<li><a href="index-3-3-4.html">
+ luaQ_checkqvariant&lt;TYPE&gt;</a></li>
+<li><a href="index-3-3-5.html">
+ luaQ_complete</a></li>
+<li><a href="index-3-3-6.html">
+ luaQ_connect</a></li>
+<li><a href="index-3-3-7.html">
+ luaQ_disconnect</a></li>
+<li><a href="index-3-3-8.html">
+ luaQ_doevents</a></li>
+<li><a href="index-3-3-9.html">
+ luaQ_engine</a></li>
+<li><a href="index-3-3-10.html">
+ luaQ_getfield</a></li>
+<li><a href="index-3-3-11.html">
+ luaQ_optqobject&lt;TYPE&gt;</a></li>
+<li><a href="index-3-3-12.html">
+ luaQ_optqvariant&lt;TYPE&gt;</a></li>
+<li><a href="index-3-3-13.html">
+ luaQ_pcall</a></li>
+<li><a href="index-3-3-14.html">
+ luaQ_print</a></li>
+<li><a href="index-3-3-15.html">
+ luaQ_pushmeta</a></li>
+<li><a href="index-3-3-16.html">
+ luaQ_pushqt</a></li>
+<li><a href="index-3-3-17.html">
+ luaQ_register</a></li>
+<li><a href="index-3-3-18.html">
+ luaQ_toqobject</a></li>
+<li><a href="index-3-3-19.html">
+ luaQ_toqvariant</a></li>
+<li><a href="index-3-3-20.html">
+ luaQ_traceback</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-3-2.html">
+ Class <code>QtLuaLocker</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

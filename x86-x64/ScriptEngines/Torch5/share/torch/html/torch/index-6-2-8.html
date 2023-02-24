@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [DoubleStorage] storage()
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [DoubleStorage] storage()</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-2.html">
+ Querying the size and structure</a>&nbsp; > &nbsp; <b>
+ <code>[DoubleStorage] storage()</code></b>
+</div>
+
+<div id="contents">
+<a name="TensorStorage"></a>
+
+<p>
+
+<p>
+
+Returns the <a href="index-5.html#Storage"><code>DoubleStorage</code></a> used to store all the elements of the <code>Tensor</code>.
+Basically, a <code>Tensor</code> is a particular way of <i>viewing</i> a <code>Storage</code>.
+<pre>
+> x = torch.Tensor(4,5)
+> s = x:storage()
+> for i=1,s:size() do -- fill up the Storage
+>> s[i] = i
+>> end
+> print(x) -- s is interpreted by x as a 2D matrix
+
+  1   5   9  13  17
+  2   6  10  14  18
+  3   7  11  15  19
+  4   8  12  16  20
+[torch.Tensor of dimension 4x5]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-2-7.html">
+ <code>[LongStorage] stride()</code></a></div>
+<div id="footer-right"><a href="index-6-2-9.html">
+ <code>[boolean] isContiguous()</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

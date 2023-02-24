@@ -1,0 +1,49 @@
+<extended>Torch Manual
+
+=Torch5= provides a Matlab-like environment for state-of-the-art machine
+learning algorithms. It is _easy_ to use and provides a very _efficient_
+implementation, thanks to [[Lua.hlp][an easy and fast scripting language]]
+[[LuaManual.hlp][(=Lua=)]] and a underlying =C++= implementation. It is
+distributed under a [[License.hlp][=BSD= license]].
+
+---+ Introduction
+
+   * [[Install.hlp][Installation instructions]]
+   * [[newbieTutorial.hlp][Basic tutorial for Torch newbies]]
+
+
+
+---+ Basics
+
+   * [torch] [[torch/index.hlp][Torch Package Reference Manual]]
+
+---+ Graphics
+
+   * [gfx] [[gfx/index.hlp][Plotting Package Reference Manual]]
+   * [graphics] [[graphics/index.hlp][Portable Graphic Layer Reference Manual]]
+   * [image] [[image/index.hlp][Image Package Reference Manual]]
+
+---+ Machine Learning
+
+   * [nn] [[nn/index.hlp][Neural Network Package]]
+
+---+ Maths
+
+   * [lab] [[lab/index.hlp][Lab Package Reference Manual]]
+   * [random] [[random/index.hlp][Random Number Package]]
+
+---+ Misc
+
+   * [help] [[help/index.hlp][Help Package Reference Manual]]
+
+---+ QT Interface
+
+   * [qt] [[qt/index.hlp][QtLua and Qt Package Reference Manual]]
+   * [qtide] [[qtide/index.hlp][QtIde Package Reference Manual]]
+   * [qttorch] [[qttorch/index.hlp][QTTorch Package Reference Manual]]
+   * [qtuiloader] [[qtuiloader/index.hlp][QtUiLoader Package Reference Manual]]
+   * [qtwidget] [[qtwidget/index.hlp][QtWidget Package Reference Manual]]
+
+---+ System
+
+   * [paths] [[paths/index.hlp][Filename Manipulation Package]]

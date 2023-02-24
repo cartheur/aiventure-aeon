@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_close
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_close</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_close</code></b>
+</div>
+
+<div id="contents">
+<a name="luaclose"></a>
+
+<p>
+
+<p>
+
+<pre>
+void lua_close (lua_State *L);
+</pre>
+<p>
+
+<p>
+
+ Destroys all objects in the given Lua state (calling the corresponding garbage-collection metamethods, if any) and frees all dynamic memory used by this state. On several platforms, you may not need to call this function, because all resources are naturally released when the host program ends. On the other hand, long-running programs, such as a daemon or a web server, might need to release states as soon as they are not needed, to avoid growing too large.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-5.html">
+ <code>lua_checkstack</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-7.html">
+ <code>lua_concat</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

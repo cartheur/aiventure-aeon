@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Receiving Signals
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Receiving Signals</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <a href="index-2-2.html">
+ Qt Objects</a>&nbsp; > &nbsp; <a href="index-2-2-5.html">
+ Signals</a>&nbsp; > &nbsp; <b>
+ Receiving Signals</b>
+</div>
+
+<div id="contents">
+<a name="signalreceive"></a>
+
+<p>
+
+<p>
+
+Qt signals can be connected to Lua functions 
+using <a href="index-2-4-1.html#qtconnectf"><code>qt.connect(...)</code></a>.
+<p>
+
+For instance, the clause
+<pre>
+  qt.connect(qobject,'mysignal(QByteArray)',
+             function(s) print("mysignal("..s..")") end)
+</pre>
+ensures that the specified lua function
+is called whenever the signal with signature 
+<code>mysignal(QByteArray)</code> is emitted.
+Arguments with string types are converted to Lua strings,
+and arguments numerical types are converted to Lua numbers.
+<p>
+
+Functions passed to <code>qt.connect</code> can of course be closures:
+<pre>
+  local table = some_lua_object()
+  qt.connect(qobject,'mysignal(QByteArray)',
+             function(s) table:mysignalemitted(s) end)
+</pre>
+<p>
+
+A rather complicated issue is to determine when 
+functions connected to Qt signals are invoked.
+<ul><li>When the Qt signal is emitted from the thread currently
+running a Lua program, it is assumed that the signal is
+a consequence of the Lua program execution and 
+the function is called synchronously.
+</li><li>When the Qt signal is emitted from another thread,
+it is assumed that the signal is asynchronous.
+Such signal invokations are queued and 
+executed just before finishing to execute
+the current Lua program.
+</li></ul><p>
+
+Function <a href="index-2-4-5.html#qtdoevents"><code>qt.doevents()</code></a> can be called anytime
+to process all pending Qt events and invoke all
+functions associated with queued signals.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-2-5-1.html">
+ Emitting Signals</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

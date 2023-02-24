@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Logical Operators
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Logical Operators</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <a href="LuaManual-2-5.html">
+  Expressions</a>&nbsp; > &nbsp; <b>
+  Logical Operators</b>
+</div>
+
+<div id="contents">
+<a name="LogicalOperators"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ The logical operators in Lua are <b>and</b>, <b>or</b>, and <b>not</b>. Like the control structures (see <a href="LuaManual-2-4-4.html#ControlStructures">Control Structures</a>), all logical operators consider both <b>false</b> and <b>nil</b> as false and anything else as true.   
+<p>
+
+ The negation operator <b>not</b> always returns <b>false</b> or <b>true</b>. The conjunction operator <b>and</b> returns its first argument if this value is <b>false</b> or <b>nil</b>; otherwise, <b>and</b> returns its second argument. The disjunction operator <b>or</b> returns its first argument if this value is different from <b>nil</b> and <b>false</b>; otherwise, <b>or</b> returns its second argument. Both <b>and</b> and <b>or</b> use short-cut evaluation; that is, the second operand is evaluated only if necessary. Here are some examples:
+<pre>
+     10 or 20            --> 10
+     10 or error()       --> 10
+     nil or "a"          --> "a"
+     nil and 10          --> nil
+     false and error()   --> false
+     false and nil       --> false
+     false or nil        --> nil
+     10 and 20           --> 20
+</pre>
+<p>
+
+<p>
+
+ (In this manual, --> indicates the result of the preceding expression.)      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-2-5-2.html">
+  Relational Operators</a></div>
+<div id="footer-right"><a href="LuaManual-2-5-4.html">
+  Concatenation</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

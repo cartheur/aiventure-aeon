@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Variables
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Variables</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <b>
+  Variables</b>
+</div>
+
+<div id="contents">
+<a name="Variables"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Variables are places that store values.  There are three kinds of variables in Lua: global variables, local variables, and table fields.   
+<p>
+
+ A single name can denote a global variable or a local variable (or a function's formal parameter, which is a particular kind of local variable):
+<pre>
+	var ::= Name
+</pre>
+<p>
+
+<p>
+
+ Name denotes identifiers, as defined in <a href="LuaManual-2-1.html#LexicalConventions">Lexical Conventions</a>.   
+<p>
+
+ Any variable is assumed to be global unless explicitly declared as a local (see <a href="LuaManual-2-4-7.html#LocalDeclarations">Local Declarations</a>). Local variables are <i>lexically scoped</i>: local variables can be freely accessed by functions defined inside their scope (see <a href="LuaManual-2-6.html#VisibilityRules">Visibility Rules</a>).   
+<p>
+
+ Before the first assignment to a variable, its value is <b>nil</b>.   
+<p>
+
+ Square brackets are used to index a table:
+<pre>
+	var ::= prefixexp `*[*` exp `*]*`
+</pre>
+<p>
+
+<p>
+
+ The meaning of accesses to global variables  and table fields can be changed via metatables. An access to an indexed variable <code>t[i]</code> is equivalent to a call <code>gettable_event(t,i)</code>. (See <a href="LuaManual-2-8.html#Metatables">Metatables</a> for a complete description of the <code>gettable_event</code> function. This function is not defined or callable in Lua. We use it here only for explanatory purposes.)   
+<p>
+
+ The syntax <code>var.Name</code> is just syntactic sugar for <code>var["Name"]</code>:
+<pre>
+	var ::= prefixexp `*.*` Name
+</pre>
+<p>
+
+<p>
+
+ All global variables live as fields in ordinary Lua tables, called <i>environment tables</i> or simply <i>environments</i> (see <a href="LuaManual-2-9.html#Environments">Environments</a>). Each function has its own reference to an environment, so that all global variables in this function will refer to this environment table. When a function is created, it inherits the environment from the function that created it. To get the environment table of a Lua function, you call <a href="LuaManual-5-1-6.html#getfenvf"><code>getfenv (f)</code></a>. To replace it, you call <a href="LuaManual-5-1-20.html#setfenvftable"><code>setfenv (f, table)</code></a>. (You can only manipulate the environment of C functions through the debug library; (see <a href="LuaManual-5-9.html#TheDebugLibrary">The Debug Library</a>).)   
+<p>
+
+ An access to a global variable <code>x</code> is equivalent to <code>_env.x</code>, which in turn is equivalent to
+<pre>
+     gettable_event(_env, "x")
+</pre>
+<p>
+
+<p>
+
+ where <code>_env</code> is the environment of the running function. (See <a href="LuaManual-2-8.html#Metatables">Metatables</a> for a complete description of the <code>gettable_event</code> function. This function is not defined or callable in Lua. Similarly, the <code>_env</code> variable is not defined in Lua. We use them here only for explanatory purposes.)      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-2-2.html">
+  Values and Types</a></div>
+<div id="footer-right"><a href="LuaManual-2-4.html">
+  Statements</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

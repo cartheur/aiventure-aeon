@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ error (message [, level])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ error (message [, level])</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-1.html">
+  Basic Functions</a>&nbsp; > &nbsp; <b>
+ <code>error (message [, level])</code></b>
+</div>
+
+<div id="contents">
+<a name="errormessagelevel"></a>
+
+<p>
+
+ Terminates the last protected function called and returns <code>message</code> as the error message. Function <code>error</code> never returns.   
+<p>
+
+ Usually, <code>error</code> adds some information about the error position at the beginning of the message. The <code>level</code> argument specifies how to get the error position. With level 1 (the default), the error position is where the <code>error</code> function was called. Level 2 points the error to where the function that called <code>error</code> was called; and so on. Passing a level 0 avoids the addition of error position information to the message.     
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-1-3.html">
+ <code>dofile (filename)</code></a></div>
+<div id="footer-right"><a href="LuaManual-5-1-5.html">
+ <code>_G</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

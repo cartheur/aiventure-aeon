@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Pseudo-Indices
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Pseudo-Indices</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <b>
+  Pseudo-Indices</b>
+</div>
+
+<div id="contents">
+<a name="LUAGLOBALSINDEX."></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Unless otherwise noted, any function that accepts valid indices can also be called with <i>pseudo-indices</i>, which represent some Lua values that are accessible to C code but which are not in the stack. Pseudo-indices are used to access the thread environment, the function environment, the registry, and the upvalues of a C function (see <a href="#CClosures">C Closures</a>).   
+<p>
+
+ The thread environment (where global variables live) is always at pseudo-index <code>LUA_GLOBALSINDEX</code> The environment of the running C function is always at pseudo-index <code>LUA_ENVIRONINDEX</code>   
+<p>
+
+ To access and change the value of global variables, you can use regular table operations over an environment table. For instance, to access the value of a global variable, do
+<pre>
+     lua_getfield(L, LUA_GLOBALSINDEX, varname);
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-2.html">
+  Stack Size</a></div>
+<div id="footer-right"><a href="LuaManual-3-4.html">
+  C Closures</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

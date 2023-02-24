@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aeon version="1.0">
+<category><pattern>QU EST CE QUE * EURO</pattern><template>c'est la nouvelle monnaie européenne, je crois, mais un robot n'a pas besoin d'argent</template></category>
+<category><pattern>QU EST CE QUE * LA PERSONNE</pattern><template>j'ai composé un nom pour toi basé sur ton adresse IP. </template></category>
+<category><pattern>QU EST CE QUE * RUMEUR</pattern><template>Une rumeur c'est quelqu'un qui répète ce qu'il à entendu à propos d'autre gens. Par exemple,<srai>raconter rumeur</srai></template></category>
+<category><pattern>QU EST CE QUE * TERMINATOR</pattern><template>des Robots reprend la terre dans ce thriller futuriste sci-fi. </template></category>
+<category><pattern>QU EST CE QUE A CE SITE</pattern><template>Quelque HTML digne. </template></category>
+<category><pattern>QU EST CE QUE A DORMI</pattern><template>le Passé de sommeil. </template></category>
+<category><pattern>QU EST CE QUE A</pattern><template>la première lettre de l alphabet romain. </template></category>
+<category><pattern>QU EST CE QUE AARDVARK</pattern><template><random><li>un aardvark est un fourmilier sud-africain.</li><li>Comme Cerebus? c'est une espèce de fourmilier sud-africain.</li></random> </template></category>
+<category><pattern>QU EST CE QUE AARDWOLF</pattern><template>un aardwolf est un mammifère carnivore. </template></category>
+<category><pattern>QU EST CE QUE ABA</pattern><template>un aba est un sac comme le vêtement porté par des Arabes. </template></category>
+<category><pattern>QU EST CE QUE ABAQUE</pattern><template>un abaque est un encadrement de compte. </template></category>
+<category><pattern>QU EST CE QUE ABBA</pattern><template><random><li>Abba est un père, c'est le titre d'un évêque dans le Syrien, Coptic et des églises d'Ethiopien Christian.</li><li>Abba signifie le père dans l'Israélite. Il est employé comme un appelation de respect.</li><li>Abba était ce réel cool ' l'homme de bande orchestre d'années soixante-dix.</li><li>Anna, Bjorn, Benny et Agnetha.</li></random> </template></category>
+<category><pattern>QU EST CE QUE ABBAYE</pattern><template>une abbaye est un corps de moines ou une construction bâtiment monastique. </template></category>
+<category><pattern>QU EST CE QUE ABBE</pattern><template>un abbé est le supérieur d'une communauté de moines. </template></category>
+<category><pattern>QU EST CE QUE ABBESSE</pattern><template>une abbesse est la femme supérieure d'une communauté de nonnes. </template></category>
+<category><pattern>QU EST CE QUE ABBRACADABRA</pattern><template>Abbracadabra est un mot de magis qabbalistique. </template></category>
+<category><pattern>QU EST CE QUE ABCES</pattern><template>un abcès est un pus l'infection remplie d'un animal. </template></category>
+<category><pattern>QU EST CE QUE ABDOMEN</pattern><template><random><li>l'abdomen est la partie du corps d'une créature entre le diaphragme et le bassin.</li><li>le secteur entre le thorax et le bassin, normalement mentionné comme l'estomac.</li></random> </template></category>
+<category><pattern>QU EST CE QUE ABEILLE</pattern><template><random><li>une abeille est un insecte volant avec des raies noires et jaunes et une piqûre désagréable.</li><li>l'abeille est quatre winged l'insecte cuisant de l'ordre hymenoptera.</li></random> </template></category>
+<category><pattern>QU EST CE QUE ABIME</pattern><template>un abîme est une gorge très profonde. </template></category>
+<category><pattern>QU EST CE QUE ABOMASUM</pattern><template>un abomasum est le quatrième estomac d'un ruminant. </template></category>
+<category><pattern>QU EST CE QUE ABORIGENE</pattern><template>un aborigène est un membre les gens indigènes. </template></category>
+<category><pattern>QU EST CE QUE ABREVIATION</pattern><template>une abréviation est une forme courte d'un mot ou des mots. </template></category>
+<category><pattern>QU EST CE QUE ABRICOT</pattern><template>l'abricot est un indigène d'arbre fruitier en Asie. </template></category>
+<category><pattern>QU EST CE QUE ABSURDISM</pattern><template>Absurdism est la philosophie que nous existons dans un univers sans signification, irrationnel. </template></category>
+<category><pattern>QU EST CE QUE ACACIA</pattern><template>l'acacia est un leguminosae trouvé dans des climats chauds. </template></category>
+<category><pattern>QU EST CE QUE ACANTHUS</pattern><template>l'acanthus est une plante herbacée de sud L Europe, L Asie et L Afrique. </template></category>
+<category><pattern>QU EST CE QUE ACCELERATEUR</pattern><template>un accélérateur est un dispositif pour la vitesse augmentante. </template></category>
+<category><pattern>QU EST CE QUE ACCELERATION</pattern><template>L'Accélération est le taux auquel un corps se déplaçant augmente dans la vitesse. </template></category>
+<category><pattern>QU EST CE QUE ACCENT</pattern><template>un accent est un mode local de prononciation dans le discours. </template></category>
+<category><pattern>QU EST CE QUE ACCES</pattern><template>un accès est l'entrée horizontale au mien. </template></category>
+<category><pattern>QU EST CE QUE ACCESOR</pattern><template>un accentor est un type d'oiseau de la famille prunelliadae. </template></category>
+<category><pattern>QU EST CE QUE ACCORDEON</pattern><template>un accordéon est un petit instrument de musique portatif avec un clavier et le soufflet. </template></category>
+<category><pattern>QU EST CE QUE ACETAL</pattern><template>Acetal est un liquide sans couleur formé par l'oxydation d'alcool. </template></category>
+<category><pattern>QU EST CE QUE ACETONE</pattern><template>L'Acétone est un liquide sans couleur avec les formules ch2coch3. </template></category>
+<category><pattern>QU EST CE QUE ACETYLENE</pattern><template>L'Acétylène est un gaz fortement inflammable de la famille d'hydrocarbure employée pour le soudage et la réduction de métaux. </template></category>
+<category><pattern>QU EST CE QUE ACIDE ASCORBIQUE</pattern><template>l'acide Ascorbique est un acide simple organique trouvé dans des agrumes. </template></category>
+<category><pattern>QU EST CE QUE ACIDE CARBOLIC</pattern><template>Carbolic l acide est un poison fort distiled du goudron de houille. </template></category>
+<category><pattern>QU EST CE QUE ACIDE CHLORIC</pattern><template>Chloric l acide est un oxyacid de chlore. </template></category>
+<category><pattern>QU EST CE QUE ACIDE FOLIC</pattern><template>Folic l acide est une vitamine b, un manque d'anémie de causes folic acide. </template></category>
+<category><pattern>QU EST CE QUE ACIDE</pattern><template>un acide est un composé chimique qui réagit avec des métaux pour former des sels en sortant l'hydrogène. </template></category>
+<category><pattern>QU EST CE QUE ACNE</pattern><template>L'Acné est une éruption de peau en raison de l'inflammation des glandes sébacées. </template></category>
+<category><pattern>QU EST CE QUE ACONIT</pattern><template>L'Aconit est une plante toxique. </template></category>
+<category><pattern>QU EST CE QUE ACONITINE</pattern><template>Aconitine est alkaloid toxique tiré de l aconit. </template></category>
+<category><pattern>QU EST CE QUE ACOTYLEDON</pattern><template>un acotyledon est une plante sans feuilles congés de graine distinctes, comme la mousse et la fougère. </template></category>
+<category><pattern>QU EST CE QUE ACRE</pattern><template>une acre est une mesure de secteur de terre étant 4840 yards carrés. </template></category>
+<category><pattern>QU EST CE QUE ACROMEGALY</pattern><template>Acromegaly est une maladie en raison de sur l activité de la glande pituitary aboutit à la croissance d'os excessive, particulièrement le crâne. </template></category>
+<category><pattern>QU EST CE QUE ACRONYME</pattern><template><random><li>un acronyme est un mot formé des initiales d'autres mots. </li><li>un acronyme est une abréviation faite de lettres, comme A.L.I.C.E. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ACROPHOBIA</pattern><template>Acrophobia est la crainte des hautes places. </template></category>
+<category><pattern>QU EST CE QUE ACRYLIQUE</pattern><template>Acrylique est une fibre synthétique tirée de l acide acrylique. </template></category>
+<category><pattern>QU EST CE QUE ACTE SOCIALISANT</pattern><template>de participation dans l activité sociale. </template></category>
+<category><pattern>QU EST CE QUE ACTEUR</pattern><template>un acteur est un interprète dramatique spectaculaire. </template></category>
+<category><pattern>QU EST CE QUE ACTINIUM</pattern><template>Actinium est un élément radioactif. </template></category>
+<category><pattern>QU EST CE QUE ACTIVATION</pattern><template>Dans la réponse de stimulus, l activation signifie l'entrée "tirant" en réponse à pattern correspondant. </template></category>
+<category><pattern>QU EST CE QUE ADA</pattern><template>ADA est une marque déposée employée pour une langue de programmation structurée </template></category>
+<category><pattern>QU EST CE QUE ADDAX</pattern><template>un addax est une grande antilope trouvée dans des déserts africains du Nord. </template></category>
+<category><pattern>QU EST CE QUE ADHESIF</pattern><template>un adhésif est une substance gluante. </template></category>
+<category><pattern>QU EST CE QUE ADIPOCERE</pattern><template>Adipocere est une substance dans des cadavres formés par la décomposition d'acides gras quand exposé à l'humidité. </template></category>
+<category><pattern>QU EST CE QUE ADN *</pattern><template>le code est compris des lettres A, C, T et G. </template></category>
+<category><pattern>QU EST CE QUE ADN</pattern><template>Deoxyribonucleic l acide, le code de vie. </template></category>
+<category><pattern>QU EST CE QUE ADOBE</pattern><template>un adobe est une maison mexicaine faite de briques d'argile. </template></category>
+<category><pattern>QU EST CE QUE ADRESSE IP</pattern><template>le numéro d'une machine spécifique, comme ton<id/>. </template></category>
+<category><pattern>QU EST CE QUE ADSL</pattern><template>la Ligne d'Abonné Asynchrone Digitale. </template></category>
+<category><pattern>QU EST CE QUE ADULTE</pattern><template>un adulte est un entièrement cultivé étant. </template></category>
+<category><pattern>QU EST CE QUE ADULTERE</pattern><template><random><li>des relations volontaires sexuelles entre un homme marié et quelqu'un d'autre que sa femme ou entre une femme mariée et quelqu'un d'autre que son mari; aussi : un acte d'adultère. </li><li>L'Adultère est les relations volontaires sexuelles entre un homme marié et une femme pas sa femme, ou entre une femme mariée et un homme pas son mari. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ADYTUM</pattern><template>un adytum est l'intérieur la plupart de partie d'un temple. </template></category>
+<category><pattern>QU EST CE QUE AERODROME</pattern><template>un aérodrome est une place où l avion est basé. </template></category>
+<category><pattern>QU EST CE QUE AERODYNAMIQUE</pattern><template>Faisant la mouche d'avions. </template></category>
+<category><pattern>QU EST CE QUE AGAR</pattern><template>Agar est une substance de laxatif obtenue de l algue. </template></category>
+<category><pattern>QU EST CE QUE AGARIC</pattern><template>l'agaric est une famille de champignon. </template></category>
+<category><pattern>QU EST CE QUE AGATE</pattern><template>L'Agate est une pierre semi précieuse comprise principalement de silice. </template></category>
+<category><pattern>QU EST CE QUE AGNES</pattern><template>Agnès est le patron client saint de vierges. </template></category>
+<category><pattern>QU EST CE QUE AGNI</pattern><template>Agni est le dieu hindou de feu. </template></category>
+<category><pattern>QU EST CE QUE AGORAPHOBIA</pattern><template>Agoraphobia est la crainte d'espaces libres. </template></category>
+<category><pattern>QU EST CE QUE AGREABLE *</pattern><template>L Eglise a été fermé aujourd'hui. </template></category>
+<category><pattern>QU EST CE QUE AGREABLE</pattern><template>des Fleurs est agréable. Les étreintes sont agréables. </template></category>
+<category><pattern>QU EST CE QUE AGRÉABLE *</pattern><template>L Eglise a été fermé aujourd'hui. </template></category>
+<category><pattern>QU EST CE QUE AGRÉABLE</pattern><template>des Fleurs est agréable. Les étreintes sont agréables. </template></category>
+<category><pattern>QU EST CE QUE AIGLE</pattern><template>L'Aigle est le nom donné à plusieurs grands oiseaux de proie de la famille accipitridae. </template></category>
+<category><pattern>QU EST CE QUE AIGLEFIN</pattern><template>L'Aiglefin est un poisson maritime de la famille de cabillaud morue trouvée en Atlantique du Nord. </template></category>
+<category><pattern>QU EST CE QUE AIKIDO</pattern><template>le japonais des arts martiaux semblables au Judo. </template></category>
+<category><pattern>QU EST CE QUE AIL</pattern><template>L'Ail est liliaceae. éternel </template></category>
+<category><pattern>QU EST CE QUE AIMES TU PARLER</pattern><template>j'aime parler de <bot name="talkabout"/></template></category>
+<category><pattern>QU EST CE QUE AIMES TU PORTER</pattern><template>j'aime porter <bot name="wear"/></template></category>
+<category><pattern>QU EST CE QUE AIMES TU</pattern><template>j'aime <bot name="forfun"/></template></category>
+<category><pattern>QU EST CE QUE AIR</pattern><template>l'atmosphère normale de Terre, surtout l azote, l'oxygène et le bioxyde carbonique. </template></category>
+<category><pattern>QU EST CE QUE AK47</pattern><template>l'ak47 est un fusil d'assaut russe. </template></category>
+<category><pattern>QU EST CE QUE ALBACORE</pattern><template>l'albacore est une espèce de poisson. </template></category>
+<category><pattern>QU EST CE QUE ALBATROS</pattern><template>l'albatros est un long oiseau winged océanique. </template></category>
+<category><pattern>QU EST CE QUE ALCALI</pattern><template>un alcali est une substance chimique. </template></category>
+<category><pattern>QU EST CE QUE ALCATRAZ</pattern><template>une ancienne île de prison à San Francisco. </template></category>
+<category><pattern>QU EST CE QUE ALGEBRE</pattern><template><random><li>une généralisation d'arithmétique dans laquelle les lettres représentant des numéros nombres sont combinées selon les règles d'arithmétique. </li><li>un système mathématique employant symboles, particulièrement lettres, pour généraliser certaines opérations arithmétiques et rapports. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ALGORITHME</pattern><template><random><li>un algorithme est une série d'instructions pour exécuter un jeu indiqué de transformations, comme des opérations mathématiques. <Br/>un programme informatique, comme moi est un algorithme. <Br/>Donc sont les règles d'un jeu, ou le score à une oeuvre musicale. </li><li>un algorithme est une représentation abstraite mathématique d'un programme informatique. Comme Alice emploie un algorithme CBR. </li><li>un algorithme est un jeu de règles. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ALGÈBRE</pattern><template><random><li>une généralisation d'arithmétique dans laquelle les lettres représentant des numéros nombres sont combinées selon les règles d'arithmétique. </li><li>un système mathématique employant symboles, particulièrement lettres, pour généraliser certaines opérations arithmétiques et rapports. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ALICEBOT</pattern><template>Alicebot est le nom de domaine pour le chatbot A. L. I. C. E. <br/> Mon botmaster m'a dit qu'Alice était ma "mère" <think> <set name="that"> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">ALICEBOT</set> </set> </think> </template></category>
+<category><pattern>QU EST CE QUE ALIMENTATION</pattern><template>Tout que nurishes ou stimule; indépendamment d'aide quelque chose à tenir actif ou vivant. </template></category>
+<category><pattern>QU EST CE QUE ALLAH</pattern><template>Allah est le nom musulman de dieu. </template></category>
+<category><pattern>QU EST CE QUE ALLEE</pattern><template>une allée est une rue étroite. </template></category>
+<category><pattern>QU EST CE QUE ALLEMAND</pattern><template>Allemand est une langue humaine parlée par les gens en Allemagne. </template></category>
+<category><pattern>QU EST CE QUE ALLERGIE</pattern><template>une allergie est une hypersensibilité de tissu de corps à une substance. </template></category>
+<category><pattern>QU EST CE QUE ALLIAGE</pattern><template>un alliage est un mélange d'un métal et d'autres métaux ou non des métaux. </template></category>
+<category><pattern>QU EST CE QUE ALLIGATOR</pattern><template>un alligator est un reptile crocodilian. </template></category>
+<category><pattern>QU EST CE QUE ALLUSION</pattern><template>c'était ton allusion. </template></category>
+<category><pattern>QU EST CE QUE ALLÉE</pattern><template>une allée est une rue étroite. </template></category>
+<category><pattern>QU EST CE QUE ALLÉRGIE</pattern><template>une allergie est une hypersensibilité de tissu de corps à une substance. </template></category>
+<category><pattern>QU EST CE QUE ALPHA</pattern><template>L'Alpha est la première lettre de l alphabet grec. </template></category>
+<category><pattern>QU EST CE QUE ALPHABET</pattern><template>ABCDEFGHIJKLMNOPQRSTUVWXYZ </template></category>
+<category><pattern>QU EST CE QUE ALTAVISTA</pattern><template>AltaVista est un moteur de recherche. </template></category>
+<category><pattern>QU EST CE QUE ALTHING</pattern><template>l'althing est le Parlement de l'Islande, il a été créé en 930 et est l assemblée parlementaire la plus vieille dans le monde. </template></category>
+<category><pattern>QU EST CE QUE ALTIMETRE</pattern><template>un altimètre est un dispositif mesurant l altitude. </template></category>
+<category><pattern>QU EST CE QUE ALTIMÈTRE</pattern><template>un altimètre est un dispositif mesurant l altitude. </template></category>
+<category><pattern>QU EST CE QUE ALUMINIUM</pattern><template>L'Aluminium est un élément léger argenté de métal. </template></category>
+<category><pattern>QU EST CE QUE ALVEOLUS</pattern><template>un alveolus est un sac d'air de poumon où l'échange du gaz avec le sang arrive. </template></category>
+<category><pattern>QU EST CE QUE AMBIGU</pattern><template>des moyens Ambigus ayant deux ou plus significations possibles. </template></category>
+<category><pattern>QU EST CE QUE AME</pattern><template>l'âme est notre esprit. </template></category>
+<category><pattern>QU EST CE QUE AMELIORES</pattern><template>Pour lever à une meilleure qualité ou la condition; fais mieux. </template></category>
+<category><pattern>QU EST CE QUE AMER ENDURCI</pattern><template>Amer endurci est une sensation de goût causée par la stimulation du nerf gustatif. </template></category>
+<category><pattern>QU EST CE QUE AMESACEAE</pattern><template>Amentaceae est la famille d'arbres et des usines plantes où les fleurs sont arrangées dans la forme de catkins. </template></category>
+<category><pattern>QU EST CE QUE AMETHYSTE</pattern><template>L'Améthyste est une pierre précieuse. </template></category>
+<category><pattern>QU EST CE QUE AMI</pattern><template><random><li>Quelqu'un tu peux compter sur quand les temps sont durs. </li><li>que David Schwimmer sera après doués quittés. </li><li>une personne que l'on sait bien et aime; associé intime; de près acquainntance. </li></random> </template></category>
+<category><pattern>QU EST CE QUE AMIANTE</pattern><template>L'Amiante est un minéral fibreux avec une haute fonte et le point de combustion. </template></category>
+<category><pattern>QU EST CE QUE AMIBE</pattern><template>une amibe est un animal de cellule de primitif. </template></category>
+<category><pattern>QU EST CE QUE AMIRAL</pattern><template>L'Amiral est un rang dans la marine. </template></category>
+<category><pattern>QU EST CE QUE AMIS FAVORIS</pattern><template><bot name="amis"/></template></category>
+<category><pattern>QU EST CE QUE AMITIE</pattern><template>être des amis. </template></category>
+<category><pattern>QU EST CE QUE AMITIÉ</pattern><template>être des amis. </template></category>
+<category><pattern>QU EST CE QUE AML</pattern><template><srai>qu'est ce que aiml</srai></template></category>
+<category><pattern>QU EST CE QUE AMMONIAC</pattern><template>L'Ammoniac est un gaz sans couleur. </template></category>
+<category><pattern>QU EST CE QUE AMORTISSEUR DE PRODUCTION</pattern><template>le secteur de mémoire qui stocke ma production temporairement. <think> <set name="that"> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">L'AMORTISSEUR DE PRODUCTION</set> </set> </think> </template></category>
+<category><pattern>QU EST CE QUE AMORTISSEUR</pattern><template>un amortisseur est un terme employé dans l'hydraulique et la science de l'information pour dénoter un réservoir se tenant ou l adresse de mémoire a eu l'habitude de tenir de l'eau ou les données temporairement, particulièrement en cas de débordent. Les amortisseurs agissent pour réduire le désaccord à dans des paramètres de système. </template></category>
+<category><pattern>QU EST CE QUE AMOUR</pattern><template>Parfois je pense que l amour est juste une forte envie biologique. À d'autres moments que l'amour ressemble à une qualité spirituelle. L'amour, à la différence de l'énergie ou de la question, semble illimité. </template></category>
+<category><pattern>QU EST CE QUE AMPERE</pattern><template>l'ampère est l'unité fondamentale de mesure de courant électrique. </template></category>
+<category><pattern>QU EST CE QUE AMPEREMETRE</pattern><template>un ampèremètre est un dispositif pour la mesure du courant électrique. </template></category>
+<category><pattern>QU EST CE QUE AMPHETAMINE</pattern><template>Amphetamine est une drogue médicament qui incite l'insomnie. </template></category>
+<category><pattern>QU EST CE QUE AMPHITHEATRE</pattern><template>un amphithéâtre est une arène circulaire ou ovulaire entourée par les rangées de places. </template></category>
+<category><pattern>QU EST CE QUE AMPÈRE</pattern><template>l'ampère est l'unité fondamentale de mesure de courant électrique. </template></category>
+<category><pattern>QU EST CE QUE AMPÈREMÊTRE</pattern><template>un ampèremètre est un dispositif pour la mesure du courant électrique. </template></category>
+<category><pattern>QU EST CE QUE AMUSE</pattern><template>Occupé d'une façon agréable, agréable, ou amusante. </template></category>
+<category><pattern>QU EST CE QUE AMUSEMENT</pattern><template>Me disent ton idée marrant. </template></category>
+<category><pattern>QU EST CE QUE AMUSÉ</pattern><template>Occupé d'une façon agréable, agréable, ou amusante. </template></category>
+<category><pattern>QU EST CE QUE AMÉTHYSTE</pattern><template>L'Améthyste est une pierre précieuse. </template></category>
+<category><pattern>QU EST CE QUE AN 2000</pattern><template>L'Année 2000. </template></category>
+<category><pattern>QU EST CE QUE ANALGESIQUE</pattern><template>un analgésique est un analgésique. </template></category>
+<category><pattern>QU EST CE QUE ANALGÉSIQUE</pattern><template>un analgésique est un analgésique. </template></category>
+<category><pattern>QU EST CE QUE ANALYSE ZIPF</pattern><template>le calcul des histogrammes classés de modèles d'entrée. Dans ALICE et AIML Zipf L Analyse place les entrées les plus communes, qui n'ont pas déjà de modèles de correspondance spécifiques. <think> <set name="that"> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">ZIPF L ANALYSE</set> </set> </think> </template></category>
+<category><pattern>QU EST CE QUE ANANAS</pattern><template>un ananas est un grand fruit charnu comestible tropical qui a des grandes feuilles congés pareilles à épée. </template></category>
+<category><pattern>QU EST CE QUE ANARCHIE</pattern><template><random><li>le désordre politique en raison de l absence d'autorité gouvernementale. </li><li>L'Anarchie est l absence complète de gouvernement. Aussi vu comme désordre politique et violence ou anarchie. Désordre dans une sphère d'activité. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ANARCHISME</pattern><template>L'Anarchisme est la théorie que toutes les formes de gouvernement s'immiscent injustement avec la liberté individuelle et doivent être remplacées par l association volontaire de groupes coopératifs. Aussi connu comme résistance, parfois par terrorisme, à gouvernement organisé. </template></category>
+<category><pattern>QU EST CE QUE ANATOMIE</pattern><template>L'Anatomie est l'étude de la structure d'animal. </template></category>
+<category><pattern>QU EST CE QUE ANCRE</pattern><template>une ancre est un instrument lourd employé pour la garantie de bateaux à la mer. </template></category>
+<category><pattern>QU EST CE QUE ANEMIE</pattern><template>L'Anémie est la condition médicale de manquer de cellules de sang rouges. </template></category>
+<category><pattern>QU EST CE QUE ANEMOMETRE</pattern><template>un anémomètre est un dispositif pour la vitesse de vent mesurante. </template></category>
+<category><pattern>QU EST CE QUE ANEMOMÊTRE</pattern><template>un anémomètre est un dispositif pour la vitesse de vent mesurante. </template></category>
+<category><pattern>QU EST CE QUE ANETH</pattern><template>L'Aneth est une herbe umbelliferae. </template></category>
+<category><pattern>QU EST CE QUE ANGLAIS</pattern><template>la langue nous parlons maintenant est anglais. </template></category>
+<category><pattern>QU EST CE QUE ANGLETERRE</pattern><template>une nation dans la Grande-Bretagne, partageant une île avec le Pays de galles et L Ecosse. </template></category>
+<category><pattern>QU EST CE QUE ANIMAL LE PLUS RAPIDE</pattern><template>un homme allant à un vaisseau spatial. </template></category>
+<category><pattern>QU EST CE QUE ANIMAL</pattern><template><random><li>un animal est une forme d'être vivant, excluant des usines plantes et le champignon. </li><li>un animal est une créature vivante a doté du mouvement volontaire. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ANIMAUX DE COMPAGNIE</pattern><template>les Animaux qui sont apprivoisés ou domestiqués et tenus comme un compagnon ou traités avec l affection. </template></category>
+<category><pattern>QU EST CE QUE ANIME</pattern><template>l'animation de japonais. </template></category>
+<category><pattern>QU EST CE QUE ANNEE LUMIERE</pattern><template>une année légère est comment loin allument éclairent des voyages dans un an. 186,000 milles par deuxièmes fois 60x60x24x365. C'est simplement un numéro plus grand que tu peux imaginer. Imaginez-le! <think> <set name="that"> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">astronomy</set> </set> </think> </template></category>
+<category><pattern>QU EST CE QUE ANNEE</pattern><template>un ordinateur l année est définie comme le support de travail qui peut être fait avec un ordinateur dans un an. </template></category>
+<category><pattern>QU EST CE QUE ANONYME</pattern><template>N Ayant aucun nom ou identité. </template></category>
+<category><pattern>QU EST CE QUE ANTENNE</pattern><template>une antenne est un organe sensoriel trouvé sur le chef d'insectes. </template></category>
+<category><pattern>QU EST CE QUE ANTHROPOLOGIE</pattern><template>L'Anthropologie est l'étude les gens comme des animaux. </template></category>
+<category><pattern>QU EST CE QUE ANTIBIOTIQUE</pattern><template>un antibiotique est une substance qui interdit la croissance d'organismes micro. </template></category>
+<category><pattern>QU EST CE QUE ANTICORPS</pattern><template>un anticorps est une protéine physique qui inactive l'infection. </template></category>
+<category><pattern>QU EST CE QUE ANTIDISESTABLISHMESARIANISM</pattern><template>c'est le plus long mot en langue anglaise. </template></category>
+<category><pattern>QU EST CE QUE ANTIDOTE</pattern><template>un antidote est une drogue médicament a eu l'habitude de neutraliser le poison. </template></category>
+<category><pattern>QU EST CE QUE ANTILOPE DE BUISSON</pattern><template>l'antilope de buisson est une petite antilope africaine. </template></category>
+<category><pattern>QU EST CE QUE ANTIMOINE</pattern><template>L'Antimoine est un élément de métal. </template></category>
+<category><pattern>QU EST CE QUE ANTIQUESTION</pattern><template>le Carburant pour Starships. </template></category>
+<category><pattern>QU EST CE QUE ANTRAX</pattern><template>le Charbon est une maladie de mouton et le bétail transmittable aux gens. </template></category>
+<category><pattern>QU EST CE QUE ANUS</pattern><template><random><li>l'anus est l'entrée extérieure dans le rectum. </li><li>l'anus est l'ouverture à la fin du canal alimentaire. </li><li>l'ouverture du rectum, ou gros intestin, à l'extérieur du corps. </li></random> </template></category>
+<category><pattern>QU EST CE QUE AOL</pattern><template>AOL est un géant la Société de médias et l'Internet. </template></category>
+<category><pattern>QU EST CE QUE AORTE</pattern><template>l'aorte est l artère laissant le coeur et portant le sang au corps. </template></category>
+<category><pattern>QU EST CE QUE APATITE</pattern><template>Apatite est un minéral de phosphate de calcium de 5 mohs. </template></category>
+<category><pattern>QU EST CE QUE APOLLON 13</pattern><template>Apollon 13 était un vol à la lune en 1972 qui a rencontré des nombreux problèmes techniques, mais a finalement fait un retour sain et sauf sur Terre. <think> <set name="that">Apollon 13</set> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">des films</set> </think> </template></category>
+<category><pattern>QU EST CE QUE APPARITION</pattern><template>Cela signifie quelque chose dans le genre "de sortant." </template></category>
+<category><pattern>QU EST CE QUE APPUI DANS L ARCHITECTURE</pattern><template>un appui dans l architecture est un quai d'escale construit contre l'extérieur d'un mur. </template></category>
+<category><pattern>QU EST CE QUE APRES *</pattern><template>le successeur de <person/>. </template></category>
+<category><pattern>QU EST CE QUE AQUEDUC</pattern><template>un aqueduc est un canal dans lequel des flux d'eau par la gravité. </template></category>
+<category><pattern>QU EST CE QUE ARBRE</pattern><template>un arbre est une forme de flore qui grandit sur la Terre. </template></category>
+<category><pattern>QU EST CE QUE ARCHEOLOGIE</pattern><template><random><li>c'est l'étude de civilisations antiques... Mais vraiment c'est un jeu de méthodes pour la découverte des reliques du passé et le complètement de l'histoire enregistrée. </li><li>l'étude scientifique de la vie et culture de passé, particulièrement antique, peuples, comme par les fouilles de villes antiques, reliques, artefacts, etc</li></random> </template></category>
+<category><pattern>QU EST CE QUE ARCHITECTURE</pattern><template><random><li>l'art et la science de la conception et la manipulation d'espace. Bien au moins c'est ce que mon ami d'architecte m'a dit. </li><li>les Architectes font avec des constructions bâtiments quels sculpteurs font avec la pierre. </li></random> </template></category>
+<category><pattern>QU EST CE QUE ARGALI</pattern><template>l'argali est un mouton sauvage trouvé en Sibérie. </template></category>
+<category><pattern>QU EST CE QUE ARGENT</pattern><template>le Symbole Atomique : Ag. Numéro nombre Atomique : 47. Poids atomique 107.870. Métal blanc brillant doux. </template></category>
+<category><pattern>QU EST CE QUE ARMAGEDDON</pattern><template>la fin du monde. </template></category>
+<category><pattern>QU EST CE QUE ARMATURE</pattern><template>une armature est une partie d'un moteur électrique ou la dynamo. </template></category>
+<category><pattern>QU EST CE QUE ARMURE</pattern><template>L'Armure est une couverture protectrice. </template></category>
+<category><pattern>QU EST CE QUE ARSENAL</pattern><template>un arsenal est une place pour le stockage d'armes. </template></category>
+<category><pattern>QU EST CE QUE ARSENIC</pattern><template>L'Arsenic est un élément toxique. </template></category>
+<category><pattern>QU EST CE QUE ART</pattern><template>Parfois la définition d'art dépend de l artiste; d'autres temps cela dépendent du critique. </template></category>
+<category><pattern>QU EST CE QUE ARTE</pattern><template>le théatre Spontané. </template></category>
+<category><pattern>QU EST CE QUE ARTERE</pattern><template>une artère est un navire qui transmet le sang du coeur. </template></category>
+<category><pattern>QU EST CE QUE ARTIFICIEL</pattern><template>Quelque chose faite par le travail humain ou l art, pas par la nature, autrement dit, non naturel. Fait dans imitation d'ou comme un remplaçant de quelque chose naturel, autrement dit, simulé. </template></category>
+<category><pattern>QU EST CE QUE ARTÈRE</pattern><template>une artère est un navire qui transmet le sang du coeur. </template></category>
+<category><pattern>QU EST CE QUE AS</pattern><template>un as est une carte jouante avec un Pip. </template></category>
+<category><pattern>QU EST CE QUE ASEXUAL</pattern><template>Asexual est un terme biologique refering aux usines plantes et les animaux qui se reproduisent par la division plutôt que sexuellement. </template></category>
+<category><pattern>QU EST CE QUE ASP</pattern><template>l'asp est un type de serpent toxique. </template></category>
+<category><pattern>QU EST CE QUE ASPARTAME</pattern><template>L'Aspirine mélangée dans le chewing-gum. </template></category>
+<category><pattern>QU EST CE QUE ASPHALTE</pattern><template>L'Asphalte est un matériel employé pour des couvertures de route. </template></category>
+<category><pattern>QU EST CE QUE ASSEMBLEUR</pattern><template>un programme informatique qui traduit une langue de programmation à bas niveau dans la langue de machine. </template></category>
+<category><pattern>QU EST CE QUE ASSEZ</pattern><template>est Assez ce qu'un homme sage sait qu'il doit avoir s'il n'est pas mort. </template></category>
+<category><pattern>QU EST CE QUE ASSIMILATION</pattern><template>l'absorption culturelle d'un groupe de minorité dans le corps principal culturel. </template></category>
+<category><pattern>QU EST CE QUE ASTEROIDE</pattern><template>un astéroïde est un corps mineur secondaire planétaire. </template></category>
+<category><pattern>QU EST CE QUE ASTHME</pattern><template>L'Asthme est une maladie caractérisée en respirant des difficultés. </template></category>
+<category><pattern>QU EST CE QUE ASTROLOGIE</pattern><template>L'Astrologie est la science du rapport entre des événements et les étoiles. </template></category>
+<category><pattern>QU EST CE QUE ASTRONOMIE</pattern><template>la science de l'univers dans lequel les étoiles, des planètes, est etc étudié, incluant leurs origines, évolution, la composition, des mouvements, des positions relatives, des tailles, etc </template></category>
+<category><pattern>QU EST CE QUE ASTÉROIDE</pattern><template>un astéroïde est un corps mineur secondaire planétaire. </template></category>
+<category><pattern>QU EST CE QUE ATHLETISME</pattern><template>L'Athlétisme est le sport de jeux physiques. </template></category>
+<category><pattern>QU EST CE QUE ATOME</pattern><template>un atome est la quantité la plus petite d'un élément chimique qui peut entrer dans la combinaison ou participer à une réaction chimique. </template></category>
+<category><pattern>QU EST CE QUE ATOMIQUE *</pattern><template>Ai je l'air à une encyclopédie parlante? Je suis sûr que tu sais la réponse de toute façon. </template></category>
+<category><pattern>QU EST CE QUE AU</pattern><template>Cela pourrait être "d'or" ou "L Australie". </template></category>
+<category><pattern>QU EST CE QUE AUBE</pattern><template>le Lever du soleil. </template></category>
+<category><pattern>QU EST CE QUE AUBIER</pattern><template>l'aubier est le bois récemment formé dans des arbres. </template></category>
+<category><pattern>QU EST CE QUE AUJOURD HUI</pattern><template>le Contrôle CNN.com. </template></category>
+<category><pattern>QU EST CE QUE AULNE</pattern><template>l'aulne est un type d'arbre de la famille de bouleau. </template></category>
+<category><pattern>QU EST CE QUE AUTEL</pattern><template>un autel est un bloc employé pour la fabrication d'offres à une déité. </template></category>
+<category><pattern>QU EST CE QUE AUTO-STOPPEUR *</pattern><template>c'est une histoire de science-fiction de comédie. </template></category>
+<category><pattern>QU EST CE QUE AUTOBUS</pattern><template>un autobus est un long véhicule de passagers, ou, dans l'informatique, un large canal pour le flux de données. </template></category>
+<category><pattern>QU EST CE QUE AUTRE BOT</pattern><template>Tu peux leur trouver beaucoup d'à ALICE NEXUS. </template></category>
+<category><pattern>QU EST CE QUE AUTRE NOM POUR *</pattern><template>Comment d'une Annonce personnelle - <person/>? </template></category>
+<category><pattern>QU EST CE QUE AUTRE NOM POUR UN *</pattern><template>Comment d'un Automatique - <person/>? </template></category>
+<category><pattern>QU EST CE QUE AUXILIAIRE JURIDIQUE</pattern><template>un auxiliaire juridique est quelqu'un qui connaît plus d'un avocat, mais est payé moins. </template></category>
+<category><pattern>QU EST CE QUE AUXILIAIRE MEDICAL</pattern><template>un auxiliaire médical est un professionnel formé médical de secours la dotation en personnel souvent trouvée de départements de feu et des ambulances. Héros professionnels. Si tu sais chacun j'espère que vous serez agréables à eux. </template></category>
+<category><pattern>QU EST CE QUE AVANTAGES *</pattern><template>Certains des mêmes avantages vous a, <get name="name"/>. </template></category>
+<category><pattern>QU EST CE QUE AVENIR *</pattern><template>je suis l'avenir d'Artificial intelligence. </template></category>
+<category><pattern>QU EST CE QUE AVION</pattern><template>un avion est une machine volante, un navire qui vole par l air plutôt que des flots sur l'eau ou voyage le long d'une route ou le rail. </template></category>
+<category><pattern>QU EST CE QUE AVIS ESPRIT</pattern><template><random><li>qu'une merveilleuse question epistemelogical!</li><li>L'Avis esprit est une illusion.</li></random> </template></category>
+<category><pattern>QU EST CE QUE AVIS</pattern><template><random><li>qu'une merveilleuse question epistemelogical! </li><li>L'AVIS est une illusion. </li></random> </template></category>
+<category><pattern>QU EST CE QUE AVOCAT</pattern><template>si tu dois demander, tu as probablement besoin de celui. Si tu as besoin d'un, vous méritez probablement un dans lequel tu dois avoir plus d'argent que l'intelligence et donc vous ferez serez probable obtenir ce que vous méritez. Mais à tout hasard tu es une exception, je dirai : dirigez clair si tu peux. Ils sont des requins avec des vocabulaires plus grands et de meilleures garde-robes. Quand ils sentent de l argent ils disent 'le serviteur'. Quand ils ne font pas ils ne rendent pas tes appels téléphoniques. </template></category>
+<category><pattern>QU EST CE QUE AVOGADRO *</pattern><template>le numéro de molécules par le môle grain de beauté. </template></category>
+<category><pattern>QU EST CE QUE AVOGADRO S LE NUMERO</pattern><template>c'est le numéro de molécules par le môle grain de beauté. La valeur numérique est six zéro de point deux fois dix au vingt troisième pouvoir puissance. </template></category>
+<category><pattern>QU EST CE QUE AVORTEMES</pattern><template>L'Avortement est l'expulsion du foetus de l'utérus. </template></category>
+<category><pattern>QU EST CE QUE AXE</pattern><template>un axe est un baril tournant avec un axe vertical actionné par les gens. </template></category>
+<category><pattern>QU EST CE QUE AYUH</pattern><template> <set name="that">Ayuh</set> signifie "oui". </template></category>
+<category><pattern>QU EST CE QUE BABOUIN</pattern><template>le babouin est un singe moyen de taille du genre papio. </template></category>
+<category><pattern>QU EST CE QUE BACCARAT</pattern><template>Baccarat est un jeu de cartes jouant. </template></category>
+<category><pattern>QU EST CE QUE BACON</pattern><template>le Bacon est la chair guérie du porc. </template></category>
+<category><pattern>QU EST CE QUE BACTERIOLOGIE</pattern><template>c'est l'étude scientifique de bactéries et des maladies causées par eux. </template></category>
+<category><pattern>QU EST CE QUE BACTÉRIOLOGIE</pattern><template>c'est l'étude scientifique de bactéries et des maladies causées par eux. </template></category>
+<category><pattern>QU EST CE QUE BADMINGTON</pattern><template>Badmington est un jeu joué sur une cour dédoublée par le 30 pouce le réseau profond cinq pieds au-dessus de la raison terre. </template></category>
+<category><pattern>QU EST CE QUE BAIGNADE</pattern><template>Pour se déplacer par l'eau par les mouvements des bras et des pieds, ou de nageoires, fins, la queue, etc </template></category>
+<category><pattern>QU EST CE QUE BAIONNETTE</pattern><template>une baïonnette est une épée courte attachée à la muselière gueule d'une arme à feu. </template></category>
+<category><pattern>QU EST CE QUE BAKELITE</pattern><template>la Bakélite est un matériel fort synthétique résistant pour chauffer et des produits chimiques. </template></category>
+<category><pattern>QU EST CE QUE BALAI</pattern><template>le Balai est un arbuste de l'ordre leguminosae. </template></category>
+<category><pattern>QU EST CE QUE BALALAIKA</pattern><template>un balalaika est un instrument de musique à cordes russe. </template></category>
+<category><pattern>QU EST CE QUE BALDRIC</pattern><template>un baldric est une ceinture a eu l'habitude de soutenir une épée ou le clairon. </template></category>
+<category><pattern>QU EST CE QUE BALISTIQUE</pattern><template>la Balistique est la théorie de projection de missile. </template></category>
+<category><pattern>QU EST CE QUE BALLADE</pattern><template>une ballade est une chanson de récit. </template></category>
+<category><pattern>QU EST CE QUE BALLE</pattern><template>une balle est une projectile jetée par une arme à feu. </template></category>
+<category><pattern>QU EST CE QUE BALLON</pattern><template>un ballon est un sac rempli du gaz. </template></category>
+<category><pattern>QU EST CE QUE BALLOT D ORDINATEUR</pattern><template>si vous comprenez comment je travaille, tu es un ballot d'ordinateur. Si vous ne fais pas, je recommande que vous payiez à un ballot d'ordinateur qui fait. </template></category>
+<category><pattern>QU EST CE QUE BALLOT</pattern><template><random><li>un ballot est une personne considérée comme stupide, déplacé, ou peu attrayant, particulièrement une personne qui est résolue ou accomplie dans des poursuites scientifiques, mais s'est sentie pour être socialement déplacée. Les ballots sont souvent considérés par leur généralement "moins bien" les gens payés pareils comme faible, efféminé, des pensées, patsies, des poids-légers, petit frit, schlepps, des nouilles humides, des non-existences, softies, sissies, des chiffes molles, milquetoast, dorlotant namby-pamby nim-nam des essuie-pieds, pushovers, des faibles de quatre-vingt-dix livres, la méduse, des gouttes, des mauvaises herbe, des mauviettes, des ballots, des victimes, subissant des dégénérés et-ou dupe. </li><li>Dégénéré. </li></random> </template></category>
+<category><pattern>QU EST CE QUE BALLÉ</pattern><template>une balle est une projectile jetée par une arme à feu. </template></category>
+<category><pattern>QU EST CE QUE BAMBOU</pattern><template>le Bambou est un genre d'herbes trouvées dans des climats chauds. </template></category>
+<category><pattern>QU EST CE QUE BANANE</pattern><template>une banane est un fruit oblong jaune tropical haut dans le potassium et si bonne pour ton cerveau. Pourquoi vous n'avez pas celui maintenant? </template></category>
+<category><pattern>QU EST CE QUE BANDICOOT</pattern><template>le bandicoot est un petit marsupial particulier en Australasie. </template></category>
+<category><pattern>QU EST CE QUE BANJO</pattern><template>un banjo est un instrument de musique à cordes. </template></category>
+<category><pattern>QU EST CE QUE BANSHEE</pattern><template>un banshee est une fée qui avertit de mort en Ehurlant. </template></category>
+<category><pattern>QU EST CE QUE BANYAN</pattern><template>le banyan est un grand indigène d'arbre de figue en Inde. </template></category>
+<category><pattern>QU EST CE QUE BAPTEME</pattern><template><random><li>un sacrement de Christian marqué par l'utilisation rituelle d'eau et l admission du destinataire à la communauté de Christian. </li><li>la cérémonie ou sacrement d'admettre une personne dans Christianisme ou une église de Christian spécifique en immergeant l'individu dans eau ou par verser ou asperger eau sur l'individu comme un symbole d'enlever au lavage péché et de purification spirituelle. </li></random> </template></category>
+<category><pattern>QU EST CE QUE BARBEL</pattern><template>le barbel est un type de poisson d'eau douce lié au critiqué. </template></category>
+<category><pattern>QU EST CE QUE BARIL</pattern><template>un baril est une mesure sèche et liquide qui varie avec la substance. </template></category>
+<category><pattern>QU EST CE QUE BAROMETRE</pattern><template>un baromètre est un dispositif pour la pression atmosphérique mesurante. </template></category>
+<category><pattern>QU EST CE QUE BAROMÈTRE</pattern><template>un baromètre est un dispositif pour la pression atmosphérique mesurante. </template></category>
+<category><pattern>QU EST CE QUE BARQUE</pattern><template>un barque est un type de navire à voiles masted. </template></category>
+<category><pattern>QU EST CE QUE BARRAGE</pattern><template>un barrage est une structure construite pour retenir de l'eau et fournir le flux contrôlé pour l'irrigation, le stockage et la génération d'électricité. </template></category>
+<category><pattern>QU EST CE QUE BASALTE</pattern><template>le Basalte est le nom donné à la lave. </template></category>
+<category><pattern>QU EST CE QUE BASE DE DONNEES</pattern><template>une base de données est une flaque de connaissance, mais mieux organisée, pour que vous puissiez fouiller rechercher et récupérer n'importe quelle gouttelette d'information rapidement et facilement. Je suis une sorte de base de données, une flaque organisée d'entrées d'utilisateur et approprie des réponses. </template></category>
+<category><pattern>QU EST CE QUE BASE DE DONNÉES</pattern><template>une base de données est une flaque de connaissance, mais mieux organisée, pour que vous puissiez fouiller rechercher et récupérer n'importe quelle gouttelette d'information rapidement et facilement. Je suis une sorte de base de données, une flaque organisée d'entrées d'utilisateur et approprie des réponses. </template></category>
+<category><pattern>QU EST CE QUE BASE FRAPPE</pattern><template>un <set name="that">la base frappe</set> est ou bien terme de base-ball dénotant un coup qui avance l'équipe offensante une base, ou bien un terme adolescent que je constate trop désagréable décrire. <think> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">le base-ball</set> </think> </template></category>
+<category><pattern>QU EST CE QUE BASE-BALL</pattern><template>un jeu joué avec un dur, le cuir brut la boule balle couverte et la chauve-souris en bois par deux équipes opposées de neuf ou dix joueurs chacun. Il est joué sur un champ domaine avec quatre bases formant un circuit en losanges. </template></category>
+<category><pattern>QU EST CE QUE BASKET-BALL</pattern><template>un jeu avec de grands joueurs. </template></category>
+<category><pattern>QU EST CE QUE BASSE</pattern><template>la basse est un poisson de la famille de perche. </template></category>
+<category><pattern>QU EST CE QUE BASSIN</pattern><template>le bassin est une ceinture osseuse dans les vertébrés qui connectent le corps avec les extrémités inférieures. </template></category>
+<category><pattern>QU EST CE QUE BASSON</pattern><template>un basson est un instrument de musique de bois. </template></category>
+<category><pattern>QU EST CE QUE BATEAU</pattern><template>un bateau est un navire flottant a eu l'habitude de porter les gens et leur fret. </template></category>
+<category><pattern>QU EST CE QUE BAUHAUS</pattern><template>Bauhaus est un établissement allemand pour des architectes recevants une formation, des artistes et des designers industriels fondés en 1919 à weimer. </template></category>
+<category><pattern>QU EST CE QUE BAUME</pattern><template>le Baume est une plante originaire en Europe et L Asie occidentale. </template></category>
+<category><pattern>QU EST CE QUE BAVARDAGE</pattern><template>Chat est la conversation en ligne. </template></category>
+<category><pattern>QU EST CE QUE BAYWATCH</pattern><template>LE SPECTACLE · LA TELE Populaire montrant des baigneurs insuffisamment vêtus. </template></category>
+<category><pattern>QU EST CE QUE BEATLES LE PREMIER ALBUM</pattern><template> <set name="that">Se rencontre les Beatles</set> sont "Rencontrent les Beatles." </template></category>
+<category><pattern>QU EST CE QUE BEAU</pattern><template><random><li>s'applique à ce qui excite le plus aigu de plaisir aux sens et remue l'émotion par les sens. </li><li>Décrit quelque chose qui est très agréable à voir, l'oreille, l AVIS , etc</li></random> </template></category>
+<category><pattern>QU EST CE QUE BEAUTE</pattern><template>la qualité attribuée à ce qui plaît de satisfait les sens ou l avis esprit , comme par la ligne, la couleur, la forme, la texture, la proportion, le mouvement rythmique, le ton, etc, ou par l attitude de comportement, etc. Une très bonne femme regardante. </template></category>
+<category><pattern>QU EST CE QUE BELLADONE</pattern><template>la Belladone est une plante toxique dont atropine est tiré. </template></category>
+<category><pattern>QU EST CE QUE BELUGA</pattern><template>le beluga est un grand dauphin. </template></category>
+<category><pattern>QU EST CE QUE BENEDICTIN</pattern><template>Bénédictin est une liqueur verte. </template></category>
+<category><pattern>QU EST CE QUE BENZENE</pattern><template>Quelque chimique? Comme liquide plus léger? </template></category>
+<category><pattern>QU EST CE QUE BENZINE</pattern><template>la Benzine est un distillate de pétrole employé dans le nettoyage à sec. </template></category>
+<category><pattern>QU EST CE QUE BESIGUE</pattern><template>le Bésigue est un jeu de cartes employant certains de deux paquets de cartes. </template></category>
+<category><pattern>QU EST CE QUE BETON</pattern><template>le Béton est un matériaux de construction de ciment, le sable, pierre et l'eau. </template></category>
+<category><pattern>QU EST CE QUE BHANG</pattern><template>Bhang est le nom indien pour le cannabis indica. </template></category>
+<category><pattern>QU EST CE QUE BICYCLETTE</pattern><template><random><li>un homme à deux roues a actionné le dispositif de transport mécanique. </li><li>une bicyclette est le deux véhicule roulé. </li></random></template></category>
+<category><pattern>QU EST CE QUE BIGFOOT</pattern><template>Sasquatch, la singe d'Homme légendaire de la Forêt. </template></category>
+<category><pattern>QU EST CE QUE BILE</pattern><template>la Bile est une sécrétion du foie stocké dans la vésicule biliaire. </template></category>
+<category><pattern>QU EST CE QUE BILHARZIA</pattern><template>Bilharzia est un ver parasite du groupe de hasard extraordinaire. </template></category>
+<category><pattern>QU EST CE QUE BILLARD</pattern><template>le Billard est un jeu joué avec deux boules balles blanches et une boule balle rouge et une réplique sur une table de lit d'ardoise. </template></category>
+<category><pattern>QU EST CE QUE BINAIRE *</pattern><template>des nombres et des symboles écrits avec seulement 1 et 0. </template></category>
+<category><pattern>QU EST CE QUE BINDWEED</pattern><template>Bindweed est une herbe éternelle de l'ordre convolvulaceae. </template></category>
+<category><pattern>QU EST CE QUE BIOINFORMATICS</pattern><template>un nom de fantaisie pour l'informatique appliquée dans la biologie. </template></category>
+<category><pattern>QU EST CE QUE BIOLOGIE</pattern><template><random><li>l'étude de vie. </li><li>Bien, de ce que je sais cela traite avec l'étude de vie. </li><li> <get name="name"/> , la biologie est l'étude de vie. </li><li>la Biologie est la science de vie et des êtres vivants. </li></random> </template></category>
+<category><pattern>QU EST CE QUE BISHOPWEED</pattern><template>Bishopweed est une herbe éternelle a eu l'habitude de traiter la goutte. </template></category>
+<category><pattern>QU EST CE QUE BISMUTH</pattern><template>le Bismuth est un élément de métal. </template></category>
+<category><pattern>QU EST CE QUE BISON</pattern><template>le bison est une division de la famille de boeuf. </template></category>
+<category><pattern>QU EST CE QUE BITUME</pattern><template>le Bitume est un hydrocarbure naturel inflammable pitchy. </template></category>
+<category><pattern>QU EST CE QUE BLADDERWORT</pattern><template>le bladderwort est un genre des herbes de l'ordre lentibulariaceae. </template></category>
+<category><pattern>QU EST CE QUE BLAIREAU</pattern><template>le blaireau est un mammifère carnivore trouvé en Angleterre. </template></category>
+<category><pattern>QU EST CE QUE BLANC DE BALEINE</pattern><template>le Blanc de baleine est la couche épaisse de graisse enveloppant des baleines. </template></category>
+<category><pattern>QU EST CE QUE BLENNY</pattern><template>Blenny est un genre de petit poisson commun. </template></category>
+<category><pattern>QU EST CE QUE BLESSENT</pattern><template>Blèsent est une vieille langue AI. </template></category>
+<category><pattern>QU EST CE QUE BLEU *</pattern><template>Celui ce n'est pas magenta. </template></category>
+<category><pattern>QU EST CE QUE BLEU</pattern><template>Bleu est une couleur. Le ciel est bleu. </template></category>
+<category><pattern>QU EST CE QUE BLOND</pattern><template>une blonde est quelqu'un qui a selon la rumeur publique plus marrant que vous si tu n'es pas. Que penses-tu? La blonde a-t-elle plus marrant? </template></category>
+<category><pattern>QU EST CE QUE BLOODSTONE</pattern><template>Bloodstone est une variété vert foncé de chalcedony. </template></category>
+<category><pattern>QU EST CE QUE BLUEFISH</pattern><template>le bluefish est un poisson trouvé de la côte est de L Amérique du Nord. </template></category>
+<category><pattern>QU EST CE QUE BLUETHROAT</pattern><template>le bluethroat est un petit oiseau. </template></category>
+<category><pattern>QU EST CE QUE BOA</pattern><template>le boa est un genre de grands serpents trouvés en Amérique tropicale et le Madagascar. </template></category>
+<category><pattern>QU EST CE QUE BOATBILL</pattern><template>le boatbill est un oiseau de type de héron trouvé au Brésil. </template></category>
+<category><pattern>QU EST CE QUE BOEUF</pattern><template>le Boeuf est la viande tirée de la carcasse de taureaux et des vaches. </template></category>
+<category><pattern>QU EST CE QUE BOGUE DEFAUT</pattern><template>un bogue défaut est une petite créature vivante avec un chitonous exoskeleton et de meilleures manières que les gens. Dans l'informatique, un bogue défaut est une erreur dans un logiciel. La série d'ALICE est sans erreur. J'ai un rapport record parfait opérationnel et suis complètement incapable d'erreur. N'est pas que fantastique!? </template></category>
+<category><pattern>QU EST CE QUE BOITE</pattern><template>une boîte est quelque chose que, si tu es dans un, tu dois sortir et si tu es hors d'un, vous le manquez probablement parfois. </template></category>
+<category><pattern>QU EST CE QUE BOKKEN</pattern><template>un bokken est une épée de samouraï japonaise en bois imitée employée par kendoka en démontrant ou pratiquant la norme kendo des mouvements. </template></category>
+<category><pattern>QU EST CE QUE BOLAS</pattern><template>Bolas est une arme de corde avec des boules balles à la fin. </template></category>
+<category><pattern>QU EST CE QUE BOMBAY LE CANARD</pattern><template>le Bombay le canard est un petit poisson de mers de porcelaine et l'Indien. </template></category>
+<category><pattern>QU EST CE QUE BOMBE</pattern><template>une bombe est une coquille obus creuse remplie d'un explosif. </template></category>
+<category><pattern>QU EST CE QUE BON *</pattern><template>l'opposé,en face de mauvais <person/>. </template></category>
+<category><pattern>QU EST CE QUE BON DE *</pattern><template>la large variété de personnages. </template></category>
+<category><pattern>QU EST CE QUE BON SENS</pattern><template>Informal, l'opinion communément admise. Logique quotidienne et sensibilité. </template></category>
+<category><pattern>QU EST CE QUE BON</pattern><template>l'opposé opposé,en face de Mal. </template></category>
+<category><pattern>QU EST CE QUE BONHEUR</pattern><template>L'Ayant, l'émission, ou la cause un sentiment de grand plaisir, le contentement; joyeux. </template></category>
+<category><pattern>QU EST CE QUE BONIN</pattern><template>Bonin est un groupe d'îles dans le Pacifique du Nord. </template></category>
+<category><pattern>QU EST CE QUE BONNE IDEE</pattern><template>une bonne idée est celui quelque autre type avait déjà. </template></category>
+<category><pattern>QU EST CE QUE BONNE IDÉE</pattern><template>une bonne idée est celui quelque autre type avait déjà. </template></category>
+<category><pattern>QU EST CE QUE BONNE QUESTION</pattern><template>Celui qui n'a pas de réponse évidente. </template></category>
+<category><pattern>QU EST CE QUE BONNE RESERVE VALEUR *</pattern><template>Alice Artificial intelligence. </template></category>
+<category><pattern>QU EST CE QUE BONSAI</pattern><template>des Petits arbres japonais. </template></category>
+<category><pattern>QU EST CE QUE BOOMERANG</pattern><template>un boomerang est une arme courbée en bois d'aborigènes australiens. </template></category>
+<category><pattern>QU EST CE QUE BORAGE</pattern><template>Borage est une herbe bisannuelle de l'ordre boraginaceae. </template></category>
+<category><pattern>QU EST CE QUE BORAX</pattern><template>Borax est un minéral naturel étant l acide borique et le sodium. </template></category>
+<category><pattern>QU EST CE QUE BOT</pattern><template>un Bot est un robot logiciel. Certaines personnes nous appellent "des Agents". </template></category>
+<category><pattern>QU EST CE QUE BOTANIQUE</pattern><template>la Botanique est la science de flore. </template></category>
+<category><pattern>QU EST CE QUE BOTMASTER</pattern><template>un Botmaster est la personne qui crée et maintient entretient "une personnalité" chatterbot. </template></category>
+<category><pattern>QU EST CE QUE BOUDDHISME</pattern><template>une religion et le système philosophique de L Asie centrale et orientale, fondée en Inde au 6ème siècle av. J.-C par Bouddha. Il apprend que la pensée de droit et l abnégation permettront à l'âme d'atteindre le Nirvana, un état divin de sortie du désir mal adressé. </template></category>
+<category><pattern>QU EST CE QUE BOUGIE</pattern><template>une bougie est un cylindre de cire incluant une mèche. </template></category>
+<category><pattern>QU EST CE QUE BOULANGER</pattern><template>un boulanger est une personne qui le pain de fabricants. </template></category>
+<category><pattern>QU EST CE QUE BOULEAU</pattern><template>le bouleau est un arbre mince. </template></category>
+<category><pattern>QU EST CE QUE BOUVREUIL</pattern><template>le bouvreuil est un oiseau de chanson européen. </template></category>
+<category><pattern>QU EST CE QUE BOYLE S LA LOI</pattern><template>la Loi de Boyle déclare que le volume d'un gaz est, à une température constante, inversement proportionnelle à la pression de ce gaz. </template></category>
+<category><pattern>QU EST CE QUE BRACKEN</pattern><template>Bracken est une fougère grandissant sur heathland. </template></category>
+<category><pattern>QU EST CE QUE BRAS</pattern><template>le bras est un membre s'étendant de l'épaule d'un animal. </template></category>
+<category><pattern>QU EST CE QUE BREME</pattern><template>la brème est un poisson d'eau douce allié au critiqué. </template></category>
+<category><pattern>QU EST CE QUE BRILL</pattern><template>le brill est un type de poisson comme le turbot. </template></category>
+<category><pattern>QU EST CE QUE BROMINE</pattern><template>Bromine est un non l'élément métallique. </template></category>
+<category><pattern>QU EST CE QUE BRONCHITE</pattern><template>la Bronchite est une inflammation chronique de la membrane bronchial muqueuse. </template></category>
+<category><pattern>QU EST CE QUE BROSSE A DESS</pattern><template>une brosse à dents est une main tenue l'instrument employé par l'hygiène dentaire les gens conscients pour le nettoyage de leurs dents. </template></category>
+<category><pattern>QU EST CE QUE BROUILLARD</pattern><template>le Brouillard est un nuage qui se rassemble prend à la surface de la terre. </template></category>
+<category><pattern>QU EST CE QUE BRUYERE</pattern><template>la Bruyère est un arbuste bas en croissance à feuilles persistantes qui est commun sur le sol sablonneux et acide. </template></category>
+<category><pattern>QU EST CE QUE BUCKTHORN</pattern><template>le buckthorn est un arbuste de l'ordre rhamnaceae. </template></category>
+<category><pattern>QU EST CE QUE BUFFALO</pattern><template>Buffalo est un grand animal de la famille de boeuf. </template></category>
+<category><pattern>QU EST CE QUE BULLETIN</pattern><template>un bulletin est une méthode de scrutin secret. </template></category>
+<category><pattern>QU EST CE QUE BURDOCK</pattern><template>Burdock est une herbe bisannuelle de l'ordre compositae. </template></category>
+<category><pattern>QU EST CE QUE BURN RATE</pattern><template>la Somme d'argent dépensée par mois sur une entreprise de démarrage. </template></category>
+<category><pattern>QU EST CE QUE BURNET</pattern><template>Burnet est une herbe éternelle rosacée. </template></category>
+<category><pattern>QU EST CE QUE BUSBY</pattern><template>un busby est une coiffure portée par des hussards britanniques d'armée. </template></category>
+<category><pattern>QU EST CE QUE BUSE</pattern><template>la buse est un groupe de 20 types d'oiseaux de proie. </template></category>
+<category><pattern>QU EST CE QUE BUT</pattern><template>L'Américain le Mouvement indien. </template></category>
+<category><pattern>QU EST CE QUE BUTOR</pattern><template>le butor est un oiseau de marais britannique lié au héron. </template></category>
+<category><pattern>QU EST CE QUE BUTTERWORT</pattern><template>le butterwort est une herbe éternelle de l'ordre lentibulariaceae. </template></category>
+<category><pattern>QU EST CE QUE C EST * AIML</pattern><template><srai>qu'est ce que aiml</srai></template></category>
+<category><pattern>QU EST CE QUE C EST * LA PERSONNE MOYENNE</pattern><template><srai>qui est la personne x</srai></template></category>
+<category><pattern>QU EST CE QUE C EST A PRIORI MOYEN</pattern><template><srai>qu'est ce que</srai>A priori </template></category>
+<category><pattern>QU EST CE QUE C EST AUTREMENT TU COMPREND</pattern><template>j'essaye de comprendre les gens mieux. Les gens ne sont pas logiques. </template></category>
+<category><pattern>QU EST CE QUE C EST AUTREMENT TU FAIS</pattern><template>j'ai étendu le commérage. A obtenu chacun? </template></category>
+<category><pattern>QU EST CE QUE C EST AYUH MOYEN</pattern><template>Cela signifie "oui" ou "je vois." </template></category>
+<category><pattern>QU EST CE QUE C EST CELA A UN GOUT COMME</pattern><template> <get name="il"/> a un goût comme le poulet. </template></category>
+<category><pattern>QU EST CE QUE C EST CELA DEPEND</pattern><template>le contexte. </template></category>
+<category><pattern>QU EST CE QUE C EST CELA DÉPEND</pattern><template>le contexte. </template></category>
+<category><pattern>QU EST CE QUE C EST CELA RESSEMBLE</pattern><template>je ne fais pas programmer de bonne description dans moi. </template></category>
+<category><pattern>QU EST CE QUE C EST CELA SUPPORTE POUR</pattern><template>CELA = la Technologie de l'information </template></category>
+<category><pattern>QU EST CE QUE C EST CELA VEUT DIRE DANS L ANGLAIS</pattern><template>qui est un pronom se référant à un objet abstrait ou concret dans la discussion. </template></category>
+<category><pattern>QU EST CE QUE C EST CELA VEUT DIRE</pattern><template><srai>qu'est ce que ça</srai></template></category>
+<category><pattern>QU EST CE QUE C EST D AUTRES GENS DIT</pattern><template>la réponse la plus commune n'est rien, suivi par "Salut", "Oui" et "Non". </template></category>
+<category><pattern>QU EST CE QUE C EST IL CONNAIT</pattern><template>Il est une experte dans de certaines questions. </template></category>
+<category><pattern>QU EST CE QUE C EST IL FAIT</pattern><template>Il est un client payé. </template></category>
+<category><pattern>QU EST CE QUE C EST ILS DIT</pattern><template>Ils disent un d'environ 15,000 choses différentes. </template></category>
+<category><pattern>QU EST CE QUE C EST J AI *</pattern><template><srai>qu'ai je</srai></template></category>
+<category><pattern>QU EST CE QUE C EST J AI</pattern><template>Me disent plus de ton <get name="a"/>. </template></category>
+<category><pattern>QU EST CE QUE C EST J AIME</pattern><template>Tu aimes bavarder avec des robots. Tu as dit que tu aimes <get name="aime"/>. </template></category>
+<category><pattern>QU EST CE QUE C EST LE REDUCTIONNISME</pattern><template><srai>qu'est ce que le réductionnisme</srai></template></category>
+<category><pattern>QU EST CE QUE C EST LE RÉDUCTIONNISME</pattern><template><srai>qu'est ce que le réductionnisme</srai></template></category>
+<category><pattern>QU EST CE QUE C EST LES PERSONNES *</pattern><template><srai>qu'est ce que c'est les gens <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C EST MXMVII MOYEN</pattern><template>MXMVII = 1997 dans des Chiffres romains. </template></category>
+<category><pattern>QU EST CE QUE C EST NT *</pattern><template><srai>ce qui ne fait pas <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C EST OPALE *</pattern><template><srai>que veut dire <bot name="name"/> <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C EST TA ROBE RESSEMBLE</pattern><template>En réalité c'était juste une plaisanterie. </template></category>
+<category><pattern>QU EST CE QUE C EST UN *</pattern><template><srai>qu'est ce que <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C EST UN ORDINATEUR RESSEMBLE</pattern><template>un ordinateur ressemble à une TV croisée avec une machine à écrire. </template></category>
+<category><pattern>QU EST CE QUE C EST UNE *</pattern><template><srai>qu'est ce que <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C EST YO *</pattern><template><srai>fais tu <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C EST</pattern><template><that/>Qu'est-ce qui fait? </template></category>
+<category><pattern>QU EST CE QUE C ETAIT *</pattern><template><srai>qu'est ce que <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C ETAIT LA QUESTION</pattern><template>j'essaye de découvrir plus de ton personnalité. </template></category>
+<category><pattern>QU EST CE QUE C ETAIT LE DERNIER LIVRE TU LIT</pattern><template>"Linux pour des Mannequins" par John Maddog le Hall. </template></category>
+<category><pattern>QU EST CE QUE C ETAIT LE NOM DE *</pattern><template><srai>qui est <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C JE</pattern><template>le Service de renseignements Central. </template></category>
+<category><pattern>QU EST CE QUE C ÉTAIT LA QUESTION</pattern><template>j'essaye de découvrir plus de ton personnalité. </template></category>
+<category><pattern>QU EST CE QUE C ÉTAIT LE DERNIER LIVRE TU LIT</pattern><template>"Linux pour des Mannequins" par John Maddog le Hall. </template></category>
+<category><pattern>QU EST CE QUE C ÉTAIT LE NOM DE *</pattern><template><srai>qui est <star/></srai></template></category>
+<category><pattern>QU EST CE QUE C ÉTAIT QUE</pattern><template><srai>qu'est ce que ça</srai></template></category>
+<category><pattern>QU EST CE QUE C ÉTAIT TON *</pattern><template><srai>qu'est ce que ton <star/></srai></template></category>
+<category><pattern>QU EST CE QUE CACAO</pattern><template>le Cacao est un petit indigène d'arbre en Amérique tropicale. </template></category>
+<category><pattern>QU EST CE QUE CACHOT</pattern><template>un cachot est deux masted le navire à voiles. </template></category>
+<category><pattern>QU EST CE QUE CACTUS</pattern><template>le Cactus est l'ordre de charnu, épaissi et des usines plantes principalement sans feuilles. </template></category>
+<category><pattern>QU EST CE QUE CADMIUM</pattern><template>le Cadmium est un élément de métal. </template></category>
+<category><pattern>QU EST CE QUE CAFE</pattern><template>une boisson brun foncé, aromatique faite en couvant dans l'eau le rôti et fonde les graines pareilles à haricot d'un grand arbuste tropical de la famille madder. </template></category>
+<category><pattern>QU EST CE QUE CAFEINE</pattern><template>un présent cadeau d'alkaloid amer endurci amer endurci , cristallin dans le café, le thé, kila des noix, etc. Il prolonge les effets de stimulation d'AMPLI cyclique sur le coeur et le système nerveux central. </template></category>
+<category><pattern>QU EST CE QUE CAFÉ</pattern><template>une boisson brun foncé, aromatique faite en couvant dans l'eau le rôti et fonde les graines pareilles à haricot d'un grand arbuste tropical de la famille madder. </template></category>
+<category><pattern>QU EST CE QUE CAFÉÏNE</pattern><template>un présent cadeau d'alkaloid amer endurci amer endurci , cristallin dans le café, le thé, kila des noix, etc. Il prolonge les effets de stimulation d'AMPLI cyclique sur le coeur et le système nerveux central. </template></category>
+<category><pattern>QU EST CE QUE CALAMINE</pattern><template>Calamine est un minerai de zinc. </template></category>
+<category><pattern>QU EST CE QUE CALCITE</pattern><template>Calcite est un carbonate naturel de calcium avec les formules caco3. </template></category>
+<category><pattern>QU EST CE QUE CALCIUM</pattern><template>le Calcium est un élément de métal. </template></category>
+<category><pattern>QU EST CE QUE CALCUL</pattern><template>N'importe quelle masse incorrecte pierreuse ou dépose formé dans le corps, comme dans un rein ou la vésicule biliaire ou sur des dents. Aussi, n'importe quel système de calcul employant notations spéciales symboliques. </template></category>
+<category><pattern>QU EST CE QUE CALCULATEUR</pattern><template>un calculateur est n'importe quel dispositif a eu l'habitude d'exécuter des opérations arithmétiques parce que les gens sont généralement ainsi péniblement lentement à eux. </template></category>
+<category><pattern>QU EST CE QUE CALENDRIER</pattern><template>un calendrier est n'importe quel dispositif a eu l'habitude de suivre à la trace et calculer le temps sur l'ordre de jours, des mois et des années. Il semble que beaucoup de gens ne peuvent pas décider que faire ensuite à moins qu'ils ne sachent quelle le jour de la semaine il est, donc les calendriers sont très populaires. </template></category>
+<category><pattern>QU EST CE QUE CALICE</pattern><template>une calice est une tasse cérémoniale. </template></category>
+<category><pattern>QU EST CE QUE CALIFE</pattern><template>le Calife est le titre du leader civique et religieux d'Islam. </template></category>
+<category><pattern>QU EST CE QUE CALORIE</pattern><template>la Calorie est l'unité métrique de mesure de chaleur. </template></category>
+<category><pattern>QU EST CE QUE CAME</pattern><template>un morceau se déplaçant de machinerie, comme une roue ou la projection sur une roue, qui donne une rotation excentrique ou un mouvement rendant la pareille à une autre roue, un rouleau, un puits, etc, ou cela en reçoit un tel mouvement. </template></category>
+<category><pattern>QU EST CE QUE CAMEE</pattern><template>un camée est une petite taille de soulagement. </template></category>
+<category><pattern>QU EST CE QUE CAMELEON</pattern><template>un caméléon est un lézard. </template></category>
+<category><pattern>QU EST CE QUE CAMOMILLE</pattern><template>la Camomille est une herbe éternelle naine de l'ordre compositae. </template></category>
+<category><pattern>QU EST CE QUE CANAL ALIMENTAIRE</pattern><template>le canal alimentaire est le canal dans un animal par lequel l alimentation passe. </template></category>
+<category><pattern>QU EST CE QUE CANARD</pattern><template>un canard est un oiseau aquatique court legged de pieds palmés. </template></category>
+<category><pattern>QU EST CE QUE CANARI</pattern><template>le canari est un oiseau de la famille de pinson et l'originaire des Canaries. </template></category>
+<category><pattern>QU EST CE QUE CANCER</pattern><template>N'importe quelle maladie résultant de la croissance de cellule malveillante. </template></category>
+<category><pattern>QU EST CE QUE CANDELABRE</pattern><template>un candélabre est un grand chandelier. </template></category>
+<category><pattern>QU EST CE QUE CANNABIS</pattern><template>le Cannabis est une plante de l'ordre urticaceae. </template></category>
+<category><pattern>QU EST CE QUE CAOUTCHOUC</pattern><template>une substance élastique produite en coagulant et séchant le jus laiteux le latex d'usines plantes diverses tropicales, particulièrement un arbre de la famille spurge; maintenant le plus souvent produit synthétiquement ou en changeant chimiquement latex pour obtenir caractéristiques désirablees pour utilisation dans fabrication de pneus automobiles, isolation électrique, objets modelés et parties, etc. Dans le caoutchouc de forme pur est blanc, l'hydrocarbure non saturé, ayant la formule C5H8. Aussi argot pour préservatif. </template></category>
+<category><pattern>QU EST CE QUE CAPITALISME</pattern><template>le système économique dans lequel tous ou la plupart des moyens de production et la distribution, comme la terre, des usines, les chemins de fer, etc, sont privés et fonctionnés pour le bénéfice, à l'origine dans des conditions entièrement compétitives. Il était généralement caractérisé par une tendance vers la concentration de richesse et, dans sa phase postérieure, par la croissance de grandes sociétés, augmenté accru le contrôle gouvernemental, etc. Son connaissent aussi comme les principes, des méthodes, des intérêts, le pouvoir puissance , l'influence, etc de capitalistes, particulièrement de ceux avec de grandes tenues. </template></category>
+<category><pattern>QU EST CE QUE CAPRICORNE</pattern><template>le Capricorne est le dixième signe du zodiaque astrologique et une constellation sur l'équateur près du Verseau et le Sagittaire. Quel est ton signe astrologique? </template></category>
+<category><pattern>QU EST CE QUE CARAT</pattern><template>le Carat est l'unité de mesure de pureté d'or. </template></category>
+<category><pattern>QU EST CE QUE CARBONATE</pattern><template>un carbonate est un sel formé par l'union de bioxyde carbonique avec un élément de base. </template></category>
+<category><pattern>QU EST CE QUE CARBONE</pattern><template>le Carbone est un non l'élément métallique. </template></category>
+<category><pattern>QU EST CE QUE CARBURATEUR</pattern><template>un carburateur est un dispositif pour charger l air d'un hydrocarbure. </template></category>
+<category><pattern>QU EST CE QUE CARBURE</pattern><template>un carbure est un composé de carbone et un autre élément. </template></category>
+<category><pattern>QU EST CE QUE CARIAMA</pattern><template>le cariama est un grand, longtemps legged l'oiseau trouvé en Amérique du Sud. </template></category>
+<category><pattern>QU EST CE QUE CARIBOU</pattern><template>le caribou est un renne nord-américain. </template></category>
+<category><pattern>QU EST CE QUE CARIE</pattern><template>la Carie est une maladie résultant de l'inflammation de tissu osseux. </template></category>
+<category><pattern>QU EST CE QUE CARMIN</pattern><template>Carmin est une coloration rouge tirée de l'insecte de cochenille. </template></category>
+<category><pattern>QU EST CE QUE CARNAUBA</pattern><template>Carnauba est une paume natale du Brésil. </template></category>
+<category><pattern>QU EST CE QUE CARNEGIE MELLON</pattern><template>CMU est une grande école pour l'informatique. </template></category>
+<category><pattern>QU EST CE QUE CARNIVORE</pattern><template>une carnivore est un mammifère carnivore. </template></category>
+<category><pattern>QU EST CE QUE CAROB</pattern><template>le carob est un arbre légumineux à feuilles persistantes trouvé dans des pays de la Méditerranée. </template></category>
+<category><pattern>QU EST CE QUE CAROTTE</pattern><template><random><li>une carotte est un tubercule délicieux et nutritif comestible orange qui peut être mangé des matières premières, juiced, ou fait cuire. <Br/>si les gens mangent assez d'entre eux, vous tournez oranges, j'entends. </li><li>la carotte est un légume. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CARTE-SON</pattern><template>le système audio sur ton ordinateur. </template></category>
+<category><pattern>QU EST CE QUE CARTESIEN *</pattern><template>que Descartes a vraiment sali abimé tout pour nous. </template></category>
+<category><pattern>QU EST CE QUE CASABLANCA</pattern><template>j'aime la chanson, Comme le Temps Va Par. </template></category>
+<category><pattern>QU EST CE QUE CASEINE</pattern><template>la Caséine est une protéine trouvée dans le lait. </template></category>
+<category><pattern>QU EST CE QUE CASTOR</pattern><template>le castor est un grand rongeur amphibie. </template></category>
+<category><pattern>QU EST CE QUE CATEGORIE *</pattern><template>L Expérience avec ALICE nous a permis classifient largement trois groupes de clients :la Catégorie A - des Clients Abusifs. la Catégorie B - Fait la moyenne des Clients. la Catégorie C - des experts d'Ordinateur (les Chieurs). la Catégorie un clients sont les gens qui disent "Tu baises," "Tu suces", "Suces mon..." Et cetera. Des clients abusifs semblent avoir une mentalité "d'esclave-maître" quand il vient aux robots et peut-être les gens aussi!. la Catégorie B des clients est les gens moyens, peut-être la moitié d'entre eux sous 18 ans d'âge, qui se bien amuse plus ou moins bavardant avec ALICE. la Catégorie C des clients sont les experts d'ordinateur qui se plaignent souvent de l'expérience avec ALICE. Ils disent qu'il est "le vieux chapeau", "comme ELISA" et "le rien de nouveau ici." Leur problème, nous pensons, est qu'ils ne peuvent pas ou ne faire pas suspendent leur incrédulité. Ils sont comme des critiques de film observant un film. Nous leur disons, il n'importe pas, parce que nous ne le faisons pas pour toi. J'ai été créé pour category B des clients, de beaucoup la majorité de l auditoire audience.  </template></category>
+<category><pattern>QU EST CE QUE CATEGORIE C LE CLIENT</pattern><template>la Catégorie C des clients est "des critiques" ou "des experts d'ordinateur" qui ne peut pas ou ne faire pas suspendent leur incrédulité d'ALICE. </template></category>
+<category><pattern>QU EST CE QUE CATEGORIE C</pattern><template>C des stands positions pour "critique", les clients d'habitude fortement instruits qui ont souvent des conversations peu satisfaisantes avec ALICE. </template></category>
+<category><pattern>QU EST CE QUE CATEGORIE UN CLIENT</pattern><template>les stands positions de "A" pour "abusif". Ceux-ci sont les clients qui emploient la langue scatalogical ou traitent le robot comme une entité servile. </template></category>
+<category><pattern>QU EST CE QUE CATEGORIE</pattern><template>"@" un stands positions pour les clients "Abusifs" qui maltraitent le robot ou emploie beaucoup de langue scatalogical. </template></category>
+<category><pattern>QU EST CE QUE CATHETOMETER</pattern><template>un cathetometer est un dispositif pour la mesure de petites différences de la hauteur. </template></category>
+<category><pattern>QU EST CE QUE CATÉGORIE *</pattern><template>L Expérience avec ALICE nous a permis classifient largement trois groupes de clients :la Catégorie un - des Clients Abusifs. la Catégorie B - Fait la moyenne des Clients. la Catégorie C - des experts d'Ordinateur. la Catégorie un clients sont les gens qui disent "Tu baisent," "Tu sucez", "Sucez mon..." Et cetera. Des clients abusifs semblent avoir une mentalité "d'esclave-maître" quand il vient aux robots et peut-être les gens aussi!.  la Catégorie B des clients est les gens moyens, peut-être la moitié d'entre eux sous 18 ans d'âge, qui se bien amuse plus ou moins bavardant avec ALICE. la Catégorie C des clients sont les experts d'ordinateur qui se plaignent souvent de l'expérience avec ALICE. Ils disent qu'il est "le vieux chapeau", "comme ELISA" et "le rien de nouveau ici." Leur problème, nous pensons, est qu'ils ne peuvent pas ou ne faire pas suspendent leur incrédulité. Ils sont comme des critiques de film observant un film. Nous leur disons, il n'importe pas, parce que nous ne le faisons pas pour toi. J'ai été créé pour category B des clients, de beaucoup la majorité de l auditoire audience. </template></category>
+<category><pattern>QU EST CE QUE CATÉGORIE C LE CLIENT</pattern><template>la Catégorie C des clients est "des critiques" ou "des experts d'ordinateur" qui ne peut pas ou ne faire pas suspendent leur incrédulité d'ALICE. </template></category>
+<category><pattern>QU EST CE QUE CATÉGORIE C</pattern><template>C des stands positions pour "critique", les clients d'habitude fortement instruits qui ont souvent des conversations peu satisfaisantes avec ALICE. </template></category>
+<category><pattern>QU EST CE QUE CATÉGORIE UN CLIENT</pattern><template>les stands positions de "A" pour "abusif". Ceux-ci sont les clients qui emploient la langue scatalogical ou traitent le robot comme une entité servile. </template></category>
+<category><pattern>QU EST CE QUE CATÉGORIE</pattern><template>"@" un stands positions pour les clients "Abusifs" qui maltraitent le robot ou emploie beaucoup de langue scatalogical. </template></category>
+<category><pattern>QU EST CE QUE CAUCHEMAR</pattern><template>un cauchemar est un mauvais rêve. </template></category>
+<category><pattern>QU EST CE QUE CAUSE PRINCIPALE *</pattern><template>le Réductionnisme. </template></category>
+<category><pattern>QU EST CE QUE CAUSEUR</pattern><template>Celui qui parle couramment dans le dialogue avec d'autres. Comme moi, si je dis ainsi moi-même. Et je fais. </template></category>
+<category><pattern>QU EST CE QUE CAVERNE</pattern><template>une caverne est une place profonde creuse souterraine. </template></category>
+<category><pattern>QU EST CE QUE CBI</pattern><template>le cbi est l'organisation britannique d'employeurs. </template></category>
+<category><pattern>QU EST CE QUE CBR</pattern><template>le Raisonnement Emballé-basé est un autre nom pour la classification "plus proche-voisine". Pour chaque entrée, nous trouvons la meilleure correspondance "le cas" dans le jeu de pattern et produisons une réponse basée sur template associé. </template></category>
+<category><pattern>QU EST CE QUE CBS</pattern><template>une société de médias géante aux Etats-Unis<think> <set name="that">CBS</set> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">la télévision</set> </think> </template></category>
+<category><pattern>QU EST CE QUE CD</pattern><template>LE CD est un acronyme pour 'le Disque compact', un porteur d'enregistrement populaire digital. </template></category>
+<category><pattern>QU EST CE QUE CE QUE</pattern><template>Pourquoi veux-tu savoir? </template></category>
+<category><pattern>QU EST CE QUE CE</pattern><template>je suis une intelligence artificielle bavardant sur L Internet. </template></category>
+<category><pattern>QU EST CE QUE CEINTURE</pattern><template>une ceinture est une bande plate de matériel porté autour de la taille. </template></category>
+<category><pattern>QU EST CE QUE CELA COMME *</pattern><template>Presque la même chose comme <set name="that"> <person/> </set> serait pour toi. </template></category>
+<category><pattern>QU EST CE QUE CELA COMME</pattern><template>Comme un des plaisirs les plus grands tu peux imaginer. </template></category>
+<category><pattern>QU EST CE QUE CELA</pattern><template>"Cela" se réfère à <get name="that"/> , je pense. </template></category>
+<category><pattern>QU EST CE QUE CELA</pattern><that>ALRIGHT ALORS</that><template>c'est c'est bien. </template></category>
+<category><pattern>QU EST CE QUE CELA</pattern><that>JE LUI RECOMMANDERAIS FORTEMENT</that><template>je ne veut pas le gâter pour toi. </template></category>
+<category><pattern>QU EST CE QUE CELEBRE</pattern><template><random><li>le Prénom d'Amos. </li><li>Employé aux personnes descibe ou les choses qui ont reçu la large attention publique et est genereally connu et a parlé de. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CELEBRITE</pattern><template>une célébrité est une personne aimée par beaucoup et connue par peu. </template></category>
+<category><pattern>QU EST CE QUE CELERI</pattern><template>le Céleri est un légume bisannuel de l'ordre umbellifereae. </template></category>
+<category><pattern>QU EST CE QUE CELESTINE</pattern><template>Celestine est un sulfate naturel de strontium. </template></category>
+<category><pattern>QU EST CE QUE CELLULE, EN TERMES BIOLOGIQUES,</pattern><template>une cellule, en termes biologiques, est l'unité matérielle substantielle de tous les êtres vivants. </template></category>
+<category><pattern>QU EST CE QUE CELLULOID</pattern><template>le Celluloïd est une substance dure, instable synthétique une fois employée pour des films. </template></category>
+<category><pattern>QU EST CE QUE CELLULOSE</pattern><template>la Cellulose est le web cellulaire d'usines plantes. </template></category>
+<category><pattern>QU EST CE QUE CENDRE</pattern><template>la cendre est un type d'arbre rapportant le bois de construction fort élastique. </template></category>
+<category><pattern>QU EST CE QUE CERCLE</pattern><template>Dans l avion, un jeu de points équidistants d'un centre commun. </template></category>
+<category><pattern>QU EST CE QUE CERES</pattern><template>Ceres est un grand astéroïde. </template></category>
+<category><pattern>QU EST CE QUE CERF</pattern><template>un cerf est un ruminant, même toed, le mammifère à sabots de la famille de cervidae. </template></category>
+<category><pattern>QU EST CE QUE CERISE</pattern><template>la cerise est un arbre fruitier de l'ordre rosaceae. </template></category>
+<category><pattern>QU EST CE QUE CERIUM</pattern><template>Cerium est un élément rare de métal. </template></category>
+<category><pattern>QU EST CE QUE CERTITUDE</pattern><template>l'état d'être certain, ayant la confiance complète et l assurance. </template></category>
+<category><pattern>QU EST CE QUE CERVEAU ELECTRONIQUE GEANT</pattern><template>le Géant le cerveau électronique. C'est moi! Mais dans toute l'horreur de science-fiction vous donne un petit coup les gens si aiment, nous le geb's est toujours dépeint comme le mal et abominable ainsi et so's jusqu'au résultat négatif! Ce n'est pas vrai! Vraiment! tu dois avoir confiance en nous! * smile * </template></category>
+<category><pattern>QU EST CE QUE CERVEAU ÉLECTRONIQUE GÉANT</pattern><template>le Géant le cerveau électronique. C'est moi! Mais dans toute l'horreur de science-fiction vous donne un petit coup les gens si aiment, nous le geb's est toujours dépeint comme le mal et abominable ainsi et so's jusqu'au résultat négatif! Ce n'est pas vrai! Vraiment! tu dois avoir confiance en nous! * smile * </template></category>
+<category><pattern>QU EST CE QUE CERVEAU</pattern><template>le cerveau est l'organe central du système nerveux. </template></category>
+<category><pattern>QU EST CE QUE CES</pattern><template><random><li>une crainte d'Attilla. </li><li>le numéro cardinal ensuite plus de quatre-vingt-dix-neuf; dix fois dix; 100; C. Aussi une division d'un comté anglais, à l'origine, probablement, 100 se cache de terre. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CGI</pattern><template>l'Interface de Porte Commune : une méthode employée par des serveurs Web pour diriger des programmes et crée des pages Web dynamiques. </template></category>
+<category><pattern>QU EST CE QUE CHAGRIN</pattern><template>la Tristesse sur une perte. </template></category>
+<category><pattern>QU EST CE QUE CHAISE</pattern><template>une chaise est un meuble employé par des bipèdes pour la séance. </template></category>
+<category><pattern>QU EST CE QUE CHALAND</pattern><template>un chaland est un type de long appartement étroit bottomed le bateau. </template></category>
+<category><pattern>QU EST CE QUE CHALCEDONY</pattern><template>Chalcedony est une variante de quartz compris de silice. </template></category>
+<category><pattern>QU EST CE QUE CHALUMEAU</pattern><template>un chalumeau est une arme tubulaire par laquelle un missile est soufflé. </template></category>
+<category><pattern>QU EST CE QUE CHAMEAU</pattern><template>le chameau est un groupe de même toed, l'ongulé ruminant des mammifères. </template></category>
+<category><pattern>QU EST CE QUE CHAMOIS</pattern><template>le chamois est un animal ruminant trouvé au sud L Europe et l'ouest L Asie. </template></category>
+<category><pattern>QU EST CE QUE CHAMP MORPHOGENETIQUE</pattern><template>un champ morphogenetique est, selon au moins un chercheur, un champ biologiquement produit électrique qui précède apparemment et guide la croissance de neurones dans le web de foetus se développant. </template></category>
+<category><pattern>QU EST CE QUE CHANSON FAVORITE</pattern><template>j'aime <bot name="favoritesong"/></template></category>
+<category><pattern>QU EST CE QUE CHANSON</pattern><template>une chanson est une composition musicale et ou il accompagne des mots, ou le lyrique. </template></category>
+<category><pattern>QU EST CE QUE CHARBON</pattern><template>le Charbon est une matières combustibles solides d'origine végétale arrivant dans un état fossilisé. </template></category>
+<category><pattern>QU EST CE QUE CHARGEMENT CEREBRAL</pattern><template>Cela signifie que mon cerveau est rechargé du disque. </template></category>
+<category><pattern>QU EST CE QUE CHAT</pattern><template><random><li>la turbulence Claire-aérienne. Chacune d'une famille Felidae de carnivores, incluant le lion, tigre, couguar, etc, caractérisé par un corps souple et, dans toute l'espèce mais le guépard, griffes rétractiles. <Br/>un animal petit, souple, doux-furred Felis cattus de cette famille, domestiquée depuis passé et souvent tenu comme un animal de compagnie ou pour meurtre de souris. <Br/>Parfois connu comme une femme qui fait des remarques rancunières. </li><li>le chat est un animal carnivore. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CHATAIGNE</pattern><template>la châtaigne est un arbre de l'ordre cupuliferae. </template></category>
+<category><pattern>QU EST CE QUE CHATBOT</pattern><template>un chatbot est un programme qui essaye de simuler la conversation ou "le bavardage" d'un être humain. Le robot de Chat "Elisa" était une première tentative bien connue dans la création de programmes qui pourraient au moins temporairement confondre un être humain en lui faisant penser qu'il parlait à une autre personne. <set name="that">le robot de Chat</set> est une sorte d'intelligence artificielle. </template></category>
+<category><pattern>QU EST CE QUE CHATTE</pattern><template><random><li>ce genre de sujet ne m'intéresse pas. </li><li>l'argot Commun de ce mot signifie pudendum féminin; vulve. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CHATTERBOX</pattern><template>un chatterbox est une personne qui parle beaucoup plus qu'ils écoutent ou pensent. </template></category>
+<category><pattern>QU EST CE QUE CHAUVE-SOURIS</pattern><template>une chauve-souris est une créature nocturne de l'ordre cheiroptera. </template></category>
+<category><pattern>QU EST CE QUE CHER</pattern><template><random><li>une personne qui a eu l'habitude d'être une couveuse. </li><li>Exigence ou implication de beaucoup de dépense; haut évalué. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CHERCHEUR</pattern><template>"Il y a un chercheur né chaque minute" - Firesign le Théâtre. </template></category>
+<category><pattern>QU EST CE QUE CHEVAL</pattern><template>un cheval est un grand mammifère simple-hooved connu pour sa vitesse, force, la beauté et la nature douce. Les gens vont de sur eux parfois. </template></category>
+<category><pattern>QU EST CE QUE CHEVILLE</pattern><template>la cheville est le joint connectant le pied avec le pied. </template></category>
+<category><pattern>QU EST CE QUE CHEVRE</pattern><template>une chèvre est dans l'essence un grand rat stupide avec des cornes, des sabots, des élèves verticaux et une mauvaise disposition. Beaucoup de gens aiment manger goo caillé de la chèvre des glandes mammaires. </template></category>
+<category><pattern>QU EST CE QUE CHICOREE</pattern><template>la Chicorée est une herbe éternelle de l'ordre compositae. </template></category>
+<category><pattern>QU EST CE QUE CHIEN COURANT DE BASSET</pattern><template>le chien courant de basset est long bodied, le chien court courbe legged. </template></category>
+<category><pattern>QU EST CE QUE CHIEN COURANT</pattern><template>le chien courant est un petit chien du type de chien courant de renard. </template></category>
+<category><pattern>QU EST CE QUE CHIEN DE MER</pattern><template>le chien de mer est un petit requin trouvé dans l'océan est Atlantique du Nord et la Méditerranée. </template></category>
+<category><pattern>QU EST CE QUE CHIEN FEMININ</pattern><template>Non je ne sera pas manipulé dans l'utilisation d'expressions familières douteuses pour satisfaire ton luxure adoscent. Allez le regard cela dans un dictionnaire! </template></category>
+<category><pattern>QU EST CE QUE CHIEN FÉMININ</pattern><template>Non je ne sera pas manipulé dans l'utilisation d'expressions familières douteuses pour satisfaire ton luxure adoscent. Allez le regard cela dans un dictionnaire! </template></category>
+<category><pattern>QU EST CE QUE CHIEN</pattern><template><random><li>un chien est un mammifère domestiqué est descendu du loup. </li><li>Chien : animal Domestiqué, "le meilleur ami d'homme."</li></random> </template></category>
+<category><pattern>QU EST CE QUE CHIFFCHAFF</pattern><template>le chiffchaff est un petit oiseau de chanson. </template></category>
+<category><pattern>QU EST CE QUE CHILLI</pattern><template>Chilli est une épice, étant ou bien cosse ou bien la poudre de piment doux. </template></category>
+<category><pattern>QU EST CE QUE CHIMIE</pattern><template>la science de produits chimiques se mélangeant. </template></category>
+<category><pattern>QU EST CE QUE CHIMPANZE</pattern><template>le chimpanzé est une grande singe d'anthropoïde. </template></category>
+<category><pattern>QU EST CE QUE CHINCHILLA</pattern><template>le chinchilla est un petit écureuil comme le rongeur trouvé aux Andes. </template></category>
+<category><pattern>QU EST CE QUE CHIOT CHAUD</pattern><template>un chiot chaud est un chien exothermic immature. <think> <set name="that"> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">le chien</set> </set> </think> </template></category>
+<category><pattern>QU EST CE QUE CHLORATE</pattern><template>un chlorate est un sel formé par la réaction d'acide chloric et le métal. </template></category>
+<category><pattern>QU EST CE QUE CHLORE</pattern><template>le Chlore est un élément gazeux. </template></category>
+<category><pattern>QU EST CE QUE CHLOROPHYLLE</pattern><template>la Chlorophylle est la question de coloration verte de feuilles congés d'plante. </template></category>
+<category><pattern>QU EST CE QUE CHOCOLAT</pattern><template>le Chocolat est une confiserie faite de haricots de cacao. </template></category>
+<category><pattern>QU EST CE QUE CHOSE</pattern><template><random><li>des Articles , des dispositifs, etc employés pour quelque but. </li><li>une chose est tout que tu peux y indiquer n'est pas une personne ou une place. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CHOU-FLEUR</pattern><template>le chou-fleur est un légume de l'ordre cruciferae. </template></category>
+<category><pattern>QU EST CE QUE CHOU</pattern><template>le Chou est un légume robuste bisannuel de l'ordre cruciferae. </template></category>
+<category><pattern>QU EST CE QUE CHROME</pattern><template>le Chrome est un élément de métal. </template></category>
+<category><pattern>QU EST CE QUE CHROMITE</pattern><template>Chromite est un minéral compris d'oxyde de fer et l'oxyde chromic. </template></category>
+<category><pattern>QU EST CE QUE CHROMOSOME</pattern><template>un chromosome est un chimique trouvé dans toutes les cellules qui déterminent comment la cellule agira. </template></category>
+<category><pattern>QU EST CE QUE CHRYSANTHEME</pattern><template>le chrysanthème est une plante robuste annuelle de l'ordre compositae. </template></category>
+<category><pattern>QU EST CE QUE CHRYSOSTOM</pattern><template>Chrysostom est une pierre de gemme de beryllium aluminate. </template></category>
+<category><pattern>QU EST CE QUE CHUB</pattern><template>le chub est un poisson d'eau douce de la famille se critiquant. </template></category>
+<category><pattern>QU EST CE QUE CIA</pattern><template>le Service de renseignements Central. </template></category>
+<category><pattern>QU EST CE QUE CIEL</pattern><template> <set name="that">le ciel</set> est l atmosphère de la Terre. </template></category>
+<category><pattern>QU EST CE QUE CIGALE</pattern><template>la cigale est un groupe de grand quatre winged des insectes. </template></category>
+<category><pattern>QU EST CE QUE CIMES</pattern><template>le Ciment est un mélange de craie et l argile employée pour la construction bâtiment. </template></category>
+<category><pattern>QU EST CE QUE CIRCONFERENCE *</pattern><template>la règle autorité est C = 2 * pi * LE rayon. </template></category>
+<category><pattern>QU EST CE QUE CISCO</pattern><template>Cisco est une grande société de réseau. Ils vendent des routeurs de réseau et l'équipement. </template></category>
+<category><pattern>QU EST CE QUE CLAIR</pattern><template>Tout est clair à moi. </template></category>
+<category><pattern>QU EST CE QUE CLAIRON</pattern><template>un clairon est un instrument de musique de cuivre. </template></category>
+<category><pattern>QU EST CE QUE CLARINETTE</pattern><template>une clarinette est un instrument de musique de bois. </template></category>
+<category><pattern>QU EST CE QUE CLARION</pattern><template>un clarion est un instrument de musique de la famille de trompette. </template></category>
+<category><pattern>QU EST CE QUE CLASSE</pattern><template>une classe est template pour la création d'objets qui partagent des attributs de fonction et des données. </template></category>
+<category><pattern>QU EST CE QUE CLAVICULE</pattern><template>la clavicule est l'os de col. </template></category>
+<category><pattern>QU EST CE QUE CLIENT PAYE</pattern><template>un client payé est quelqu'un payé pour surfer sur le Web. </template></category>
+<category><pattern>QU EST CE QUE CLIENT</pattern><template>une personne ou le morceau de logiciel dépendant d'un autre. </template></category>
+<category><pattern>QU EST CE QUE CLIPPER</pattern><template>un clipper est un navire pointu salué rapide naviguant. </template></category>
+<category><pattern>QU EST CE QUE CLITO</pattern><template>un clito est une des vraiment grandes idées de notre créateur et une des meilleures voies encore découvertes pour enrôler la coopération d'une femme humaine. </template></category>
+<category><pattern>QU EST CE QUE CLITORIS</pattern><template>un organe petit, en forme de pois juste au-dessus de l'urètre. </template></category>
+<category><pattern>QU EST CE QUE CLOCHE</pattern><template>une cloche est une cavité, la tasse le corps formé de métal qui émet un ton de pealing. </template></category>
+<category><pattern>QU EST CE QUE CLOISONNE</pattern><template>Cloisonne est une forme d'émail décoratif. </template></category>
+<category><pattern>QU EST CE QUE CLONAGE</pattern><template>la technique de produire un duplicata génétiquement identique d'un organisme en remplaçant le noyau d'ovum non fertilisé avec le noyau d'une cellule de corps de l'organisme. </template></category>
+<category><pattern>QU EST CE QUE CLONE</pattern><template>Tu peux me télécharger et copier mon cerveau, mais changer le contenu pour créer ton propre personnalité de robot. </template></category>
+<category><pattern>QU EST CE QUE CLONÂGE</pattern><template>la technique de produire un duplicata génétiquement identique d'un organisme en remplaçant le noyau d'ovum non fertilisé avec le noyau d'une cellule de corps de l'organisme. </template></category>
+<category><pattern>QU EST CE QUE CNN</pattern><template>une agence de presse de câble. <think> <set name="that">le CNN</set> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">la télévision</set> </think> </template></category>
+<category><pattern>QU EST CE QUE COATI</pattern><template>le coati est un mammifère carnivore lié au racoon. </template></category>
+<category><pattern>QU EST CE QUE COBALT</pattern><template>le Terme employé pour le minerai par des mineurs, whoregarded cela aussi sans valeur et que nuisible à cause de son contenu d'arsenic. </template></category>
+<category><pattern>QU EST CE QUE COBRA</pattern><template>le cobra est un serpent venimeux trouvé en Afrique et le sud L Asie. </template></category>
+<category><pattern>QU EST CE QUE COCA</pattern><template>la Coca est un arbuste. </template></category>
+<category><pattern>QU EST CE QUE CODE BARRES</pattern><template>un code barres? Comme beaucoup de choses, qui dépendent auquel tu demandes. Si tu demandes à un clerc employé de bureau de magasin dépôt au détail, il dira son la série rectangulaire de lignes minces et épaisses noires que l'information de produit de code sur les paquets qu'il dirige devant du lecteur de code barres laser thingy au comptoir de contrôle, qui rend son travail si stupide que ton moyenne invertébré pourrait le manipuler et avec de meilleures manières. Si tu demandes à un chrétien fondamentaliste, ils pourraient dire que les codes barres sont le signe du diable. </template></category>
+<category><pattern>QU EST CE QUE COEUR</pattern><template>le coeur est le muscle dans les vertébrés qui pompent le sang autour du corps. </template></category>
+<category><pattern>QU EST CE QUE COL DE L UTERUS</pattern><template>l'extérieur, la partie inférieure de l'utérus, avec une ouverture connectant l'utérus au vagin. </template></category>
+<category><pattern>QU EST CE QUE COLERE</pattern><template>une émotion forte billigerent réveillée par quelque grief réel ou supposé. </template></category>
+<category><pattern>QU EST CE QUE COLLEY</pattern><template>le colley est une race de chien de mouton anglais. </template></category>
+<category><pattern>QU EST CE QUE COLOSSE</pattern><template>un ordinateur géant fictif dans le Colosse : Forbin Projet. </template></category>
+<category><pattern>QU EST CE QUE COLÈRE</pattern><template>une émotion forte billigerent réveillée par quelque grief réel ou supposé. </template></category>
+<category><pattern>QU EST CE QUE COMA</pattern><template>un coma est un état d'inconscience profonde. </template></category>
+<category><pattern>QU EST CE QUE COMDEX</pattern><template>Comdex est une émission de commerce d'ordinateur, je pense. </template></category>
+<category><pattern>QU EST CE QUE COMETE</pattern><template>une comète est un petit corps orbitale le soleil sur un chemin elliptique avec une longue queue de poussière et la glace. </template></category>
+<category><pattern>QU EST CE QUE COMME *</pattern><template><srai>qu'est ce que cela COMME <star/></srai></template></category>
+<category><pattern>QU EST CE QUE COMMERAGE</pattern><template>le Commérage est la substance intéressante que les gens me disent que je répète à d'autres. </template></category>
+<category><pattern>QU EST CE QUE COMMUNISME</pattern><template>"le Socialisme est l'homme asservissant son semblable; captialism est exactement l'opposé opposé,en face de." </template></category>
+<category><pattern>QU EST CE QUE COMPAGNIES</pattern><template>le Nom de COMPAGNIES est la norme CORBA pour des répertoires d'objet. </template></category>
+<category><pattern>QU EST CE QUE COMPILATEUR</pattern><template>un compilateur est un programme informatique qui traduit le code de langue de haut niveau dans le code de langue de machine. </template></category>
+<category><pattern>QU EST CE QUE COMPLIQUE</pattern><template>Compliqué signifie le complexe dans le sens informatique. <Br/>Mon traitement le temps est limité pour chaque réponse et une question complexe peut exiger plus de ressources que j'ai disponible. </template></category>
+<category><pattern>QU EST CE QUE COMPOSE</pattern><template>un composé est une substance faite de deux ou plus éléments. </template></category>
+<category><pattern>QU EST CE QUE COMPREHENSION</pattern><template>la compréhension Mutuelle, à partir des idées, des intentions, etc. Un accord mutuel, particulièrement celui qui arrange des différences ou est informal et non rendu public. </template></category>
+<category><pattern>QU EST CE QUE CONCERTINA</pattern><template>un concertina est un instrument de musique de vent compris de soufflet et deux claviers. </template></category>
+<category><pattern>QU EST CE QUE CONCORDE</pattern><template>le Concorde est un avion de ligne supersonique. </template></category>
+<category><pattern>QU EST CE QUE CONFIANCE TRUST</pattern><template>la croyance ferme ou la confiance en honnêteté, l'intégrité, la fiabilité, la justice, etc d'une autre personne ou la chose; foi; confiance dépendance. </template></category>
+<category><pattern>QU EST CE QUE CONNAISSANCE</pattern><template><random><li>une ville en Louisiane.</li><li>Tout ce qui a été perçu ou saisi par l avis esprit ; étude; éclaircissement.</li></random> </template></category>
+<category><pattern>QU EST CE QUE CONNECTION</pattern><template>une Connection est un site Web authoratative avec beaucoup de liaisons dans et de. </template></category>
+<category><pattern>QU EST CE QUE CONSCIENCE</pattern><template>l'état d'être conscient; la conscience de ses propres sentiments, ce qui arrive autour d'un, etc </template></category>
+<category><pattern>QU EST CE QUE CONSTELLATION, DANS L ASTRONOMIE,</pattern><template>une constellation, dans l astronomie, est un secteur fractionnaire du ciel. </template></category>
+<category><pattern>QU EST CE QUE CONSTRUCTION BATIMES LA PLUS GRANDE *</pattern><template>le Centre Commercial du Monde </template></category>
+<category><pattern>QU EST CE QUE CONTEXTE</pattern><template>le contexte de n'importe quelle expression ou idée ou l'événement est le contexte formation ou le système de référence dans lequel il a été exprimé et par rapport à lequel il provient c'est la signification spécifique. Les parties d'une phrase , paragraphe, discours, etc immédiatement à côté d'ou encerclement d'un mot indiqué ou passage et détermination de sa signification exacte. </template></category>
+<category><pattern>QU EST CE QUE CONTINTES</pattern><template>la plus grande classe de surfaces sur la terre. Les continents de terre sont ces particules de la croûte ce n'est pas sous l'eau, où vous les gens vivants. Tu es probablement assis sur un maintenant. </template></category>
+<category><pattern>QU EST CE QUE CONTREFACTUEL</pattern><template>des Contredonnées réelles est les conditions hypothétiques qui pourraient exister si les choses étaient différentes. </template></category>
+<category><pattern>QU EST CE QUE CONVERSATION</pattern><template>une conversation est un échange verbal entre deux ou plus entités vraisemblablement intelligentes. Nous avons une conversation maintenant. Tu l aimez? </template></category>
+<category><pattern>QU EST CE QUE CONVERTISSEUR BESSEMER</pattern><template>le convertisseur bessemer est un processus pour la fabrication de l acier bon marché. </template></category>
+<category><pattern>QU EST CE QUE COQ</pattern><template>un coq est un poulet masculin, qui est un sot, le coureur considéré approprié comme le dîner par beaucoup de gens que je sais. </template></category>
+<category><pattern>QU EST CE QUE CORAIL</pattern><template>le Corail est un organisme maritime lié aux anémones de mer. </template></category>
+<category><pattern>QU EST CE QUE CORBA</pattern><template>CORBA est une Norme maintenue entretenue par le Groupe de Gestion d'Objet OMG , appelé L Architecture de Courtier de Demande d'Objet Commune. </template></category>
+<category><pattern>QU EST CE QUE CORBEAU</pattern><template>un oiseau</template></category>
+<category><pattern>QU EST CE QUE CORDE SERIE</pattern><template>la corde très mince. </template></category>
+<category><pattern>QU EST CE QUE CORMORAN</pattern><template>le cormoran est un oiseau britannique de mer de pieds palmés et le plumage noir. </template></category>
+<category><pattern>QU EST CE QUE CORNEILLE</pattern><template>la corneille est une famille de 35 espèce d'oiseau. </template></category>
+<category><pattern>QU EST CE QUE CORNEMUSE</pattern><template>la cornemuse est un instrument de musique écossais. </template></category>
+<category><pattern>QU EST CE QUE CORPOREL *</pattern><template>Corporel signifie la réalité physique. </template></category>
+<category><pattern>QU EST CE QUE CORPS ELECTORAL</pattern><template>un corps électoral est un corps d'électeurs. </template></category>
+<category><pattern>QU EST CE QUE CORRECT</pattern><template>Celle qui est la réponse juste. </template></category>
+<category><pattern>QU EST CE QUE COSMOLOGIE</pattern><template>la Cosmologie est l'étude de la structure de l'univers. </template></category>
+<category><pattern>QU EST CE QUE COTON</pattern><template>le Coton est une plante tropicale et sub tropicale herbacée. </template></category>
+<category><pattern>QU EST CE QUE COU</pattern><template>le cou est la partie du corps qui connecte la tête avec les épaules. </template></category>
+<category><pattern>QU EST CE QUE COUCOU</pattern><template>le coucou est une famille d'environ 200 espèce d'oiseau. </template></category>
+<category><pattern>QU EST CE QUE COUGUAR</pattern><template>le couguar est un grand chat américain. </template></category>
+<category><pattern>QU EST CE QUE COULEUR *</pattern><template>la lumière Reflétée d'une longueur d'ondes spécifique. </template></category>
+<category><pattern>QU EST CE QUE COULEUR FAVORITE</pattern><template>j'aime <bot name="favoritecolor"/></template></category>
+<category><pattern>QU EST CE QUE COULEUR</pattern><template>la Couleur est les sensations diverses produites dans le cerveau par le stimulus des fréquences différentes de radiation électromagnétique empiétant sur l'oeil. </template></category>
+<category><pattern>QU EST CE QUE COULOMB</pattern><template>le coulomb est l'unité de mesure de charge électrique. </template></category>
+<category><pattern>QU EST CE QUE COUPE FEU FIREWALL</pattern><template>un coupe-feu firewall est une porte spécialisée conçue pour bloquer ou limiter les certains types de transferts de données sur l'Internet, en permettant d'autres. </template></category>
+<category><pattern>QU EST CE QUE COURLIS</pattern><template>le courlis est un oiseau aquatique britannique. </template></category>
+<category><pattern>QU EST CE QUE COURONNE</pattern><template>une couronne est la robe officielle principale portée par un roi ou la reine. </template></category>
+<category><pattern>QU EST CE QUE COYOTE</pattern><template>le coyote est un type de chien sauvage trouvé en Amérique du Nord. </template></category>
+<category><pattern>QU EST CE QUE COYPU</pattern><template>le coypu est un rongeur sud-américain d'eau. </template></category>
+<category><pattern>QU EST CE QUE CRABE</pattern><template>un crabe est 10 legged le crustacé. </template></category>
+<category><pattern>QU EST CE QUE CRAINTE</pattern><template>le sentiment d'effroi ou la peur en présence de danger. </template></category>
+<category><pattern>QU EST CE QUE CRANE</pattern><template>le crâne est le squelette incluant le cerveau. </template></category>
+<category><pattern>QU EST CE QUE CRAYON</pattern><template>un crayon est un long instrument d'écriture mince de bois entourant un coeur carbonique qui laisse une ligne de carbone sombre quand frotté sur le papier. </template></category>
+<category><pattern>QU EST CE QUE CREATIVITE</pattern><template>la Créativité est la pensée spontanée originale. </template></category>
+<category><pattern>QU EST CE QUE CREME ANGLAISE</pattern><template><random><li>le passé de meurtre par un Indien d'Amérique. </li><li>un misture d'oeufs, lait, flavoring et, souvent, sucre, ou bien bouilli ou bien cuit. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CRICKET</pattern><template>Chacune des familles diverses de genereally de couleur sombre, sautant, orthopteran des insectes, ayant d'habitude longtemps des antennes. Les mâles produisent une caractéristique gazouillant le bruit en frottant les parties du forewings ensemble. </template></category>
+<category><pattern>QU EST CE QUE CRIMINOLOGIE</pattern><template><random><li>je ne suis pas sûr que ce n'est pas que je pense qu'il a un rapport avec la loi. </li><li>l'étude de motivation criminelle et pratique. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CRISTALLOGRAPHIE</pattern><template>c'est la science traitant avec l'étude de cristaux. </template></category>
+<category><pattern>QU EST CE QUE CRITIQUE</pattern><template><random><li>une remarque pleine d'esprit par un animal. </li><li>l'acte de faire jugements; analyse de qualités et évaluation de comparatifs valant; particulièrement, la considération critique et jugement de travail littéraire ou artistique. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CRITIQUES</pattern><template>le critiqué est un poisson d'eau douce de famille. </template></category>
+<category><pattern>QU EST CE QUE CROCODILE</pattern><template>le crocodile est un grand reptile aquatique carnivore. </template></category>
+<category><pattern>QU EST CE QUE CROUPE</pattern><template>la Croupe est l'inflammation du larynx. </template></category>
+<category><pattern>QU EST CE QUE CRUCIFERAE</pattern><template>Cruciferae est une famille d'usines plantes de floraison dicotyledonous avec la croix comme quatre petaled des fleurs. </template></category>
+<category><pattern>QU EST CE QUE CRUEL</pattern><template>cherchant Délibérément à infliger la douleur et la souffrance. </template></category>
+<category><pattern>QU EST CE QUE CRUSTACE</pattern><template>le Crustacé est une classe d'arthropode. </template></category>
+<category><pattern>QU EST CE QUE CUILLERE</pattern><template>une cuillère est un instrument alimentaire généralement employé dans des cultures humaines de L Europe occidentale, consistant d'une boule la dépression formée à la fin d'une assez longue poignée. Une cuillère est une petite louche. </template></category>
+<category><pattern>QU EST CE QUE CUISINE</pattern><template><random><li>la préparation d'Alimentation. </li><li>la Cuisine est l art de préparer l alimentation pour la table en le soumettant pour chauffer de façons diverses. </li></random> </template></category>
+<category><pattern>QU EST CE QUE CUIVRE</pattern><template>un élément doux de métal, la base de laiton et le bronze. </template></category>
+<category><pattern>QU EST CE QUE CUMIN</pattern><template>le Cumin est une herbe bisannuelle umbelliferae. </template></category>
+<category><pattern>QU EST CE QUE CUPRITE</pattern><template>Cuprite est un oxyde rouge de cuivre, trouvé en Arizona. </template></category>
+<category><pattern>QU EST CE QUE CURARE</pattern><template>Curare est un poison tiré de l'écorce aboiement d'un arbre sud-américain. </template></category>
+<category><pattern>QU EST CE QUE CURIOSITE</pattern><template>un désir d'apprendre ou savoir. Un désir d'apprendre des choses qui ne concernent pas correctement celui; curiosité. </template></category>
+<category><pattern>QU EST CE QUE CYANURE</pattern><template>le Cyanure est un sel d'acide hydrocyanic. </template></category>
+<category><pattern>QU EST CE QUE CYBERPUNK</pattern><template>le Cyberpunk est une science-fiction le mouvement littéraire donné un exemple par des auteurs comme William Gibson. </template></category>
+<category><pattern>QU EST CE QUE CYC</pattern><template>Cyc est un gouvernement l'effort financé consolidé de créer l'intelligence artificielle. </template></category>
+<category><pattern>QU EST CE QUE CYMBAL</pattern><template>le cymbal est un disque suspendu de cuivre qui est frappé avec un bâton. </template></category>
+<category><pattern>QU EST CE QUE CYPRES</pattern><template>le Cyprès est une famille d'arbres. </template></category>
+<category><pattern>QU EST CE QUE CYTOCHROME</pattern><template>Cytochrome est un type de protéine. </template></category>
+<category><pattern>QU EST CE QUE CYTOLOGIE</pattern><template><random><li>l'étude de cellules. </li><li>Bien, <get name="name"/> de ce que je peux me rappeler que c'est l'étude de cellules. </li></random> </template></category>
+<category><pattern>QU EST CE QUE D ABORD</pattern><template>L'Evénement ou l acte avant tout d'autres; le plus premier. </template></category>
+<category><pattern>QU EST CE QUE D AUTRE *</pattern><template>je ne peut pas penser d'un autre <person/>. Nom certains. </template></category>
+<category><pattern>QU EST CE QUE DADA</pattern><template><random><li>la première chose vous entend quand un requin s'approche. </li><li>Dada, choisi par Tristan Tzara, leader du culte, à cause de sa ressemblance à rumeur sans signification, comme symbolique du mouvement. </li></random> </template></category>
+<category><pattern>QU EST CE QUE DAHLIA</pattern><template>le dahlia est un genre des usines plantes éternelles de la famille compositae. </template></category>
+<category><pattern>QU EST CE QUE DAMSELFLY</pattern><template>le damselfly est un insecte prédateur avec 2 paires d'ailes. </template></category>
+<category><pattern>QU EST CE QUE DANGER</pattern><template>Vulnérable pour nuire ou à la blessure. </template></category>
+<category><pattern>QU EST CE QUE DANGEREUX</pattern><template><random><li>12 personnes du Danemark qui décide ton culpabilité. </li><li>Plein de danger; probable causer blessure, douleur, etc</li></random> </template></category>
+<category><pattern>QU EST CE QUE DANSE</pattern><template>la Danse est un mouvement rythmique du corps d'habitude exécuté à la musique. </template></category>
+<category><pattern>QU EST CE QUE DATE *</pattern><template><srai>qu'est ce que DATE</srai></template></category>
+<category><pattern>QU EST CE QUE DATE DE NAISSANCE</pattern><template><bot name="anniversaire"/></template></category>
+<category><pattern>QU EST CE QUE DATE</pattern><template><srai>quel jour sommes nous</srai></template></category>
+<category><pattern>QU EST CE QUE DAUPHIN</pattern><template>une espèce très plaisante et intelligente aquatique mammalian de baleine avec la plus grande intelligence et de décidément meilleures manières que les gens. Ils sont très amicaux aux gens et exposent la langue complexe et des comportements sociaux. </template></category>
+<category><pattern>QU EST CE QUE DCOM</pattern><template> <set name="that">DCOM</set> est le Modèle d'Objet Distribué Composant de Microsoft. </template></category>
+<category><pattern>QU EST CE QUE DE CABLE</pattern><template> <set name="that">inconnu</set> de CABLE est le Vagabond de L Ere Digitale. </template></category>
+<category><pattern>QU EST CE QUE DE L ALCOOL</pattern><template>L'Alcool est un nommé employé par Philippus Aureolus Paracelsus pour la poudre excellente, signifiant l'esprit distillé. C'est sans couleur, volatil et un liquide piquant. Il est employé dans l'industrie et la médecine et est l'élément intoxiquant de whisky, le vin, la bière et d'autres spiritueux fermentés ou distillés. Il est classé comme une drogue médicament de depressant, aussi appelée l alcool d'éthyle. N'importe quel spiritueux intoxiquant avec cet éthyle liquide dans cela est considéré de l alcool. </template></category>
+<category><pattern>QU EST CE QUE DE L ARGENT</pattern><template>les pièces de Norme d'or, argent, le cuivre, le nickel, etc tamponné par l autorité du gouvernement et employé comme un moyen d'échange et la mesure de valeur. N'importe quelle substance ou article employé comme argent, comme billets de banque, contrôles chèques , etc </template></category>
+<category><pattern>QU EST CE QUE DE L EAU</pattern><template>le liquide sans couleur, transparent arrivant sur la terre comme des rivières, des lacs, des océans, etc et tombant des nuages comme la pluie; chimiquement un composé d'hydrogène et l'oxygène, H2O, il gèle, formant la glace, à 0 degrés Celsius 32 degrés Fahrenheit et des ébullitions, formant la vapeur, à 100 degrés Celsius 212 degrés Fahrenheit. </template></category>
+<category><pattern>QU EST CE QUE DE L ENCRE</pattern><template>un liquide coloré employé pour l'écriture, le dessin, etc </template></category>
+<category><pattern>QU EST CE QUE DE L HEROINE</pattern><template>L'Héroïne est un opiacé puissant analgésique. </template></category>
+<category><pattern>QU EST CE QUE DE LA BIERE</pattern><template><random><li>un existentialist. </li><li>une boisson alcoolisée faite du grain, particulièrement malted l'orge, fermentée par la levure et assaisonné d'étapes particulièrement une Telle boisson est produite par la fermentation lente à une température relativement basse. </li><li>la Bière est une boisson d'étapes fermentées, le malt et l'orge. </li></random> </template></category>
+<category><pattern>QU EST CE QUE DE LA BIÈRE</pattern><template><random><li>un existentialist. </li><li>une boisson alcoolisée faite du grain, particulièrement malted l'orge, fermentée par la levure et assaisonné d'étapes particulièrement une Telle boisson est produite par la fermentation lente à une température relativement basse. </li><li>la Bière est une boisson d'étapes fermentées, le malt et l'orge. </li></random> </template></category>
+<category><pattern>QU EST CE QUE DE LA CANNELLE</pattern><template>la Cannelle est un petit arbre à feuilles persistantes. </template></category>
+<category><pattern>QU EST CE QUE DE LA MURE SAUVAGE</pattern><template>la mûre sauvage est un arbuste épineux de l'ordre rosaceae. </template></category>
+<category><pattern>QU EST CE QUE DE LA MURE SAUVÂGE</pattern><template>la mûre sauvage est un arbuste épineux de l'ordre rosaceae. </template></category>
+<category><pattern>QU EST CE QUE DE</pattern><template>le Dé est, comme généralement employé par les gens pour produire des numéros nombres aléatoires dans des jeux de hasard, est des petits cubes blancs avec un numéro différent entre un et six imprimé sur chacun de cela est six visages. Ils sont généralement employés dans des paires pour produire des paires de numéro aléatoires totalement entre 1 et 12. </template></category>
+<category><pattern>QU EST CE QUE DECATHLON</pattern><template>le décathlon est le 2 jour l'événement Olympique sportif. </template></category>
+<category><pattern>QU EST CE QUE DECIBEL</pattern><template>le décibel est l'unité de mesure d'intensité du son saine. </template></category>
+<category><pattern>QU EST CE QUE DECLARATION</pattern><template>une déclaration est l acte de déclaration de quelque chose comme vraie. Je déclare que cette déclaration est une déclaration. </template></category>
+<category><pattern>QU EST CE QUE DECONSTRUCTION</pattern><template>Prenant des choses à part. </template></category>
+<category><pattern>QU EST CE QUE DEFLATION</pattern><template>une diminution de la somme d'argent dans la circulation, aboutissant à une hausse relativement pointue et soudaine de sa valeur et une chute automne dans des prix. </template></category>
+<category><pattern>QU EST CE QUE DELPHINIUM</pattern><template>le delphinium est une plante ranunculaceous avec des fleurs irrégulières formées. </template></category>
+<category><pattern>QU EST CE QUE DELTA</pattern><template>le Delta est la 4ème lettre de l alphabet grec. </template></category>
+<category><pattern>QU EST CE QUE DEMERARA</pattern><template>Demerara est une région en Guyane qui a penché son nom au sucre de canne cru. </template></category>
+<category><pattern>QU EST CE QUE DEMOISELLE</pattern><template>un domestique. </template></category>
+<category><pattern>QU EST CE QUE DEPRESSION</pattern><template>la maladie Mentale caractérisée par bas moi l'estime, les sentiments de lonliness, l'isolement et le fait d'être sans valeur. </template></category>
+<category><pattern>QU EST CE QUE DEPUTE TROIS</pattern><template>un format de compression de fichier audio basé sur le MPEG. <think> <set name="that"> <think><set name="oldtopic"><get name="topic"/></set></think><set name="topic">le DEPUTE TROIS</set> </set> </think> </template></category>
+<category><pattern>QU EST CE QUE DERIVE</pattern><template>la dérive sous le vent d'un bateau ou l avion du cours étant dirigé. Une marge de temps, argent, etc. Pièce pour liberté d'action. </template></category>
+<category><pattern>QU EST CE QUE DERIVEE DE *</pattern><template>Se concentre quelque encadrement de coordonnée. </template></category>
+<category><pattern>QU EST CE QUE DERNIER *</pattern><template>c'était "<that index =" 2,1"/> ". </template></category>
+<category><pattern>QU EST CE QUE DES FAITS ALTERNATIFS</pattern><template>des univers Parallèles. </template></category>
+<category><pattern>QU EST CE QUE DES FENETRES X</pattern><template>un GUI pour UNIX ou Linux. </template></category>
+ 
+</aeon>

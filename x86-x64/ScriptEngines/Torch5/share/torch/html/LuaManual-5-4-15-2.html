@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Pattern Item:
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Pattern Item:</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-4.html">
+  String Manipulation</a>&nbsp; > &nbsp; <a href="LuaManual-5-4-15.html">
+  Patterns</a>&nbsp; > &nbsp; <b>
+ Pattern Item:</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<p>
+
+ A <i>pattern item</i> may be    
+<ul><li>a single character class, which matches any single character in the class;  
+</li><li>a single character class followed by '=*=', which matches 0 or more repetitions of characters in the class. These repetition items will always match the longest possible sequence;  
+</li><li>a single character class followed by '=+=', which matches 1 or more repetitions of characters in the class. These repetition items will always match the longest possible sequence;  
+</li><li>a single character class followed by '=-=', which also matches 0 or more repetitions of characters in the class. Unlike '=*=', these repetition items will always match the <i>shortest</i> possible sequence;  
+</li><li>a single character class followed by '=?=', which matches 0 or 1 occurrence of a character in the class;  
+</li><li><code>%_n_</code>, for <i>n</i> between 1 and 9; such item matches a substring equal to the _n_-th captured string (see below);  
+</li><li><code>%b_xy_</code>, where <i>x</i> and <i>y</i> are two distinct characters; such item matches strings that start with <i>x</i>, end with <i>y</i>, and where the <i>x</i> and <i>y</i> are <i>balanced</i>. This means that, if one reads the string from left to right, counting <i>+1</i> for an <i>x</i> and <i>-1</i> for a <i>y</i>, the ending <i>y</i> is the first <i>y</i> where the count reaches 0. For instance, the item <code>%b()</code> matches expressions with balanced parentheses.       </li></ul>
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-4-15-1.html">
+ Character Class:</a></div>
+<div id="footer-right"><a href="LuaManual-5-4-15-3.html">
+ Pattern:</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

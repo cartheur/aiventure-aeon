@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ subplot(cols,rows,index)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ subplot(cols,rows,index)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Plotting Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ Window</a>&nbsp; > &nbsp; <b>
+ <code>subplot(cols,rows,index)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Breaks the window into an rows-by-cols matrix of small axes, 
+selects the index-th subplot for the current plot, and returns the handle. 
+The subplots are counted along the top row of the window, then the
+second row, etc.  
+<p>
+
+<code>subplot(index)</code> selects the index-th subplot for the current plot, and 
+returns the handle, assuming it is already created.
+<p>
+
+Here is a typical example:
+<pre>
+	require "lab"
+	w=gfx.Window(300,500) 
+	w:subplot(1,2,1)
+	w:hist(lab.randn(100,3))
+	w:subplot(2)
+	w:plot({5,7,8,1,3},'co:')
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-1-2.html">
+ <code>cls()</code></a></div>
+<div id="footer-right"><a href="index-1-4.html">
+ <code>plot(x,y,params)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

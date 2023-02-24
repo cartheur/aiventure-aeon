@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Changes in the API
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Changes in the API</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-7.html">
+  Incompatibilities with the Previous Version</a>&nbsp; > &nbsp; <b>
+  Changes in the API</b>
+</div>
+
+<div id="contents">
+<a name="ChangesintheAPI"></a>
+
+<p>
+
+<p>
+
+<ul><li>The <code>luaopen_*</code> functions (to open libraries) cannot be called directly, like a regular C function. They must be called through Lua, like a Lua function.  
+</li><li>Function <code>lua_open</code> was replaced by <a href="LuaManual-3-7-35.html#luanewstate"><code>lua_newstate</code></a> to allow the user to set a memory-allocation function. You can use <a href="LuaManual-4-1-32.html#luaLnewstate"><code>luaL_newstate</code></a> from the standard library to create a state with a standard allocation function (based on <code>realloc</code>).  
+</li><li>Functions <code>luaL_getn</code> and <code>luaL_setn</code> (from the auxiliary library) are deprecated. Use <a href="LuaManual-3-7-41.html#luaobjlen"><code>lua_objlen</code></a> instead of <code>luaL_getn</code> and nothing instead of <code>luaL_setn</code>.  
+</li><li>Function <code>luaL_openlib</code> was replaced by <a href="LuaManual-4-1-44.html#luaLregister"><code>luaL_register</code></a>.  
+</li><li>Function <code>luaL_checkudata</code> now throws an error when the given value is not a userdata of the expected type. (In Lua 5.0 it returned <code>NULL</code>.)       </li></ul>
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-7-2.html">
+  Changes in the Libraries</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

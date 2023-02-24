@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ File
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ File</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <b>
+ <code>File</code></b>
+</div>
+
+<div id="contents">
+<a name="File"></a>
+
+<p>
+
+<p>
+
+This is an <i>abstract</i> class. It defines most methods implemented by its
+child classes, like <a href="index-1.html#DiskFile"><code>DiskFile</code></a>,
+<a href="index-3.html#MemoryFile"><code>MemoryFile</code></a> and <a href="index-4.html#PipeFile"><code>PipeFile</code></a>.
+<p>
+
+Methods defined here are intended for basic read/write functionalities.
+Read/write methods might write in <a href="index-2-5.html#FileAscii"><code>ASCII</code></a> mode or
+<a href="index-2-7.html#FileBinary">binary</a> mode.
+<p>
+
+In <a href="index-2-5.html#FileAscii"><code>ASCII</code></a> mode, numbers are converted in human readable
+format (characters). Booleans are converted into <code>0</code> (false) or <code>1</code> (true).
+In <a href="index-2-7.html#FileBinary">binary</a> mode, numbers and boolean are directly encoded
+as represented in a register of the computer. While not being human
+readable and less portable, the binary mode is obviously faster.
+<p>
+
+In <a href="index-2-5.html#FileAscii"><code>ASCII</code></a> mode, if the default option
+<a href="index-2-6.html#FileAutoSpacing"><code>autoSpacing()</code></a> is chosen, a space will be generated
+after each written number or boolean. A carriage return will also be added
+after each call to a write method. With this option, the spaces are
+supposed to exist while reading. This option can be deactivated with
+<a href="index-2-14.html#FileNoAutoSpacing"><code>noAutoSpacing()</code></a>.
+<p>
+
+A <code>Lua</code> error might or might be not generated in case of read/write error
+or problem in the file. This depends on the choice made between
+<a href="index-2-18.html#FileQuiet"><code>quiet()</code></a> and <a href="index-2-16.html#FilePedantic"><code>pedantic()</code></a> options. It
+is possible to query if an error occured in the last operation by calling
+<a href="index-2-10.html#FileHasError"><code>hasError()</code></a>.
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-2-1.html">
+ Read methods</a></li>
+<li><a href="index-2-2.html">
+ Write methods</a></li>
+<li><a href="index-2-3.html">
+ <code>Lua</code> style read/write methods</a></li>
+<li><a href="index-2-4.html">
+ Serialization methods</a></li>
+<li><a href="index-2-5.html">
+ <code>ascii()</code> [default]</a></li>
+<li><a href="index-2-6.html">
+ <code>autoSpacing()</code> [default]</a></li>
+<li><a href="index-2-7.html">
+ <code>binary()</code></a></li>
+<li><a href="index-2-8.html">
+ <code>clearError()</code></a></li>
+<li><a href="index-2-9.html">
+ <code>close()</code></a></li>
+<li><a href="index-2-10.html">
+ <code>[boolean] hasError()</code></a></li>
+<li><a href="index-2-11.html">
+ <code>[boolean] isQuiet()</code></a></li>
+<li><a href="index-2-12.html">
+ <code>[boolean] isReadable()</code></a></li>
+<li><a href="index-2-13.html">
+ <code>[boolean] isWritable()</code></a></li>
+<li><a href="index-2-14.html">
+ <code>noAutoSpacing()</code></a></li>
+<li><a href="index-2-15.html">
+ <code>synchronize()</code></a></li>
+<li><a href="index-2-16.html">
+ <code>pedantic()</code> [default]</a></li>
+<li><a href="index-2-17.html">
+ <code>[number] position()</code></a></li>
+<li><a href="index-2-18.html">
+ <code>quiet()</code></a></li>
+<li><a href="index-2-19.html">
+ <code>seek(position)</code></a></li>
+<li><a href="index-2-20.html">
+ <code>seekEnd()</code></a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-1.html">
+ <code>DiskFile</code></a></div>
+<div id="footer-right"><a href="index-3.html">
+ <code>MemoryFile</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

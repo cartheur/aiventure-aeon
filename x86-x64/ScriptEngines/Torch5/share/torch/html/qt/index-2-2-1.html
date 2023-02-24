@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Memory management
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Memory management</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <a href="index-2-2.html">
+ Qt Objects</a>&nbsp; > &nbsp; <b>
+ Memory management</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Qt organizes the Qt objects hierarchically.
+An object can be an orphan or can be the child of another object.
+When a Qt object is deleted, all its descendants are deleted as well.
+When programming in C++, orphan objects must be deleted manually.
+<p>
+
+Two situations arise when a Qt object is exposed the Lua interpreter.
+<p>
+
+<ul><li>An exposed Qt object may be deleted by C++ code, 
+either directly, or indirectly because one of its 
+ascendant has been deleted.
+The Lua userdata representing the object becomes a "zombie".
+Zombies can be detected using method <a href="index-2-1-3.html#qttobool"><code>tobool()</code></a>.
+</li></ul><p>
+
+<ul><li>An exposed Qt object may be deleted because the Lua
+garbage collector determines that the Lua program no longer
+needs this object.  Whether this happens is determined when
+the object is exposed to the Lua interpreter. 
+Such objects are said to be owned by Lua.
+</li></ul><p>
+
+In general, orphan objects created from a Lua program are owned by Lua.
+Objects with a parent and orphan objects created from C++ code are
+not Lua owned and are not affected by the decisions 
+of the Lua garbage collector.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-2-2-2.html">
+ Properties</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

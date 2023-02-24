@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qt.QBrush(table)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qt.QBrush(table)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Qt Classes</a>&nbsp; > &nbsp; <a href="index-2-1.html">
+ qt.QBrush</a>&nbsp; > &nbsp; <b>
+ qt.QBrush(table)</b>
+</div>
+
+<div id="contents">
+<a name="qbrushfromtable"></a>
+
+<p>
+
+<p>
+
+Expression <code>qt.QBrush(table)</code> returns a brush whose settings
+are determined by the fields of table <code>table</code>. 
+The following fields are recognized:
+<p>
+
+<ul><li>Field <code>color</code> contains a <a href="index-2-2.html#qcolor"><code>qt.QColor</code></a> value
+representing the brush color. 
+</li></ul><p>
+
+<ul><li>Field <code>texture</code> contains a <a href="index-2-5.html#qimage"><code>qt.QImage</code></a> value
+representing the brush texture.
+</li></ul><p>
+
+<ul><li>Field <code>gradient</code> contains a <a href="index-2-4.html#qgradient"><code>qt.QGradient</code></a> value
+representing a color gradient.
+</li></ul><p>
+
+<ul><li>Field <code>transform</code> contains a <code>qt.QTransform</code> value that 
+defines a additional transformation applied to the brush before
+painting it into the current coordinate system.
+</li></ul><p>
+
+<ul><li>Field <code>style</code> contains the name of the
+<a href="http://doc.trolltech.com/main-snapshot/qt.html#BrushStyle-enum">brush style</a>.
+The default brush style is <code>SolidPatter</code> when field <code>color</code> is defined,
+<code>TexturePattern</code> when field <code>texture</code> is defined, or one of the gradient styles
+when field <code>gradient</code> is defined.  Otherwise the default style is <code>NoBrush</code>
+meaning that nothing is painted.
+</li></ul><p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-2-1-2.html">
+ qbrush:totable()</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

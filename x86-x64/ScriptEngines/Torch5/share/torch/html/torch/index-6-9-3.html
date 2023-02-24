@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] map2(tensor1, tensor2, function(x, xt1, xt2))
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] map2(tensor1, tensor2, function(x, xt1, xt2))</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-9.html">
+ Applying a function to a tensor</a>&nbsp; > &nbsp; <b>
+ <code>[self] map2(tensor1, tensor2, function(x, xt1, xt2))</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Apply the given function to all elements of self, <code>tensor1</code> and <code>tensor2</code>. The number of elements of all tensors
+must match, but sizes do not matter.
+<p>
+
+The function takes three numbers (the current element of self, <code>tensor1</code> and <code>tensor2</code>) and might return
+a number, in which case it will be stored in self.
+<p>
+
+Example:
+<pre>
+> x = torch.Tensor(3,3)
+> y = torch.Tensor(9)
+> z = torch.Tensor(3,3)
+> 
+> i = 0; x:apply(function() i = i + 1; return math.cos(i)*math.cos(i) end)
+> i = 0; y:apply(function() i = i + 1; return i end)
+> i = 0; z:apply(function() i = i + 1; return i end)
+> 
+> print(x)
+
+ 0.2919  0.4272  0.5684
+ 0.1732  0.0805  0.0212
+ 0.9801  0.9219  0.8302
+[torch.Tensor of dimension 3x3]
+
+> print(y)
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+[torch.Tensor of dimension 9]
+
+> print(z)
+
+ 1  4  7
+ 2  5  8
+ 3  6  9
+[torch.Tensor of dimension 3x3]
+
+> 
+> x:map2(y, z, function(xx, yy, zz) return xx+yy*zz end)
+> 
+> print(x)
+
+  1.2919  16.4272  49.5684
+  4.1732  25.0805  64.0212
+  9.9801  36.9219  81.8302
+[torch.Tensor of dimension 3x3]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-9-2.html">
+ <code>[self] map(tensor, function(xs, xt))</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

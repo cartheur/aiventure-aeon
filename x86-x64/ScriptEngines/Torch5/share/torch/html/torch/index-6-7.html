@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Extracting sub-tensors
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Extracting sub-tensors</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <b>
+ Extracting sub-tensors</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Each of these methods returns a <code>Tensor</code> which is a sub-tensor of the given
+tensor, <i>with the same <code>Storage</code></i>. Hence, any modification in the memory of
+the sub-tensor will have an impact on the primary tensor, and vice-versa.
+<p>
+
+These methods are very fast, and they do not involve any memory copy.
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-6-7-1.html">
+ <code>[Tensor] narrow(dim, index, size)</code></a></li>
+<li><a href="index-6-7-2.html">
+ <code>[Tensor] sub(dim1s, dim1e ... [, dim4s [, dim4e]])</code></a></li>
+<li><a href="index-6-7-3.html">
+ <code>[Tensor] select(dim, index)</code></a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-6-6.html">
+ Resizing</a></div>
+<div id="footer-right"><a href="index-6-8.html">
+ Manipulating the tensor view</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

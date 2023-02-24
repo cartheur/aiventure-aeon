@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaQ_optqobject&lt;TYPE&gt;
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaQ_optqobject&lt;TYPE&gt;</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <a href="index-3-3.html">
+ The <code>luaQ</code> functions </a>&nbsp; > &nbsp; <b>
+ luaQ_optqobject&lt;TYPE&gt;</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<code>TYPE* luaQ_optqobject&lt;TYPE&gt;(lua_State *L, int index, TYPE *d)</code>
+<p>
+
+Returns the optional <a href="index-2-2.html#QObjects">Qt object</a> of type <code>TYPE</code>
+found at position <code>index</code> in the stack.  If the position
+corresponds to an unspecified function argument, 
+this function returns <code>d</code>.  If the Lua value at this position
+is not a Qt object of the requested type, this function
+causes an error.
+<p>
+
+See also <a href="index-3-3-3.html#luaqcheckqobject"><code>luaQ_checkqobject</code></a>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-3-10.html">
+ luaQ_getfield</a></div>
+<div id="footer-right"><a href="index-3-3-12.html">
+ luaQ_optqvariant&lt;TYPE&gt;</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

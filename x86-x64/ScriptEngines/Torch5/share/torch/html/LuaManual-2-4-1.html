@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Chunks
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Chunks</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <a href="LuaManual-2-4.html">
+  Statements</a>&nbsp; > &nbsp; <b>
+  Chunks</b>
+</div>
+
+<div id="contents">
+<a name="Chunks"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ The unit of execution of Lua is called a <i>chunk</i>. A chunk is simply a sequence of statements, which are executed sequentially. Each statement can be optionally followed by a semicolon:
+<pre>
+	chunk ::= {stat [`*;*`]}
+</pre>
+<p>
+
+<p>
+
+ There are no empty statements and thus '=;;=' is not legal.   
+<p>
+
+ Lua handles a chunk as the body of an anonymous function  with a variable number of arguments (see <a href="LuaManual-2-5-9.html#FunctionDefinitions">Function Definitions</a>). As such, chunks can define local variables, receive arguments, and return values.   
+<p>
+
+ A chunk may be stored in a file or in a string inside the host program. When a chunk is executed, first it is pre-compiled into instructions for a virtual machine, and then the compiled code is executed by an interpreter for the virtual machine.   
+<p>
+
+ Chunks may also be pre-compiled into binary form; see program <code>luac</code> for details. Programs in source and compiled forms are interchangeable; Lua automatically detects the file type and acts accordingly.       
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="LuaManual-2-4-2.html">
+  Blocks</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

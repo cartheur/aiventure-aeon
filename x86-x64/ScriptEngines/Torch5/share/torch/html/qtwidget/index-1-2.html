@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qtwidget.newimage(...)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qtwidget.newimage(...)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ High Level Interface</a>&nbsp; > &nbsp; <b>
+ qtwidget.newimage(...)</b>
+</div>
+
+<div id="contents">
+<a name="qtwidgetnewimage"></a>
+
+<p>
+
+<p>
+
+Function <code>qtwidget.newimage</code> creates an image in memory
+that can be the target of drawing operations.
+This function returns a Lua table that 
+serves as a drawing port descriptor.
+<p>
+
+There are several ways to specify its arguments:
+<p>
+
+<ul><li><code>qtwidget.newimage(w,h,[monoflag])</code>
+</li></ul><p>
+
+     Creates an image of width <code>w</code> and height <code>h</code>.
+     When the optional argument <code>monoflag</code> is <code>true</code>, 
+     a bitonal image is created.
+     Otherwise the image can contain arbitrary RGBA colors.
+<p>
+
+<ul><li><code>qtwidget.newimage(filename,[format])</code>
+</li></ul><p>
+
+     Creates an image by loading the contents of file <code>filename</code>.
+     The file format is defined by the optional string argument <code>format</code> 
+     or derived from the file name extension.
+<p>
+
+<ul><li><code>qtwidget.newimage(torchtensor)</code>
+</li></ul><p>
+
+     Creates an image by extracting the contents of the specified
+     <a href="../torch/index-6.html#Tensor"><code>torch.Tensor</code></a>.
+     The valid tensor formats are described in the documentation for function 
+     <a href="../qttorch/index-1.html#qimagefromtensor"><code>qt.QImage.fromTensor</code></a>.
+     This only works when both packages <a href="../torch/index.html"><code>torch</code></a>
+     and <a href="../qttorch/index.html"><code>qttorch</code></a> have been loaded.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-1-1.html">
+ qtwidget.newwindow(w,h,[title]) </a></div>
+<div id="footer-right"><a href="index-1-3.html">
+ qtwidget.newps(w,h,filename)</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

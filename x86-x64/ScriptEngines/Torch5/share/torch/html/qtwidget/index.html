@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+QtWidget Package Reference Manual
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+QtWidget Package Reference Manual</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <b>
+QtWidget Package Reference Manual</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+A package providing interfaces to a number 
+of essential Qt Graphical User Interface classes.
+<p>
+
+This package also provides QtLua specific classes.
+Class <a href="index-3-2.html#qtluapainter"><code>QtLuaPainter</code></a> gives you the ability 
+draw simple graphics using well known postscript-like operators.
+Graphic output can be sent to an arbitrary widget, 
+to a PS or PDF file, or to a printer.
+Class <a href="index-3-1.html#qtlualistener"><code>QtLuaListener</code></a> gives you the 
+ability to listen to events on arbitrary widgets
+<p>
+
+For instance, the convenient 
+function <a href="index-1-1.html#qtwidgetnewwindow"><code>qtwidget.newwindow</code></a>
+creates a main window and returns its descriptor.
+<pre>
+  require 'qtwidget'
+  w=qtwidget.newwindow(400,300,"Some QWidget")
+</pre>
+Drawing is easily achieved using Postscript-like operators.
+<pre>
+  w:moveto(0,0); w:curveto(0,300,400,0,400,300); w:closepath()
+  w:setcolor("red"); w:fill(false)
+  w:setcolor("blue"); w:setlinewidth(5); w:stroke()
+</pre>
+Text output is of course supported 
+using <a href="index-3-2-3-69.html#paintershow"><code>show</code></a>.
+<pre>
+  w:moveto(90,40)
+  w:setcolor("black")
+  w:setfont(qt.QFont{serif=true,italic=true,size=20})
+  w:show("The Quick Brown Fox...")
+</pre>
+Alpha-transparency works as well.
+<pre>
+  w:rectangle(50,50,300,200)
+  w:setcolor(1,1,0,.5)
+  w:fill()
+</pre>
+Finally you can capture Qt events using the 
+<a href="../qt/index-2-4-1.html#qtconnectf"><code>qt.connect</code></a> function,
+<pre>
+  qt.connect(w.listener,
+       'sigMousePress(int,int,QByteArray,QByteArray,QByteArray)',
+       function(...) print("MousePress",...) end );
+</pre>
+and you can erase everything with
+<pre>
+  w:showpage()
+</pre>
+<p>
+
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-1.html">
+ High Level Interface</a></li>
+<li><a href="index-2.html">
+ Qt Classes</a></li>
+<li><a href="index-3.html">
+ QtLua Classes</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

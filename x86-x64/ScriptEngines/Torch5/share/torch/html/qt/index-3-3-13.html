@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaQ_pcall
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaQ_pcall</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <a href="index-3-3.html">
+ The <code>luaQ</code> functions </a>&nbsp; > &nbsp; <b>
+ luaQ_pcall</b>
+</div>
+
+<div id="contents">
+<a name="luaqpcall"></a>
+
+<p>
+
+<p>
+
+<code>int luaQ_pcall(lua_State *L, int na, int nr, int eh, QObject *obj = 0)</code>
+<p>
+
+<code>int luaQ_pcall(lua_State *L, int na, int nr, int eh, int oh)</code>
+<p>
+
+Performs a Lua function call like 
+<a href="../LuaManual.hlp#luapcall"><code>lua_pcall</code></a> but ensures that
+the function is executed in the thread owning the Qt object <code>obj</code>
+or the Qt object at position <code>oh</code> on the stack.
+Argument <code>eh</code> is an event handler that will be executed
+in the target thread if an error occurs during the
+execution of the function.
+<p>
+
+This function is the basis for all <a href="index-2-4-7.html#qtqcall">thread hopping</a>
+operations in the QtLua interface.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-3-12.html">
+ luaQ_optqvariant&lt;TYPE&gt;</a></div>
+<div id="footer-right"><a href="index-3-3-14.html">
+ luaQ_print</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

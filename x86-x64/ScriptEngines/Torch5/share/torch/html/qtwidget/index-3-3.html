@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qt.QtLuaPrinter
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qt.QtLuaPrinter</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <b>
+ qt.QtLuaPrinter</b>
+</div>
+
+<div id="contents">
+<a name="qtluaprinter"></a>
+
+<p>
+
+<p>
+
+Printing in Qt is usually achieved using class
+<a href="http://doc.trolltech.com/main-snapshot/qprinter.html"><code>QPrinter</code></a>.
+Since this class is neither a subclass of
+<a href="http://doc.trolltech.com/main-snapshot/qobject.html"><code>QObject</code></a>
+nor a value class suitable for storing into a Qt variant,
+the QtLua class <code>QtLuaPrinter</code> defines a Qt object that
+acts as a thin wrapper for class <code>QPrinter</code>.
+<p>
+
+Most usual 
+<a href="http://doc.trolltech.com/main-snapshot/qprinter.html">printer settings</a> 
+are exposed by class <code>qt.QtLuaPrinter</code> as properties. 
+Property <a href="index-3-3-19.html#printerpapersize"><code>printer.paperSize</code></a> 
+can be used to specify the size of the drawing in pixels.
+Printers can be selected using <a href="index-3-3-21.html#printerprintername"><code>printer.printerName</code></a>
+and PostScript and PDF files can be produced with 
+properties <a href="index-3-3-14.html#printeroutputfilename"><code>printer.outputFileName</code></a>
+and <a href="index-3-3-15.html#printeroutputformat"><code>printer.outputFormat</code></a>.
+Alternatively, function <code>printer:setup()</code> pops a print dialog
+that lets the user adjust these properties interactively.
+<p>
+
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-3-3-1.html">
+ qt.QtLuaPrinter([mode])</a></li>
+<li><a href="index-3-3-2.html">
+ printer:abort()</a></li>
+<li><a href="index-3-3-3.html">
+ printer.collateCopies</a></li>
+<li><a href="index-3-3-4.html">
+ printer.colorMode</a></li>
+<li><a href="index-3-3-5.html">
+ printer.creator</a></li>
+<li><a href="index-3-3-6.html">
+ printer.docName</a></li>
+<li><a href="index-3-3-7.html">
+ printer.doubleSidedPrinting</a></li>
+<li><a href="index-3-3-8.html">
+ printer.fontEmbeddingEnabled</a></li>
+<li><a href="index-3-3-9.html">
+ printer.fromPage</a></li>
+<li><a href="index-3-3-10.html">
+ printer.fullPage</a></li>
+<li><a href="index-3-3-11.html">
+ printer.landscape</a></li>
+<li><a href="index-3-3-12.html">
+ printer:newPage()</a></li>
+<li><a href="index-3-3-13.html">
+ printer.numCopies</a></li>
+<li><a href="index-3-3-14.html">
+ printer.outputFileName</a></li>
+<li><a href="index-3-3-15.html">
+ printer.outputFormat</a></li>
+<li><a href="index-3-3-16.html">
+ printer.pageRect</a></li>
+<li><a href="index-3-3-17.html">
+ printer.pageSize</a></li>
+<li><a href="index-3-3-18.html">
+ printer.paperRect</a></li>
+<li><a href="index-3-3-19.html">
+ printer.paperSize</a></li>
+<li><a href="index-3-3-20.html">
+ printer.printProgram</a></li>
+<li><a href="index-3-3-21.html">
+ printer.printerName</a></li>
+<li><a href="index-3-3-22.html">
+ printer.printerState</a></li>
+<li><a href="index-3-3-23.html">
+ printer.resolution</a></li>
+<li><a href="index-3-3-24.html">
+ printer:setFromTo(frompage,topage)</a></li>
+<li><a href="index-3-3-25.html">
+ printer:setup()</a></li>
+<li><a href="index-3-3-26.html">
+ printer.toPage</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-3-2.html">
+ qt.QtLuaPainter</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

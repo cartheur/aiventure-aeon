@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ L1HingeEmbeddingCriterion
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ L1HingeEmbeddingCriterion</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-3.html">
+ Criterions</a>&nbsp; > &nbsp; <b>
+ <code>L1HingeEmbeddingCriterion</code></b>
+</div>
+
+<div id="contents">
+<a name="L1HingeEmbeddingCriterion"></a>
+
+<p>
+
+<p>
+
+<pre>
+criterion = L1HingeEmbeddingCriterion(margin)
+</pre>
+<p>
+
+Creates a criterion that measures the loss given  an input
+<code>x</code> = <code>{x1,x2}</code>, a table of two tensors, and a label <code>y</code> (1 or -1):
+This is used for measuring whether two inputs are similar
+or dissimilar, using the L1 distance, and is typically used for
+learning nonlinear embeddings or semi-supervised learning.
+<p>
+
+<pre>
+loss(x,y) = forward(x,y) = ||x1-x2||_1, if y=1
+                         = max(0,margin - ||x1-x2||_1), if y=-1
+</pre>
+<p>
+
+The <code>margin</code> has a default value of 1, or can be set in the constructor:
+<pre>
+criterion = L1HingeEmbeddingCriterion(marginValue)
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-7.html">
+ <code>HingeEmbeddingCriterion</code></a></div>
+<div id="footer-right"><a href="index-3-9.html">
+ <code>CosineEmbeddingCriterion</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [metatable] torch.class(name, [parentName])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [metatable] torch.class(name, [parentName])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-8.html">
+ Torch utility functions</a>&nbsp; > &nbsp; <b>
+ <code>[metatable] torch.class(name, [parentName])</code></b>
+</div>
+
+<div id="contents">
+<a name="TorchClass"></a>
+
+<p>
+
+<p>
+
+Creates a new <code>Torch</code> class called <code>name</code>. If <code>parentName</code> is provided, the class will inherit
+<code>parentName</code> methods. A class is a table which has a particular metatable.
+<p>
+
+If <code>name</code> is of the form <code>package.className</code> then the class <code>className</code> will be added to the specified <code>package</code>.
+In that case, <code>package</code> has to be a valid (and already loaded) package. If <code>name</code> does not contain any "=.=",
+then the class will be defined in the global environment.
+<p>
+
+A (meta)table is returned. This table contains all the method provided by the class. After a call to <code>torch.class()</code>
+you have to fill-up properly the metatable.
+<p>
+
+After the class definition is complete, constructing a new class <code>name</code> will be achieved by a call to <code>name()</code>.
+This call will first call the method <code>__init()</code> if it exists, passing all arguments of <code>name()</code> into
+<code>__init()</code>.
+If <code>parentName</code> has been provided, the class table will also contain the field <code>__parent</code>.
+<p>
+
+<pre>
+ require "torch"
+
+ -- for naming convenience
+ do
+   --- creates a class "Foo"
+   local Foo = torch.class('Foo')
+ 
+   --- the initializer
+   function Foo:__init()
+     self.contents = "this is some text"
+   end
+
+   --- a method
+   function Foo:print()
+     print(self.contents)
+   end
+
+   --- another one
+   function Foo:bip()
+     print('bip')
+   end
+
+ end
+
+ --- now create an instance of Foo
+ foo = Foo()
+
+ --- try it out
+ foo:print()
+
+ --- create a class torch.Bar which
+ --- inherits from Foo
+ do
+   local Bar = torch.class('torch.Bar', 'Foo')
+
+   --- the initializer
+   function Bar:__init(stuff)
+     --- call the parent initializer on ourself
+     self.__parent.__init(self)
+ 
+     --- do some stuff
+     self.stuff = stuff
+   end
+
+   --- a new method
+   function Bar:boing()
+     print('boing!')
+   end
+
+   --- override parent's method
+   function Bar:print()
+     print(self.contents)
+     print(self.stuff)
+   end
+ end
+
+ --- create a new instance and use it
+ bar = torch.Bar("ha ha!")
+ bar:print() -- overrided method
+ bar:boing() -- child method
+ bar:bip()   -- parent's method
+
+</pre>
+<p>
+
+For advanced users, it is worth mentionning that <code>torch.class()</code> actually calls <a href="index-8-3.html#TorchNewmetatable"><code>torch.newmetatable()</code></a>.
+with a particular constructor. The constructor creates a Lua table and set the right metatable on it, and then
+calls <code>__init()</code> if it exists in the metatable. It also sets a
+<a href="index-8-4.html#TorchFactory"><code>__factory</code></a> field such that it is possible to create an empty object of this class.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-8-2.html">
+ <code>[string] torch.typename(object)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

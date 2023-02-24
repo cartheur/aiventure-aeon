@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Environments
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Environments</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <b>
+  Environments</b>
+</div>
+
+<div id="contents">
+<a name="Environments"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Besides metatables, objects of types thread, function, and userdata have another table associated with them, called their <i>environment</i>. Like metatables, environments are regular tables and multiple objects can share the same environment.   
+<p>
+
+ Environments associated with userdata have no meaning for Lua. It is only a convenience feature for programmers to associate a table to a userdata.   
+<p>
+
+ Environments associated with threads are called <i>global environments</i>. They are used as the default environment for their threads and non-nested functions created by the thread (through <a href="LuaManual-5-1-10.html#loadfilefilename"><code>loadfile ([filename])</code></a>, <a href="LuaManual-5-1-11.html#loadstringstringchunkname"><code>loadstring (string [, chunkname])</code></a> or <a href="LuaManual-5-1-9.html#loadfuncchunkname"><code>load (func [, chunkname])</code></a>) and can be directly accessed by C code (see <a href="#PseudoIndices">Pseudo-Indices</a>).   
+<p>
+
+ Environments associated with C functions can be directly accessed by C code (see <a href="#PseudoIndices">Pseudo-Indices</a>). They are used as the default environment for other C functions created by the function.   
+<p>
+
+ Environments associated with Lua functions are used to resolve all accesses to global variables within the function (see <a href="LuaManual-2-3.html#Variables">Variables</a>). They are used as the default environment for other Lua functions created by the function.   
+<p>
+
+ You can change the environment of a Lua function or the running thread by calling <a href="LuaManual-5-1-20.html#setfenvftable"><code>setfenv (f, table)</code></a>. You can get the environment of a Lua function or the running thread by calling <a href="LuaManual-5-1-6.html#getfenvf"><code>getfenv (f)</code></a>. To manipulate the environment of other objects (userdata, C functions, other threads) you must use the C API.      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-2-8.html">
+  Metatables</a></div>
+<div id="footer-right"><a href="LuaManual-2-10.html">
+  Garbage Collection</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

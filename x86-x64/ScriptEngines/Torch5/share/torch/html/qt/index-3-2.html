@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Class QtLuaLocker
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Class QtLuaLocker</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <b>
+ Class <code>QtLuaLocker</code></b>
+</div>
+
+<div id="contents">
+<a name="QtLuaLocker"></a>
+
+<p>
+
+<p>
+
+Class <a href="index-3-2.html#QtLuaLocker"><code>QtLuaLocker</code></a> provides means
+to directly access the Lua state <code>lua_State*</code> using the Lua API.
+This class ensures that the current thread has exclusive
+access to the Lua state.
+<p>
+
+<code>QtLuaLocker::QtLuaLocker(QtLuaEngine *engine)</code>
+<p>
+
+Create a <code>QtLuaLocker</code> object and ensures that the 
+current thread has exclusive access to the Lua state
+for the Lua interpreter <code>engine</code>.
+This constructor hangs until obtaining the lock
+<p>
+
+<code>QtLuaLocker::QtLuaLocker(QtLuaEngine *engine, int timeOut)</code>
+<p>
+
+Create a <code>QtLuaLocker</code> object and ensures that the 
+current thread has exclusive access to the Lua state
+for the Lua interpreter <code>engine</code>.
+This constructor hangs at most for <code>timeOut</code> milliseconds.
+To know whether the lock was acquired, 
+cast the <code>QtLuaLocker</code> as a <code>lua_State*</code> pointer.
+<p>
+
+<p>
+
+<code>lua_State* QtLuaLocker::operator lua_State*()</code>
+<p>
+
+Returns a <a href="../LuaManual-3-7-74.html#luaState"><code>lua_State*</code></a> 
+pointer to access the state
+of the Lua interpreter using the Lua API.
+Since this is a cast operator, one can simply pass 
+the <code>QtLuaLocker</code> object whenever a <code>lua_State*</code> is expected.
+This cast returns <code>0</code> when the constructor was unable
+to acquire the exclusive lock during the specified timeout.
+<p>
+
+<p>
+
+<code>bool QtLuaLocker::isReady()</code>
+<p>
+
+Returns <code>true</code> if the locking operation was 
+successful and the interpreter is in ready state. 
+Note that locking and state are distinct concepts.
+It is possible to lock a running interpreter
+while it is waiting for other events.
+The <code>eval</code> and <code>evaluate</code> functions use this test
+to decide whether to run a command.
+<p>
+
+<p>
+
+<code>void QtLuaLocker::setRunning()</code>
+<p>
+
+Sets the interpreter to state <code>Running</code>.
+The engine will return to state <code>Ready</code> after
+the destruction of the last <code>QtLuaLocker</code> object 
+and the execution of the queue.
+Temporary releasing the lock with <code>unlock()</code>
+keeps the engine in state <code>Running</code>. */
+<p>
+
+This can be useful if you plan to call the Lua API 
+functions <a href="../LuaManual.hlp#luacall"><code>lua_call</code></a> 
+or <a href="../LuaManual.hlp#luapcall"><code>lua_pcall</code></a> and expect
+the code to run for an extended period of time.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-1.html">
+ Class <code>QtLuaEngine</code></a></div>
+<div id="footer-right"><a href="index-3-3.html">
+ The <code>luaQ</code> functions </a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

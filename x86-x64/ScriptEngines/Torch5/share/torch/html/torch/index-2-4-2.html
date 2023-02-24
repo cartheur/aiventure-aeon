@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ writeObject(object)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ writeObject(object)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ <code>File</code></a>&nbsp; > &nbsp; <a href="index-2-4.html">
+ Serialization methods</a>&nbsp; > &nbsp; <b>
+ <code>writeObject(object)</code></b>
+</div>
+
+<div id="contents">
+<a name="FileWriteObject"></a>
+
+<p>
+
+<p>
+
+Writes <code>object</code> into the file. This object can be read later using
+<a href="index-2-4-1.html#FileReadObject"><code>readObject()</code></a>. Serializable objects are <code>Torch</code>
+objects having a <code>read()</code> and <code>write()</code> method. <code>Lua</code> objects such as
+<code>table</code>, <code>number</code> or <code>string</code> are also serializable.
+<p>
+
+If the object has been already written in the file, only a <i>reference</i> to
+this already saved object will be written: this saves space an speed-up
+writing; it also allows to keep the dependencies between objects intact.
+<p>
+
+In returns, if one writes an object, modify its member, and write the
+object again in the same file, the modifications will not be recorded
+in the file, as only a reference to the original will be written. See
+<a href="index-2-4-1.html#FileReadObject"><code>readObject()</code></a> for an example.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-4-1.html">
+ <code>readObject()</code></a></div>
+<div id="footer-right"><a href="index-2-4-3.html">
+ <code>[string] readString([format])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

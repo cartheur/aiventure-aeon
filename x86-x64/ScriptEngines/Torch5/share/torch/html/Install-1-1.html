@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Debian/Ubuntu 64 bits
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Debian/Ubuntu 64 bits</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="Install.html">
+Torch Installation Manual</a>&nbsp; > &nbsp; <a href="Install-1.html">
+ Installing from binaries</a>&nbsp; > &nbsp; <b>
+ Debian/Ubuntu 64 bits</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<a href="https://sourceforge.net/project/showfiles.php?group_id=183526">Download</a>
+the last <code>Torch5-XXX.deb</code> package.
+<p>
+
+<b>Make sure lua package is not installed</b>. Right now, we conflict with lua
+package, and our CMake package generation does not handle conflictual
+packages.
+<p>
+
+Then simply do
+<pre>
+sudo dpkg -i Torch5-XXX.deb
+</pre>
+<p>
+
+You might have to install dependencies. If you have a old distribution, it
+will complain not finding QT 4.4.  You can follow
+<a href="InstallQTDebian.html">our instructions</a> to create these packages.
+<p>
+
+You can then run Lua with <code>qlua</code> (handles graphics an IDE) or <code>lua</code> (no graphics).
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="Install-1-2.html">
+ MacOS X Intel</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

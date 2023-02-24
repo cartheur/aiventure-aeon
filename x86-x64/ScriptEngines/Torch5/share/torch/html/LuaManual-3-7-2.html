@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_atpanic
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_atpanic</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_atpanic</code></b>
+</div>
+
+<div id="contents">
+<a name="luaatpanic"></a>
+
+<p>
+
+<p>
+
+<pre>
+lua_CFunction lua_atpanic (lua_State *L, lua_CFunction panicf);
+</pre>
+<p>
+
+<p>
+
+ Sets a new panic function and returns the old one.   
+<p>
+
+ If an error happens outside any protected environment, Lua calls a <i>panic function</i> and then calls <code>exit(EXIT_FAILURE)</code>, thus exiting the host application. Your panic function may avoid this exit by never returning (e.g., doing a long jump).   
+<p>
+
+ The panic function can access the error message at the top of the stack.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-1.html">
+ <code>lua_Alloc</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-3.html">
+ <code>lua_call</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

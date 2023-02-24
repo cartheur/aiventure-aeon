@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_tointeger
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_tointeger</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_tointeger</code></b>
+</div>
+
+<div id="contents">
+<a name="luatointeger"></a>
+
+<p>
+
+<p>
+
+<pre>
+lua_Integer lua_tointeger (lua_State *L, int idx);
+</pre>
+<p>
+
+<p>
+
+ Converts the Lua value at the given acceptable index to the signed integral type <a href="LuaManual-3-7-22.html#luaInteger"><code>lua_Integer</code></a>. The Lua value must be a number or a string convertible to a number (see <a href="LuaManual-2-2-1.html#Coercion">Coercion</a>); otherwise, <a href="LuaManual-3-7-78.html#luatointeger"><code>lua_tointeger</code></a> returns 0.   
+<p>
+
+ If the number is not an integer, it is truncated in some non-specified way.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-77.html">
+ <code>lua_tocfunction</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-79.html">
+ <code>lua_tolstring</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

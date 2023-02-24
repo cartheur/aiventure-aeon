@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Stack Size
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Stack Size</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <b>
+  Stack Size</b>
+</div>
+
+<div id="contents">
+<a name="LUAMINSTACK"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ When you interact with Lua API, you are responsible for ensuring consistency. In particular, <i>you are responsible for controlling stack overflow</i>. You can use the function <a href="LuaManual-3-7-5.html#luacheckstack"><code>lua_checkstack</code></a> to grow the stack size.   
+<p>
+
+ Whenever Lua calls C, it ensures that at least <code>LUA_MINSTACK</code> stack positions are available. <code>LUA_MINSTACK</code> is defined as 20, so that usually you do not have to worry about stack space unless your code has loops pushing elements onto the stack.   
+<p>
+
+ Most query functions accept as indices any value inside the available stack space, that is, indices up to the maximum stack size you have set through <a href="LuaManual-3-7-5.html#luacheckstack"><code>lua_checkstack</code></a>. Such indices are called <i>acceptable indices</i>. More formally, we define an <i>acceptable index</i> as follows:
+<pre>
+     (index < 0 && abs(index) <= top) ||
+     (index > 0 && index <= stackspace)
+</pre>
+<p>
+
+<p>
+
+ Note that 0 is never an acceptable index.      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-1.html">
+  The Stack</a></div>
+<div id="footer-right"><a href="LuaManual-3-3.html">
+  Pseudo-Indices</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

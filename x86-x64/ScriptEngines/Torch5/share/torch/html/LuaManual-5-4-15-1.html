@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Character Class:
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Character Class:</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-4.html">
+  String Manipulation</a>&nbsp; > &nbsp; <a href="LuaManual-5-4-15.html">
+  Patterns</a>&nbsp; > &nbsp; <b>
+ Character Class:</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<p>
+
+ A <i>character class</i> is used to represent a set of characters. The following combinations are allowed in describing a character class:    
+<ul><li><b><i>x</i>:</b> (where <i>x</i> is not one of the <i>magic characters</i> <code>^$()%.[]*+-?</code>) represents the character <i>x</i> itself.  
+</li><li><b><code>.</code>:</b> (a dot) represents all characters.  
+</li><li><b><code>%a</code>:</b> represents all letters.  
+</li><li><b><code>%c</code>:</b> represents all control characters.  
+</li><li><b><code>%d</code>:</b> represents all digits.  
+</li><li><b><code>%l</code>:</b> represents all lowercase letters.  
+</li><li><b><code>%p</code>:</b> represents all punctuation characters.  
+</li><li><b><code>%s</code>:</b> represents all space characters.  
+</li><li><b><code>%u</code>:</b> represents all uppercase letters.  
+</li><li><b><code>%w</code>:</b> represents all alphanumeric characters.  
+</li><li><b><code>%x</code>:</b> represents all hexadecimal digits.  
+</li><li><b><code>%z</code>:</b> represents the character with representation 0.  
+</li><li><b><code>%_x_</code>:</b> (where <i>x</i> is any non-alphanumeric character) represents the character <i>x</i>. This is the standard way to escape the magic characters. Any punctuation character (even the non magic) can be preceded by a '=%=' when used to represent itself in a pattern.  
+</li><li><b><code>[<i>set</i>]</code>:</b> represents the class which is the union of all characters in <i>set</i>. A range of characters may be specified by separating the end characters of the range with a '=-='. All classes =%=_x_ described above may also be used as components in <i>set</i>. All other characters in <i>set</i> represent themselves. For example, <code>[%w_]</code> (or <code>[_%w]</code>) represents all alphanumeric characters plus the underscore, <code>[0-7]</code> represents the octal digits, and <code>[0-7%l%-]</code> represents the octal digits plus the lowercase letters plus the '=-=' character.   
+</li></ul><p>
+
+ The interaction between ranges and classes is not defined. Therefore, patterns like <code>[%a-z]</code> or <code>[a-%%]</code> have no meaning.  
+<ul><li><b><code>[^_set_]</code>:</b> represents the complement of <i>set</i>, where <i>set</i> is interpreted as above.  
+</li></ul><p>
+
+ For all classes represented by single letters (<code>%a</code>, <code>%c</code>, etc.), the corresponding uppercase letter represents the complement of the class. For instance, <code>%S</code> represents all non-space characters.   
+<p>
+
+ The definitions of letter, space, and other character groups depend on the current locale. In particular, the class <code>[a-z]</code> may not be equivalent to <code>%l</code>.      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="LuaManual-5-4-15-2.html">
+ Pattern Item:</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

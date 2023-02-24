@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Timer
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Timer</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <b>
+ <code>Timer</code></b>
+</div>
+
+<div id="contents">
+<a name="Timer"></a>
+
+<p>
+
+<p>
+
+This class is able to measure time (in seconds) elapsed in a particular period. Example:
+<pre>
+  timer = torch.Timer() -- the Timer starts to count now
+  x = 0
+  for i=1,1000000 do
+    x = x + math.sin(x)
+  end
+  print('Time elapsed for 1,000,000 sin: ' .. timer:time() .. ' seconds')
+</pre>
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-7-1.html">
+ <code>torch.Timer()</code></a></li>
+<li><a href="index-7-2.html">
+ <code>[self] reset()</code></a></li>
+<li><a href="index-7-3.html">
+ <code>[self] resume()</code></a></li>
+<li><a href="index-7-4.html">
+ <code>[self] stop()</code></a></li>
+<li><a href="index-7-5.html">
+  <code>[number] time()</code></a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-6.html">
+ <code>Tensor</code></a></div>
+<div id="footer-right"><a href="index-8.html">
+ Torch utility functions</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

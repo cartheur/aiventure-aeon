@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] apply(function(x))
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] apply(function(x))</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-9.html">
+ Applying a function to a tensor</a>&nbsp; > &nbsp; <b>
+ <code>[self] apply(function(x))</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Apply the given function to all elements of self.
+<p>
+
+The function takes a number (the current element of the tensor) and might return
+a number, in which case it will be stored in self.
+<p>
+
+Examples:
+<pre>
+> i = 0
+> z = torch.Tensor(3,3)
+> z:apply(function(x)
+>> i = i + 1
+>> return i
+>> end) -- fill up the tensor
+> = z
+
+ 1  4  7
+ 2  5  8
+ 3  6  9
+[torch.Tensor of dimension 3x3]
+
+> z:apply(math.sin) -- apply the sin function
+> = z
+
+ 0.8415 -0.7568  0.6570
+ 0.9093 -0.9589  0.9894
+ 0.1411 -0.2794  0.4121
+[torch.Tensor of dimension 3x3]
+
+> sum = 0
+> z:apply(function(x)
+>> sum = sum + x
+>> end) -- compute the sum of the elements
+> = sum
+1.9552094821074
+> = z:sum() -- it is indeed correct!
+1.9552094821074
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-6-9-2.html">
+ <code>[self] map(tensor, function(xs, xt))</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

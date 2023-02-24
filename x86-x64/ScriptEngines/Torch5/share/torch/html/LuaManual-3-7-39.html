@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_next
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_next</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_next</code></b>
+</div>
+
+<div id="contents">
+<a name="luanext"></a>
+
+<p>
+
+<p>
+
+<pre>
+int lua_next (lua_State *L, int index);
+</pre>
+<p>
+
+<p>
+
+ Pops a key from the stack, and pushes a key-value pair from the table at the given index (the "next" pair after the given key). If there are no more elements in the table, then <a href="LuaManual-3-7-39.html#luanext"><code>lua_next</code></a> returns 0 (and pushes nothing).   
+<p>
+
+ A typical traversal looks like this:
+<pre>
+     /* table is in the stack at index 't' */
+     lua_pushnil(L);  /* first key */
+     while (lua_next(L, t) != 0) {
+       /* uses 'key' (at index -2) and 'value' (at index -1) */
+       printf("%s - %s\n",
+              lua_typename(L, lua_type(L, -2)),
+              lua_typename(L, lua_type(L, -1)));
+       /* removes 'value'; keeps 'key' for next iteration */
+       lua_pop(L, 1);
+     }
+</pre>
+<p>
+
+<p>
+
+ While traversing a table, do not call <a href="LuaManual-3-7-79.html#luatolstring"><code>lua_tolstring</code></a> directly on a key, unless you know that the key is actually a string. Recall that <a href="LuaManual-3-7-79.html#luatolstring"><code>lua_tolstring</code></a> <i>changes</i> the value at the given index; this confuses the next call to <a href="LuaManual-3-7-39.html#luanext"><code>lua_next</code></a>.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-38.html">
+ <code>lua_newuserdata</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-40.html">
+ <code>lua_Number</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

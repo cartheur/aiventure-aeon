@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_yield
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_yield</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_yield</code></b>
+</div>
+
+<div id="contents">
+<a name="luayield"></a>
+
+<p>
+
+<p>
+
+<pre>
+int lua_yield  (lua_State *L, int nresults);
+</pre>
+<p>
+
+<p>
+
+ Yields a coroutine.   
+<p>
+
+ This function should only be called as the return expression of a C function, as follows:
+<pre>
+     return lua_yield (L, nresults);
+</pre>
+<p>
+
+<p>
+
+ When a C function calls <a href="LuaManual-3-7-89.html#luayield"><code>lua_yield</code></a> in that way, the running coroutine suspends its execution, and the call to <a href="LuaManual-3-7-66.html#luaresume"><code>lua_resume</code></a> that started this coroutine returns. The parameter <code>nresults</code> is the number of values from the stack that are passed as results to <a href="LuaManual-3-7-66.html#luaresume"><code>lua_resume</code></a>.        
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-88.html">
+ <code>lua_xmove</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

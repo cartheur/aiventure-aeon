@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ QtLuaPainter Functions
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ QtLuaPainter Functions</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <b>
+ QtLuaPainter Functions</b>
+</div>
+
+<div id="contents">
+<a name="qtluapainterfunctions"></a>
+
+<p>
+
+<p>
+
+Class <code>QtLuaPainter</code> provides a broad array of 
+painting functions that closely resemble
+the well-known PostScript operators.
+Additional functions provide capabilities
+that are unique to the Qt platform.
+<p>
+
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-3-2-3-1.html">
+ painter:arc(x,y,r,angle1,angle2)</a></li>
+<li><a href="index-3-2-3-2.html">
+ painter:arcn(x,y,r,angle1,angle2)</a></li>
+<li><a href="index-3-2-3-3.html">
+ painter:arcto(x1,y1,x2,y2,r)</a></li>
+<li><a href="index-3-2-3-4.html">
+ painter:charpath(string)</a></li>
+<li><a href="index-3-2-3-5.html">
+ painter:clip(optnewpath)</a></li>
+<li><a href="index-3-2-3-6.html">
+ painter:close()</a></li>
+<li><a href="index-3-2-3-7.html">
+ painter:closepath()</a></li>
+<li><a href="index-3-2-3-8.html">
+ painter:concat(qtransform)</a></li>
+<li><a href="index-3-2-3-9.html">
+ painter:currentangleunit()</a></li>
+<li><a href="index-3-2-3-10.html">
+ painter:currentbackground()</a></li>
+<li><a href="index-3-2-3-11.html">
+ painter:currentbrush()</a></li>
+<li><a href="index-3-2-3-12.html">
+ painter:currentclip()</a></li>
+<li><a href="index-3-2-3-13.html">
+ painter:currentcolor()</a></li>
+<li><a href="index-3-2-3-14.html">
+ painter:currentdash()</a></li>
+<li><a href="index-3-2-3-15.html">
+ painter:currentfont()</a></li>
+<li><a href="index-3-2-3-16.html">
+ painter:currentfontsize()</a></li>
+<li><a href="index-3-2-3-17.html">
+ painter:currenthints()</a></li>
+<li><a href="index-3-2-3-18.html">
+ painter:currentlinewidth()</a></li>
+<li><a href="index-3-2-3-19.html">
+ painter:currentmatrix()</a></li>
+<li><a href="index-3-2-3-20.html">
+ painter:currentmode()</a></li>
+<li><a href="index-3-2-3-21.html">
+ painter:currentpath()</a></li>
+<li><a href="index-3-2-3-22.html">
+ painter:currentpen()</a></li>
+<li><a href="index-3-2-3-23.html">
+ painter:currentpoint()</a></li>
+<li><a href="index-3-2-3-24.html">
+ painter:currentsize()</a></li>
+<li><a href="index-3-2-3-25.html">
+ painter:curveto(x1,y1,x2,y2,x3,y3)</a></li>
+<li><a href="index-3-2-3-26.html">
+ painter:device()</a></li>
+<li><a href="index-3-2-3-27.html">
+ painter:eoclip(optnewpath)</a></li>
+<li><a href="index-3-2-3-28.html">
+ painter:eofill(optnewpath)</a></li>
+<li><a href="index-3-2-3-29.html">
+ painter:fill(optnewpath)</a></li>
+<li><a href="index-3-2-3-30.html">
+ painter:gbegin()</a></li>
+<li><a href="index-3-2-3-31.html">
+ painter:gend()</a></li>
+<li><a href="index-3-2-3-32.html">
+ painter:grestore()</a></li>
+<li><a href="index-3-2-3-33.html">
+ painter:gsave()</a></li>
+<li><a href="index-3-2-3-34.html">
+ painter:image()</a></li>
+<li><a href="index-3-2-3-35.html">
+ painter:image(x,y,[w,h],image,[sx,sy,[sw,sh]])</a></li>
+<li><a href="index-3-2-3-36.html">
+ painter:initclip()</a></li>
+<li><a href="index-3-2-3-37.html">
+ painter:initgraphics()</a></li>
+<li><a href="index-3-2-3-38.html">
+ painter:initmatrix()</a></li>
+<li><a href="index-3-2-3-39.html">
+ painter:lineto(x,y)</a></li>
+<li><a href="index-3-2-3-40.html">
+ painter:moveto(x,y)</a></li>
+<li><a href="index-3-2-3-41.html">
+ painter:newpath()</a></li>
+<li><a href="index-3-2-3-42.html">
+ painter:painter()</a></li>
+<li><a href="index-3-2-3-43.html">
+ painter:pixmap()</a></li>
+<li><a href="index-3-2-3-44.html">
+ painter:printer()</a></li>
+<li><a href="index-3-2-3-45.html">
+ painter:rcurveto(x1,y1,x2,y2,x3,y3)</a></li>
+<li><a href="index-3-2-3-46.html">
+ painter:rect()</a></li>
+<li><a href="index-3-2-3-47.html">
+ painter:rectangle(x,y,w,h)</a></li>
+<li><a href="index-3-2-3-48.html">
+ painter:refresh()</a></li>
+<li><a href="index-3-2-3-49.html">
+ painter:rlineto(rx,ry)</a></li>
+<li><a href="index-3-2-3-50.html">
+ painter:rmoveto(rx,ry)</a></li>
+<li><a href="index-3-2-3-51.html">
+ painter:rotate(angle)</a></li>
+<li><a href="index-3-2-3-52.html">
+ painter:scale(sx,sy)</a></li>
+<li><a href="index-3-2-3-53.html">
+ painter:setangleunit(unit)</a></li>
+<li><a href="index-3-2-3-54.html">
+ painter:setbackground(brush)</a></li>
+<li><a href="index-3-2-3-55.html">
+ painter:setbrush(brush)</a></li>
+<li><a href="index-3-2-3-56.html">
+ painter:setclip(qpainterpath)</a></li>
+<li><a href="index-3-2-3-57.html">
+ painter:setcolor(...)</a></li>
+<li><a href="index-3-2-3-58.html">
+ painter:setdash([sizes,[offset]])</a></li>
+<li><a href="index-3-2-3-59.html">
+ painter:setfont(qfont)</a></li>
+<li><a href="index-3-2-3-60.html">
+ painter:setfontsize(size)</a></li>
+<li><a href="index-3-2-3-61.html">
+ painter:sethints(hints)</a></li>
+<li><a href="index-3-2-3-62.html">
+ painter:setlinewidth(lw)</a></li>
+<li><a href="index-3-2-3-63.html">
+ painter:setmatrix(qtransform)</a></li>
+<li><a href="index-3-2-3-64.html">
+ painter:setmode(compositionmode)</a></li>
+<li><a href="index-3-2-3-65.html">
+ painter:setpath(qpainterpath)</a></li>
+<li><a href="index-3-2-3-66.html">
+ painter:setpattern(pattern,[x,y])</a></li>
+<li><a href="index-3-2-3-67.html">
+ painter:setpen(qpen)</a></li>
+<li><a href="index-3-2-3-68.html">
+ painter:setpoint(x,y)</a></li>
+<li><a href="index-3-2-3-69.html">
+ painter:show(string,[x,y,w,h,textflags])</a></li>
+<li><a href="index-3-2-3-70.html">
+ painter:showpage()</a></li>
+<li><a href="index-3-2-3-71.html">
+ painter:size()</a></li>
+<li><a href="index-3-2-3-72.html">
+ painter:stringrect(string,[x,y,w,h,textflags])</a></li>
+<li><a href="index-3-2-3-73.html">
+ painter:stringwidth(string)</a></li>
+<li><a href="index-3-2-3-74.html">
+ painter:stroke(optnewpath)</a></li>
+<li><a href="index-3-2-3-75.html">
+ painter:translate(dx,dy)</a></li>
+<li><a href="index-3-2-3-76.html">
+ painter:widget()</a></li>
+<li><a href="index-3-2-3-77.html">
+ painter:write(f,[format])</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-3-2-2.html">
+ QtLuaPainter Properties</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

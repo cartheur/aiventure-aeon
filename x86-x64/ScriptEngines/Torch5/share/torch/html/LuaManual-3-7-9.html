@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_createtable
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_createtable</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_createtable</code></b>
+</div>
+
+<div id="contents">
+<a name="luacreatetable"></a>
+
+<p>
+
+<p>
+
+<pre>
+void lua_createtable (lua_State *L, int narr, int nrec);
+</pre>
+<p>
+
+<p>
+
+ Creates a new empty table and pushes it onto the stack. The new table has space pre-allocated for <code>narr</code> array elements and <code>nrec</code> non-array elements. This pre-allocation is useful when you know exactly how many elements the table will have. Otherwise you can use the function <a href="LuaManual-3-7-36.html#luanewtable"><code>lua_newtable</code></a>.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-8.html">
+ <code>lua_cpcall</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-10.html">
+ <code>lua_dump</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

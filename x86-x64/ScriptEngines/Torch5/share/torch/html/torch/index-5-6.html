@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] resize(size [, keepContent])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] resize(size [, keepContent])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-5.html">
+ <code>Storage</code> and <code>MapStorage</code></a>&nbsp; > &nbsp; <b>
+ <code>[self] resize(size [, keepContent])</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Resize the storage to the provide <code>size</code>. If <code>keepContent</code> is <code>true</code>, then the contents
+of the storage are kept. If not, <i>the new contents are undertermined</i>.
+<p>
+
+This function returns self, allowing things like:
+<pre>
+x = torch.DoubleStorage(10):fill(1)
+y = torch.DoubleStorage():resize(x:size()):copy(x) -- y won't be nil!
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-5-5.html">
+ <code>[self] fill(value)</code></a></div>
+<div id="footer-right"><a href="index-5-7.html">
+ <code>[number] size()</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core.csproj", "{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.UnitTests", "..\Core.UnitTests\Core.UnitTests.csproj", "{9CE31BCA-511F-42FB-9CB9-B5B1DD904077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.NeuralNetwork", "..\Core.NeuralNetwork\Core.NeuralNetwork.csproj", "{56D7AC79-339F-4016-B454-322902993E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.TestWindow", "..\Core.TestWindow\Core.TestWindow.csproj", "{C1467304-9DAA-4EDE-A5F8-BD93D8A7E14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.BinaryUnitTests", "..\Core.BinaryUnitTests\Core.BinaryUnitTests.csproj", "{4DA2CC45-60EE-47A6-8CC0-27234CE8BEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.SimulatedAnnealing", "..\Core.Algorithms\SimulatedAnnealing\Algorithms.SimulatedAnnealing.csproj", "{ACDEEBFE-2AEF-49A0-BCA6-EEA5196262A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE31BCA-511F-42FB-9CB9-B5B1DD904077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE31BCA-511F-42FB-9CB9-B5B1DD904077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE31BCA-511F-42FB-9CB9-B5B1DD904077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE31BCA-511F-42FB-9CB9-B5B1DD904077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D7AC79-339F-4016-B454-322902993E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D7AC79-339F-4016-B454-322902993E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D7AC79-339F-4016-B454-322902993E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D7AC79-339F-4016-B454-322902993E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1467304-9DAA-4EDE-A5F8-BD93D8A7E14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1467304-9DAA-4EDE-A5F8-BD93D8A7E14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1467304-9DAA-4EDE-A5F8-BD93D8A7E14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1467304-9DAA-4EDE-A5F8-BD93D8A7E14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA2CC45-60EE-47A6-8CC0-27234CE8BEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA2CC45-60EE-47A6-8CC0-27234CE8BEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA2CC45-60EE-47A6-8CC0-27234CE8BEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA2CC45-60EE-47A6-8CC0-27234CE8BEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDEEBFE-2AEF-49A0-BCA6-EEA5196262A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDEEBFE-2AEF-49A0-BCA6-EEA5196262A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDEEBFE-2AEF-49A0-BCA6-EEA5196262A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDEEBFE-2AEF-49A0-BCA6-EEA5196262A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

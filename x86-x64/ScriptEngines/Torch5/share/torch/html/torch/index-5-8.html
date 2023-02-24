@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] string(str)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] string(str)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-5.html">
+ <code>Storage</code> and <code>MapStorage</code></a>&nbsp; > &nbsp; <b>
+ <code>[self] string(str)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+This function is available only on <code>CharStorage</code>.
+<p>
+
+This method resizes the storage to the length of the provided
+string <code>str</code>, and copy the contents of <code>str</code> into the storage. The <code>NULL</code> terminating character is not copied,
+but <code>str</code> might contain <code>NULL</code> characters. The method returns the <code>Storage</code>.
+<pre>
+> x = torch.CharStorage():string("blah blah")
+> print(x)
+  98
+ 108
+  97
+ 104
+  32
+  98
+ 108
+  97
+ 104
+[torch.CharStorage of size 9]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-5-7.html">
+ <code>[number] size()</code></a></div>
+<div id="footer-right"><a href="index-5-9.html">
+ <code>[string] string()</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qt.QtLuaPainter(...)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qt.QtLuaPainter(...)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <b>
+ qt.QtLuaPainter(...)</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Function <code>qt.QtLuaPainter</code> constructs a new <code>QtLuaPainter</code> instance.
+<p>
+
+<ul><li><code>qt.QtLuaPainter(qimage)</code>
+</li></ul><p>
+
+Constructs a painter instance that targets an offscreen image.
+The image is initialized with a copy of the <a href="index-2-5.html#qimage"><code>qt.QImage</code></a> 
+passed as argument. Painting operations do not modify the image 
+passed as argument. Instead a copy of the current image can be 
+accessed using expression <a href="index-3-2-3-34.html#paintergrab"><code>painter:image()</code></a>.
+<p>
+
+<ul><li><code>qt.QtLuaPainter(filename, [format])</code>
+</li></ul><p>
+
+ Constructs a painter instance that targets an offscreen image
+ initialized by reading the image file <code>filename</code>.  
+ The file format is determined by the optional string 
+ <code>format</code> or by the file name extension.
+ Use expression <a href="index-3-2-3-34.html#paintergrab"><code>painter.image()</code></a> to 
+ obtain a copy of the offscreen image.
+<p>
+
+<ul><li><code>qt.QtLuaPainter(w,h,[monoflag])</code>
+</li></ul><p>
+
+ Constructs a painter instance that targets an offscreen image
+ of width <code>w</code> and height <code>h</code>. The image is bitonal when 
+ the optional boolean flag <code>monoflag</code> is <code>true</code>. Otherwise
+ the image is a 32 bits RGBA image.
+ Use expression <a href="index-3-2-3-34.html#paintergrab"><code>painter.image()</code></a> to 
+ obtain a copy of the offscreen image.
+<p>
+
+<ul><li><code>qt.QtLuaPainter(qpixmap)</code>
+</li></ul><p>
+
+Constructs a painter instance that targets a 
+device-dependent pixmap in memory.
+The pixmap is initialized with a copy of 
+the <a href="index-2-7.html#qpixmap"><code>qt.QPixmap</code></a> passed as argument.
+Use expression <a href="index-3-2-3-43.html#painterpixmap"><code>painter:pixmap()</code></a>.
+to obtain a copy of the target pixmap.
+Since Qt only supports painting a device-dependent <code>QPixmap</code> from 
+the main thread, one must use <a href="../qt/index-2-4-7.html#qtqcall"><code>qt.pcall</code></a>
+to ensure that painting operations are performed from the main thread.
+Otherwise Qt prints a lot of warnings and behaves erratically.
+<p>
+
+<ul><li><code>qt.QtLuaPainter(qwidget,[buffered])</code>
+</li></ul><p>
+
+ Constructs a painter instance that targets the 
+ specified <a href="index-2-10.html#qwidget"><code>qt.QWidget</code></a>.
+ The optional boolean argument <code>buffered</code> indicates
+ The resulting painter is a child of <code>qwidget</code>.
+ whether drawing should be performed in a offscreen buffer
+ or directly on the widget surface.  The default is to
+ create a buffered painter.
+<p>
+
+ A buffered painter always draws onto an offscreen image
+ and ensures that the widget surface is automatically refreshed or 
+ updated when needed.  Since the painting functions target
+ a <a href="index-2-5.html#qimage"><code>qt.QImage</code></a>, they can be called from any thread
+ at any time.  This is the recommended mode of operation.
+<p>
+
+ An unbuffered painter directly draws onto the widget surface. 
+ Unfortunately Qt4 only supports painting a widget from the paint event handler
+ <a href="http://doc.trolltech.com/main-snapshot/qwidget.html#paintEvent"><code>QObject::paintEvent</code></a>. 
+ While this is happening in the main thread, 
+ the Lua interpreter might be unavailable for painting because
+ the Lua thread is busy running another program.
+ Unbuffered widget painters are therefore difficult to use for painting;
+ they are mostly useful for grabbing the on-screen representation 
+ of a widget using function <a href="index-3-2-3-34.html#paintergrab"><code>painter.image()</code></a>.
+<p>
+
+<ul><li><code>qt.QtLuaPainter(qtluaprinter)</code>
+</li></ul><p>
+
+ Constructs a painter instance that target the output
+ device represented by a <a href="index-3-3.html#qtluaprinter"><code>qt.QtLuaPrinter</code></a>.
+ The resulting painter is a child of <code>qtluaprinter</code>.
+<p>
+
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-3-2-2.html">
+ QtLuaPainter Properties</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

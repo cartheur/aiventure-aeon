@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ load (func [, chunkname])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ load (func [, chunkname])</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-1.html">
+  Basic Functions</a>&nbsp; > &nbsp; <b>
+ <code>load (func [, chunkname])</code></b>
+</div>
+
+<div id="contents">
+<a name="loadfuncchunkname"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Loads a chunk using function <code>func</code> to get its pieces. Each call to <code>func</code> must return a string that concatenates with previous results. A return of <b>nil</b> (or no value) signals the end of the chunk.   
+<p>
+
+ If there are no errors,  returns the compiled chunk as a function; otherwise, returns <b>nil</b> plus the error message. The environment of the returned function is the global environment.   
+<p>
+
+ <code>chunkname</code> is used as the chunk name for error messages and debug information.     
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-1-8.html">
+ <code>ipairs (t)</code></a></div>
+<div id="footer-right"><a href="LuaManual-5-1-10.html">
+ <code>loadfile ([filename])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

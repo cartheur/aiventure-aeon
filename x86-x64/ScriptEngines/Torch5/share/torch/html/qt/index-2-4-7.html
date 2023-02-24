@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qt.qcall(qobject, function, ... )
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qt.qcall(qobject, function, ... )</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <a href="index-2-4.html">
+ Functions</a>&nbsp; > &nbsp; <b>
+ qt.qcall(qobject, function, ... )</b>
+</div>
+
+<div id="contents">
+<a name="qtqcall"></a>
+
+<p>
+
+<p>
+
+Expression <code>qt.qcall(qobject, f, ...)</code> executes 
+function <code>f</code> from the thread owning the Qt object <code>qobject</code>.
+To achieve this, the current thread performs a rendez-vous
+with the object thread. The object thread takes ownership
+of the Lua data structures and invokes function <code>f</code> with
+the specified arguments. Meanwhile the original thread
+processes events and waits. When the function <code>f</code> returns,
+the original thread resumes the execution.
+<p>
+
+Like the standard Lua function <a href="../LuaManual-5-1-14.html#pcallfarg"><code>pcall</code></a>,
+this function returns multiple results. If an error occurs during the 
+execution, this function returns <code>false</code> plus the error message.
+Otherwise it returns <code>true</code> plus the results returned by function <code>f</code>.
+<p>
+
+This function is the basis for the thread hopping mechanism
+that underlies the multi-thread operations in QtLua.
+Thread hopping happens automatically whenever one
+manipulates a slot or a property of a Qt object.
+It may occasionnally be useful to manually hop
+into an object thread in order to avoid the overhead
+of subsequent thread hopping operations: if the Lua
+interpreter is already running in the desired thread,
+the function <code>f</code> can be invoked directly without
+expensive synchronization.
+<p>
+
+<i>Important</i> : Thread hopping only works if the 
+target thread runs an event loop, 
+using <code>QThread::exec()</code> or <code>QEventLoop::exec()</code>.
+Execution of Lua program will stop if this is not the case.
+<p>
+
+Within program <a href="index-1.html#qlua"><code>qlua</code></a>, 
+object <a href="index-2-3-10.html#qtqapp"><code>qt.qApp</code></a> is always owned by the main thread
+in charge of the user interaction, 
+and object <a href="index-2-3-12.html#qtqengine"><code>qt.qEngine</code></a>
+is always owned by the auxilliary thread in charge
+of the evaluation of Lua expressions.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-4-6.html">
+ qt.isa(arg, typename)</a></div>
+<div id="footer-right"><a href="index-2-4-8.html">
+ qt.require(modulename)</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

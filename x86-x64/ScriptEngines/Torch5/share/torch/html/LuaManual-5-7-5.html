@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ io.open (filename [, mode])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ io.open (filename [, mode])</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-7.html">
+  Input and Output Facilities</a>&nbsp; > &nbsp; <b>
+ <code>io.open (filename [, mode])</code></b>
+</div>
+
+<div id="contents">
+<a name="ioopenfilenamemode"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ This function opens a file, in the mode specified in the string <code>mode</code>. It returns a new file handle, or, in case of errors, <b>nil</b> plus an error message.   
+<p>
+
+ The <code>mode</code> string can be any of the following:   
+<ul><li><b>"r":</b> read mode (the default); 
+</li><li><b>"w":</b> write mode; 
+</li><li><b>"a":</b> append mode; 
+</li><li><b>"r+":</b> update mode, all previous data is preserved; 
+</li><li><b>"w+":</b> update mode, all previous data is erased; 
+</li><li><b>"a+":</b> append update mode, previous data is preserved,   writing is only allowed at the end of file. 
+</li></ul><p>
+
+ The <code>mode</code> string may also have a '=b=' at the end, which is needed in some systems to open the file in binary mode. This string is exactly what is used in the standard C function <code>fopen</code>.     
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-7-4.html">
+ <code>io.lines ([filename])</code></a></div>
+<div id="footer-right"><a href="LuaManual-5-7-6.html">
+ <code>io.output ([file])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

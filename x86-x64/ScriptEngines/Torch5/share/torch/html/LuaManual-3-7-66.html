@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_resume
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_resume</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_resume</code></b>
+</div>
+
+<div id="contents">
+<a name="luaresume"></a>
+
+<p>
+
+<p>
+
+<pre>
+int lua_resume (lua_State *L, int narg);
+</pre>
+<p>
+
+<p>
+
+ Starts and resumes a coroutine in a given thread.   
+<p>
+
+ To start a coroutine, you first create a new thread (see <a href="LuaManual-3-7-37.html#luanewthread"><code>lua_newthread</code></a>); then you push onto its stack the main function plus any arguments; then you call <a href="LuaManual-3-7-66.html#luaresume"><code>lua_resume</code></a>, with <code>narg</code> being the number of arguments. This call returns when the coroutine suspends or finishes its execution. When it returns, the stack contains all values passed to <a href="LuaManual-3-7-89.html#luayield"><code>lua_yield</code></a>, or all values returned by the body function. <a href="LuaManual-3-7-66.html#luaresume"><code>lua_resume</code></a> returns <a href="LuaManual-3-7-75.html#LUAYIELD"><code>LUA_YIELD</code></a> if the coroutine yields, 0 if the coroutine finishes its execution without errors, or an error code in case of errors (see <a href="#luapcall"><code>lua_pcall</code></a>). In case of errors, the stack is not unwound, so you can use the debug API over it. The error message is on the top of the stack. To restart a coroutine, you put on its stack only the values to be passed as results from <code>yield</code>, and then call <a href="LuaManual-3-7-66.html#luaresume"><code>lua_resume</code></a>.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-65.html">
+ <code>lua_replace</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-67.html">
+ <code>lua_setallocf</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ image.crop(src,dst,x1,y1,x2,y2)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ image.crop(src,dst,x1,y1,x2,y2)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Image Package Reference Manual</a>&nbsp; > &nbsp; <b>
+ <code>image.crop(src,dst,x1,y1,x2,y2)</code></b>
+</div>
+
+<div id="contents">
+
+<code>image.crop(src,dst,x1,y1,x2,y2)</code>
+crops the <a href="../torch/index-6.html#Tensor"><code>Tensor</code></a> <code>src</code>
+by taking only the part of the image with top left-hand 
+corner <code>(x1,y1)</code> and bottom right corner <code>(x2,y2)</code>
+to fit the destination <a href="../torch/index-6.html#Tensor"><code>Tensor</code></a> <code>dst</code>.
+<p>
+
+If <code>dst</code> is not of size <code>(x2-x1+1,y2-y1+1)</code> then the cropped
+part of the image is also scaled to fit the dimensions
+of <code>dst</code>.
+<p>
+
+<code>src</code> and <code>dst</code> cannot be the same.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-4.html">
+ <code>image.rotate(src,dst,theta)</code></a></div>
+<div id="footer-right"><a href="index-6.html">
+ <code>image.convolve(...)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ HingeEmbeddingCriterion
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ HingeEmbeddingCriterion</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-3.html">
+ Criterions</a>&nbsp; > &nbsp; <b>
+ <code>HingeEmbeddingCriterion</code></b>
+</div>
+
+<div id="contents">
+<a name="HingeEmbeddingCriterion"></a>
+
+<p>
+
+<p>
+
+<pre>
+criterion = HingeEmbeddingCriterion()
+</pre>
+<p>
+
+Creates a criterion that measures the loss given  an input
+<code>x</code> which is a 1-dimensional vector and a label <code>y</code> (1 or -1).
+This is usually used for measuring whether two inputs are similar
+or dissimilar, e.g. using the L1 pairwise distance, 
+and is typically used for
+learning nonlinear embeddings or semi-supervised learning.
+<p>
+
+<pre>
+loss(x,y) = forward(x,y) = x, if y=1
+                         = max(0,margin - x), if y=-1
+</pre>
+<p>
+
+The <code>margin</code> has a default value of 1, or can be set in the constructor:
+<pre>
+criterion = HingeEmbeddingCriterion(marginValue)
+</pre>
+<p>
+
+<p>
+
+<p>
+
+Example use:
+<pre>
+-- imagine we have one network we are interested in, it is called "p1_mlp"
+p1_mlp= nn.Sequential(); p1_mlp:add(nn.Linear(5,2))
+
+-- But we want to push examples towards or away from each other
+-- so we make another copy of it called p2_mlp
+-- this *shares* the same weights via the set command, but has its own set of temporary gradient storage
+-- that's why we create it again (so that the gradients of the pair don't wipe each other)
+p2_mlp= nn.Sequential(); p2_mlp:add(nn.Linear(5,2))
+p2_mlp:get(1).weight:set(p1_mlp:get(1).weight)
+p2_mlp:get(1).bias:set(p1_mlp:get(1).bias)
+
+-- we make a parallel table that takes a pair of examples as input. they both go through the same (cloned) mlp
+prl = nn.ParallelTable()
+prl:add(p1_mlp)
+prl:add(p2_mlp)
+
+-- now we define our top level network that takes this parallel table and computes the pairwise distance betweem
+-- the pair of outputs
+mlp= nn.Sequential()
+mlp:add(prl)
+mlp:add(nn.PairwiseDistance(1))
+
+-- and a criterion for pushing together or pulling apart pairs
+crit=nn.HingeEmbeddingCriterion(1)
+
+-- lets make two example vectors
+x=lab.rand(5)
+y=lab.rand(5)
+
+
+-- Use a typical generic gradient update function
+function gradUpdate(mlp, x, y, criterion, learningRate)
+local pred = mlp:forward(x)
+local err = criterion:forward(pred, y)
+local gradCriterion = criterion:backward(pred, y)
+mlp:zeroGradParameters()
+mlp:backward(x, gradCriterion)
+mlp:updateParameters(learningRate)
+end
+
+-- push the pair x and y together, notice how then the distance between them given
+-- by  print(mlp:forward({x,y})[1]) gets smaller
+for i=1,10 do
+gradUpdate(mlp,{x,y},1,crit,0.01)
+print(mlp:forward({x,y})[1])
+end
+
+
+-- pull apart the pair x and y, notice how then the distance between them given
+-- by  print(mlp:forward({x,y})[1]) gets larger
+
+for i=1,10 do
+gradUpdate(mlp,{x,y},-1,crit,0.01)
+print(mlp:forward({x,y})[1])
+end
+
+</pre>
+<p>
+
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-6.html">
+ <code>MultiCriterion</code></a></div>
+<div id="footer-right"><a href="index-3-8.html">
+ <code>L1HingeEmbeddingCriterion</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

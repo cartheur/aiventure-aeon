@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [string] readString([format])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [string] readString([format])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ <code>File</code></a>&nbsp; > &nbsp; <a href="index-2-4.html">
+ Serialization methods</a>&nbsp; > &nbsp; <b>
+ <code>[string] readString([format])</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+If <code>format</code> starts with <code>'*l'</code> then returns the next line in the <code>File</code>. The end-of-line character is skipped.
+<p>
+
+If <code>format</code> starts with <code>'*a'</code> then returns all the remaining contents of the <code>File</code>.
+<p>
+
+If no data is available, then an error is raised, except if <code>File</code> is in <a href="index-2-18.html#FileQuiet"><code>quiet()</code></a> mode where
+it then returns <code>nil</code>.
+<p>
+
+Because Torch is more precised on number typing, the <code>Lua</code> format <code>'*n'</code> is not supported:
+instead use one of the <a href="index-2-1.html#FileReadMethods">number read methods</a>.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-4-2.html">
+ <code>writeObject(object)</code></a></div>
+<div id="footer-right"><a href="index-2-4-4.html">
+ <code>[number] writeString(str)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

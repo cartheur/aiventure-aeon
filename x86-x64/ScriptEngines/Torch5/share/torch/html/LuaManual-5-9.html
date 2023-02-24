@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  The Debug Library
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  The Debug Library</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <b>
+  The Debug Library</b>
+</div>
+
+<div id="contents">
+<a name="TheDebugLibrary"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ This library provides the functionality of the debug interface to Lua programs. You should exert care when using this library. The functions provided here should be used exclusively for debugging and similar tasks, such as profiling. Please resist the temptation to use them as a usual programming tool: they can be very slow. Moreover, several of its functions violate some assumptions about Lua code (e.g., that variables local to a function cannot be accessed from outside or that userdata metatables cannot be changed by Lua code) and therefore can compromise otherwise secure code.   
+<p>
+
+ All functions in this library are provided inside the <code>debug</code> table. All functions that operate over a thread have an optional first argument which is the thread to operate over. The default is always the current thread.   
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="LuaManual-5-9-1.html">
+ <code>debug.debug ()</code></a></li>
+<li><a href="LuaManual-5-9-2.html">
+ <code>debug.getfenv (o)</code></a></li>
+<li><a href="LuaManual-5-9-3.html">
+ <code>debug.gethook ([thread])</code></a></li>
+<li><a href="LuaManual-5-9-4.html">
+ <code>debug.getinfo ([thread,] function [, what])</code></a></li>
+<li><a href="LuaManual-5-9-5.html">
+ <code>debug.getlocal ([thread,] level, local)</code></a></li>
+<li><a href="LuaManual-5-9-6.html">
+ <code>debug.getmetatable (object)</code></a></li>
+<li><a href="LuaManual-5-9-7.html">
+ <code>debug.getregistry ()</code></a></li>
+<li><a href="LuaManual-5-9-8.html">
+ <code>debug.getupvalue (func, up)</code></a></li>
+<li><a href="LuaManual-5-9-9.html">
+ <code>debug.setfenv (object, table)</code></a></li>
+<li><a href="LuaManual-5-9-10.html">
+ <code>debug.sethook ([thread,] hook, mask [, count])</code></a></li>
+<li><a href="LuaManual-5-9-11.html">
+ <code>debug.setlocal ([thread,] level, local, value)</code></a></li>
+<li><a href="LuaManual-5-9-12.html">
+ <code>debug.setmetatable (object, table)</code></a></li>
+<li><a href="LuaManual-5-9-13.html">
+ <code>debug.setupvalue (func, up, value)</code></a></li>
+<li><a href="LuaManual-5-9-14.html">
+ <code>debug.traceback ([thread,] [message] [, level])</code></a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-8.html">
+  Operating System Facilities</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

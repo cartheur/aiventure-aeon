@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_ref
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_ref</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_ref</code></b>
+</div>
+
+<div id="contents">
+<a name="LUAREFNIL."></a>
+
+<p>
+
+<p>
+
+<pre>
+int luaL_ref (lua_State *L, int t);
+</pre>
+<p>
+
+<p>
+
+ Creates and returns a <i>reference</i>, in the table at index <code>t</code>, for the object at the top of the stack (and pops the object).   
+<p>
+
+ A reference is a unique integer key. As long as you do not manually add integer keys into table <code>t</code>, <a href="#luaLref"><code>luaL_ref</code></a> ensures the uniqueness of the key it returns. You can retrieve an object referred by reference <code>r</code> by calling <code>lua_rawgeti(L, t, r)</code>. Function <a href="LuaManual-4-1-47.html#luaLunref"><code>luaL_unref</code></a> frees a reference and its associated object.   
+<p>
+
+ If the object at the top of the stack is <b>nil</b>, <a href="#luaLref"><code>luaL_ref</code></a> returns the constant <code>LUA_REFNIL</code> The constant <code>LUA_NOREF</code> is guaranteed to be different from any reference returned by <a href="#luaLref"><code>luaL_ref</code></a>.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-41.html">
+ <code>luaL_pushresult</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-43.html">
+ <code>luaL_Reg</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

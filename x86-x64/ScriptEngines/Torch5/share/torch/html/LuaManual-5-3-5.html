@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ package.loadlib (libname, funcname)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ package.loadlib (libname, funcname)</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-3.html">
+  Modules</a>&nbsp; > &nbsp; <b>
+ <code>package.loadlib (libname, funcname)</code></b>
+</div>
+
+<div id="contents">
+<a name="packageloadliblibnamefuncname"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Dynamically links the host program with the C library <code>libname</code>. Inside this library, looks for a function <code>funcname</code> and returns this function as a C function. (So, <code>funcname</code> must follow the protocol (see <a href="LuaManual-3-7-4.html#luaCFunction"><code>lua_CFunction</code></a>)).   
+<p>
+
+ This is a low-level function. It completely bypasses the package and module system. Unlike <a href="LuaManual-5-3-2.html#requiremodname"><code>require (modname)</code></a>, it does not perform any path searching and does not automatically adds extensions. <code>libname</code> must be the complete file name of the C library, including if necessary a path and extension. <code>funcname</code> must be the exact name exported by the C library (which may depend on the C compiler and linker used).   
+<p>
+
+ This function is not supported by ANSI C. As such, it is only available on some platforms (Windows, Linux, Mac OS X, Solaris, BSD, plus other Unix systems that support the <code>dlfcn</code> standard).     
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-3-4.html">
+ <code>package.loaded</code></a></div>
+<div id="footer-right"><a href="LuaManual-5-3-6.html">
+ <code>package.path</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

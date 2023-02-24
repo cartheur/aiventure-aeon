@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+Appendix: Install QT 4.4 under Windows
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+Appendix: Install QT 4.4 under Windows</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <b>
+Appendix: Install QT 4.4 under Windows</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Download <a href="http://trolltech.com/downloads/opensource/appdev/windows-cpp">QT 4.4 sources for Windows</a>
+on Trolltech website.
+<p>
+
+Unzip then and move the directory to <code>C:\Qt</code>.
+<p>
+
+Set the system <code>PATH</code> such that it contains <code>C:\Qt\bin</code>. It can be done by
+opening the Control Panel, then System, then go to Advanced and then
+Environment Variables. Make sure you do that before compilation. The Torch
+configuration procedure also needs it for finding QT.
+<p>
+
+Considering you have Microsoft Visual Studio, you can then do:
+<pre>
+cd c:\Qt
+configure -release
+nmake
+</pre>
+Given the size of QT, allow few hours for compilation.
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

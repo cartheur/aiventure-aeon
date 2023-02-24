@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ torch.Tensor(storage, storageOffset, sizes, [strides])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ torch.Tensor(storage, storageOffset, sizes, [strides])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-1.html">
+ Tensor constructors</a>&nbsp; > &nbsp; <b>
+ <code>torch.Tensor(storage, storageOffset, sizes, [strides])</code></b>
+</div>
+
+<div id="contents">
+<a name="TorchTensorStorageStorageOffsetSizesStrides"></a>
+
+<p>
+
+<p>
+
+Returns a tensor which uses the existing <a href="index-5.html#Storage"><code>DoubleStorage</code></a>
+<code>storage</code>, starting at position <code>storageOffset</code> (>=1).  The size of each
+dimension of the tensor is given by the <a href="index-5.html#Storage"><code>LongStorage</code></a>
+<code>sizes</code>.
+<p>
+
+The jump necessary to go from one element to the next one in each dimension
+is given by the optional argument <a href="index-5.html#Storage"><code>LongStorage</code></a> <code>strides</code>.If
+not given, or if some elements of <code>strides</code> are negative, the
+<a href="index-6-2-7.html#TensorStride"><code>stride()</code></a> will be computed such that the tensor is as
+contiguous as possible in memory.
+<p>
+
+For a number of dimension up to 4, you can use a <a href="index-6-1-6.html#TorchTensorSzxStx">convenience method</a>.
+<p>
+
+Any modification in the elements of the <code>Storage</code> will have a impact on the
+elements of the new <code>Tensor</code>, and vice-versa. There is no memory copy!
+<pre>
+-- creates a storage with 10 elements
+> s = torch.DoubleStorage(10):fill(1)
+
+  -- we want to see it as a 2x5 tensor
+> sz = torch.LongStorage(2)
+> sz[1] = 2; sz[2] = 5;
+> x = torch.Tensor(s, 1, sz)
+> print(x)
+
+ 1  1  1  1  1
+ 1  1  1  1  1
+[torch.Tensor of dimension 2x5]
+> x:zero()
+> print(s) -- the storage contents have been modified
+> print(s)
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+[torch.DoubleStorage of size 10]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-1-4.html">
+ <code>torch.Tensor(sizes, [strides])</code></a></div>
+<div id="footer-right"><a href="index-6-1-6.html">
+ <code>torch.Tensor(storage, storageOffset, sz1 [, st1 ... [, sz4 [, st4]]])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

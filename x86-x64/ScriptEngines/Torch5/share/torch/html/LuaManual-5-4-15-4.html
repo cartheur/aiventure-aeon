@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Captures:
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Captures:</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-4.html">
+  String Manipulation</a>&nbsp; > &nbsp; <a href="LuaManual-5-4-15.html">
+  Patterns</a>&nbsp; > &nbsp; <b>
+ Captures:</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<p>
+
+ A pattern may contain sub-patterns enclosed in parentheses; they describe <i>captures</i>. When a match succeeds, the substrings of the subject string that match captures are stored (<i>captured</i>) for future use. Captures are numbered according to their left parentheses. For instance, in the pattern <code>"(a*(.)%w(%s*))"</code>, the part of the string matching <code>"a*(.)%w(%s*)"</code> is stored as the first capture (and therefore has number 1); the character matching "=.=" is captured with number 2, and the part matching "=%s*=" has number 3.   
+<p>
+
+ As a special case, the empty capture <code>()</code> captures the current string position (a number). For instance, if we apply the pattern <code>"()aa()"</code> on the string <code>"flaaap"</code>, there will be two captures: 3 and 5.   
+<p>
+
+ A pattern cannot contain embedded zeros.  Use <code>%z</code> instead.            
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-4-15-3.html">
+ Pattern:</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

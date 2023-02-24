@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qt.doevents()
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qt.doevents()</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <a href="index-2-4.html">
+ Functions</a>&nbsp; > &nbsp; <b>
+ qt.doevents()</b>
+</div>
+
+<div id="contents">
+<a name="qtdoevents"></a>
+
+<p>
+
+<p>
+
+Function <code>qt.doevents()</code> processes all pending events 
+and executes the functions associated with all queued signals.
+Calling this function periodically can be useful to
+ensure that queued signals are processed timely.
+<p>
+
+Calling this function is very important when you run <code>qlua</code> 
+in single-threaded mode using option <code>-onethread</code>,
+as graphic output will not be displayed properly 
+until <code>qt.doevents()</code> is called.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-4-4.html">
+ qt.disconnect(qobject1, signature1, qobject2, signature2)</a></div>
+<div id="footer-right"><a href="index-2-4-6.html">
+ qt.isa(arg, typename)</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

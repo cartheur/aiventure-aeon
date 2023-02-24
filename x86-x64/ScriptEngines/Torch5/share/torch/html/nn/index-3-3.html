@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ ClassNLLCriterion
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ ClassNLLCriterion</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-3.html">
+ Criterions</a>&nbsp; > &nbsp; <b>
+ <code>ClassNLLCriterion</code></b>
+</div>
+
+<div id="contents">
+<a name="ClassNLLCriterion"></a>
+
+<p>
+
+<p>
+
+<pre>
+criterion = ClassNLLCriterion()
+</pre>
+<p>
+
+The negative log likelihood criterion. It is useful to train a classication
+problem with <code>n</code> classes. The <code>input</code> given through a <code>forward()</code> is
+expected to contain <b><i>log-probabilities</i></b> of each class: <code>input</code> has to be a
+1D tensor of size <code>n</code>. Obtaining log-probabilities in a neural network is
+easily achieved by adding a <a href="index-2-4-6.html#LogSoftMax">LogSoftMax</a> layer in the last
+layer of your neural network.
+<p>
+
+This criterion expect a class index (1 to the number of class) as <code>target</code>
+when calling <a href="index-3-1-1.html#CriterionForward"><code>forward(input, target)</code></a> and
+<a href="index-3-1-2.html#CriterionBackward"><code>backward(input, target)</code></a>.
+<p>
+
+The loss can be described as:
+<pre>
+loss(x, class) = forward(x, class) = -x[class]
+</pre>
+<p>
+
+The following is a code fragment showing how to make a gradient step 
+given an input <code>x</code>, a desired output <code>y</code> (an integer <code>1</code> to <code>n</code>, 
+in this case <code>n</code> = <code>2</code> classes), 
+a network <code>mlp</code> and a learning rate <code>learningRate</code>:
+<pre>
+function gradUpdate(mlp,x,y,learningRate)
+  local criterion = nn.ClassNLLCriterion()
+  pred = mlp:forward(x)
+  local err = criterion:forward(pred, y); 
+  mlp:zeroGradParameters();
+  local t = criterion:backward(pred, y);
+  mlp:backward(x, t);
+  mlp:updateParameters(learningRate);
+end
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-2.html">
+ <code>AbsCriterion</code></a></div>
+<div id="footer-right"><a href="index-3-4.html">
+ <code>MarginCriterion</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

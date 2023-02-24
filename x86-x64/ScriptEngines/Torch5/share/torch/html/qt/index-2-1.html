@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Qt Variants
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Qt Variants</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <b>
+ Qt Variants</b>
+</div>
+
+<div id="contents">
+<a name="QVariants"></a>
+
+<p>
+
+<p>
+
+Values represented by the Qt class 
+<a href="http://doc.trolltech.com/main-snapshot/qvariant.html"><code>QVariant</code></a>
+can be exposed to the Lua interpreter as userdata.
+Class <code>QVariant</code> defines in fact a container for
+a large number of standard Qt types with value semantics.
+In fact any type registered with the Qt macro 
+<a href="http://doc.trolltech.com/main-snapshot/qmetatype.html"><code>Q_DECLARE_METATYPE</code></a> 
+can be represented by a Qt variant value.
+<p>
+
+Whenever a <code>QVariant</code> value is made accessible 
+to the Lua interpreter (see <a href="index-3-3-16.html#luaqpushqt"><code>luaQ_pushqt</code></a>),
+the QtLua library ensures that there is a metatable 
+associated with all objects of that type. 
+Methods for each type can then be added
+to the class table <code>qt.TypeName</code> where <code>TypeName</code> 
+represent the type name.  
+If the class table contains a method named <code>new</code>,
+this method is used to construct new values of that type
+using the syntax <code>qt.Typename(...)</code>. 
+<p>
+
+The metatable defines the standard Lua hooks <code>__eq</code>
+to perform an equality test and <code>__tostring</code>
+to return a string representing the data.
+In addition, the following methods are 
+predefined in all class tables:
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-2-1-1.html">
+ qtdata:tostring()</a></li>
+<li><a href="index-2-1-2.html">
+ qtdata:tonumber()</a></li>
+<li><a href="index-2-1-3.html">
+ qtdata:tobool()</a></li>
+<li><a href="index-2-1-4.html">
+ qtdata:type()</a></li>
+<li><a href="index-2-1-5.html">
+ qtdata:isa(typename)</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-2-2.html">
+ Qt Objects</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

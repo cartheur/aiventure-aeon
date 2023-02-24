@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaQ_checkqvariant&lt;TYPE&gt;
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaQ_checkqvariant&lt;TYPE&gt;</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <a href="index-3-3.html">
+ The <code>luaQ</code> functions </a>&nbsp; > &nbsp; <b>
+ luaQ_checkqvariant&lt;TYPE&gt;</b>
+</div>
+
+<div id="contents">
+<a name="luaqcheckqvariant"></a>
+
+<p>
+
+<p>
+
+<code>TYPE luaQ_checkqvariant&lt;TYPE&gt;(lua_State *L, int index)</code>
+<p>
+
+This function causes an error if the Lua value at position <code>index</code>
+in the stack cannot be converted to 
+<a href="index-2-1.html#QVariants">Qt variant</a> of actual type <code>TYPE</code>.
+Otherwise it returns a value of the requested type.
+<p>
+
+The C++ type <code>TYPE</code> must be known to the Qt meta type system.
+This can always be achieved using the macro 
+<a href="http://doc.trolltech.com/main-snapshot/qmetatype.html"><code>Q_DECLARE_METATYPE</code></a>.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-3-3.html">
+ luaQ_checkqobject&lt;TYPE&gt;</a></div>
+<div id="footer-right"><a href="index-3-3-5.html">
+ luaQ_complete</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

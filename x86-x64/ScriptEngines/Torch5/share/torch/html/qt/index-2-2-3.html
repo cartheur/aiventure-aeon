@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Slots and Invokable Methods
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Slots and Invokable Methods</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <a href="index-2-2.html">
+ Qt Objects</a>&nbsp; > &nbsp; <b>
+ Slots and Invokable Methods</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Publics and protected Qt slots can be called 
+using the Lua method invokation syntax.
+<p>
+
+Examples:
+<pre>
+       widget:setEnabled(true)
+       widget:show()
+</pre>
+<p>
+
+Public and protected member functions whose c++ declaration 
+is marked with the Qt macro <code>Q_INVOKABLE</code> can also be invoked 
+using the standard Lua syntax.
+<p>
+
+When a member function has the same name as a property,
+the property takes precedence.
+When overloaded member functions are exposed in this fashion,
+the QtLua library makes a best effort to determine
+which function should be called. It first narrows the choices
+using the number of parameters. When several options remain,
+it chooses one on the basis of the types of the parameters.
+Member function arguments with default values are handled
+by considering implicit overloaded functions.
+<p>
+
+It is always possible to work around these rules
+by selecting a particular member function using its signature.
+<pre>
+       widget['setEnabled(bool)'](widget, true)
+</pre>
+<p>
+
+Member functions exposes in this way are always invoked 
+from the thread owning the Qt object. If the Lua interpreter runs 
+in a different thread, a <a href="index-2-4-7.html#qtqcall">thread hopping</a> 
+operation is performed for the duration of the operation.
+<p>
+
+Argument types and return values are automatically converted.
+Lua strings can be specified when a <code>QByteArray</code> 
+or a <code>QString</code> are expected. Lua numbers can be specified
+whenever numerical types are expected.
+<p>
+
+Inheritance ensures that all methods exposed
+by a class are also exposed by its subclasses.
+Methods exposed by the <code>QObject</code> class,
+such as <a href="index-2-3-2-2.html#qobjectdeletelater"><code>deleteLater()</code></a>,
+are inherited by all Qt object classes.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-2-2.html">
+ Properties</a></div>
+<div id="footer-right"><a href="index-2-2-4.html">
+ Named Children</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

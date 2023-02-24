@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qimage:toTensor(arg)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qimage:toTensor(arg)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QTTorch Package Reference Manual</a>&nbsp; > &nbsp; <b>
+ qimage:toTensor(arg)</b>
+</div>
+
+<div id="contents">
+<a name="qimagetotensor"></a>
+
+<p>
+
+<p>
+
+<code>qimage.toTensor(tensor)</code>
+<p>
+
+Fill the <a href="../torch/index-6.html#Tensor">Tensor</a> <code>tensor</code> with data 
+from <a href="../qtwidget/index-2-5.html#qimage">QImage</a> <code>qimage</code>.
+Tensor <code>tensor</code> must have 2 or 3 dimensions.
+The first two dimensions must be equal to the 
+image width and height respectively.
+The third dimension must be 1, 3, or 4
+for monochromatic, rgb or rgba images.
+The <code>qimage</code> data will be converted to the desired format
+and stored into the tensor, each component being
+represented by a floating point number in range 0 to 1.
+This function returns the filled tensor.
+<p>
+
+<code>qimage.toTensor(depth)</code>
+<p>
+
+Create a tensor with data from image <code>qimage</code>.
+Argument <code>depth</code> must be 1, 3, or 4
+for extracting monochromatic, rgb or rgba data.
+When <code>depth</code> is one, this function returns a two-dimensional tensor.
+Otherwise it returns a three-dimensional tensor with
+the third dimension equal to <code>depth</code>. 
+The first two dimensions are always 
+the image width and height.
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-1.html">
+ qt.QImage.fromTensor(tensor)</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

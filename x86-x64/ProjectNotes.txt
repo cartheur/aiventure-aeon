@@ -1,0 +1,115 @@
+﻿April 2017
+A Kantian test core
+
+18.04.2017
+	1629: Adding in a basic core.
+20.04.2017
+	1123: A working aeon is in hand. How does this work, this Kantian thing?
+	1231: Playing a bit with the serializer to see if this is useful for combinatorial parallel tasks such as learning which is reapplied to the aeon at runtime via a *.bph file.
+	1447: Found language data files so integrated them. Not working but useful to have in place.
+06.05.2017
+	1428: Look in CoreTagHandler.cs to see where I have left off for the bug on the learning process.
+	1525: Added the early screen interface from interactive console I last worked on end of July 2015. Funny how the first ideas are coming back into relevance the closer this gets to being complete.
+	1600: Finished implementing the visual interface to the general core. Needs work and will have to discover simplest interface in case it has to be rewritten for another platform. Pure, simple, creative, and easy.
+14.05.2017
+	1754: Here dropping Aibo docs and program utilities. The latter are best run in XP, but having the WAP, not sure how that will work. Can give it a try now.
+22.05.2017
+	1458: After getting everything written up, I am ready to return here. Question is: when I experiment with the pure reason tags, here or in the open-source version?
+	1501: The fact that I found myself here tells you the answer.
+	1700: Have a basic structure of pure reason sketched out so that I can be productive during the weekdays.
+23.05.2017
+	1012: Here to sort how to get these two attributes to cooperate, despite their esoteric names.
+	1203: Would mind also sorting the learning aspect.
+22.06.2017
+	1307: Been quiet but let's experiment if we can create a nuget package of the core.
+23.06.2017
+	1040: I'll be darned, it worked.
+03.07.2017
+	1224: I need to cleanup VSO for this project as conflicts within the current setup, are inevitable.
+	1537: Think it is as best as it can be at the moment. Now, where can I exploit this scripting thing I've invented?
+04.07.2017
+	1344: On this festivus, let's get scripty!
+06.07.2017
+	1054: Festivus continues to inspire scripty passions. You make it easy.
+	1057: Could I script a mood?
+	1504: Successfully scripted a mood and a (random) change to it, iterating over four different seed values for the RNG.
+07.07.2017
+	1229: Bringing in the neural network to see if I can implement some Keras/TensorFlow/Tophol on my own terms. May the blessed boagaphish spirit guide me!
+	1318: Sample NN project, time series, here, but not multithreaded. A good starting point to script it?? :-)
+	1408: Got the chart up on a form and need to either multithread (started), else see how a script would also do.
+11.07.2017
+	1534: Torch-related materials can be found at: http://torch5.sourceforge.net/
+	1655: I think the test worked since calling "lua" resulted in the Lua command window being opened. Running from batch probably would be the most flexible arrangement.
+31.07.2017
+	1156: Will be green when ready. Now will address the learning issue, what has been so burning for so long in this project. How to (re)do it?
+	1430: I dedicate myself to spending at least one hour each day until this is sorted.
+	1515: Would like to run a startup of the app based on different sets of personality files--like, for example, to perfect the one that is current the prototype. What is easy? Just delete these and copy new ones?
+	1538: Created a platform variable that will allow a subset of files similar to what is being done in the language categorization. Will need to extend this to the loading of the other files: mindpixel, reductions, and update.
+	1539: By the way, I notice that mindpixel, update, and reductions are not loading into the program.
+	1546: i think a great idea is to package the compendium of files for the prototype and execute them in this environment, replete with their shortcomings and limitations.
+	1640: Got a good start but not sure how effective in the moment. Needs more work.
+01.08.2017
+	635: Proto personality sent up.
+	1005: Ready to continue on the learning exercise using the wm set of files.
+	1022: Add files being loaded into memory using the proto files. :-)
+	1038: Program goes into infinite loop with the input: "Franky is a Gateau."
+	1629: Using the default files, it does not recognize named inputs, like a particular rhoda on a liva. The wm version will go into infinite loop when querying: "what is my name?".
+	1634: Have set the state for the files anticipated from liva. Later.
+02.08.2017
+	606: Adding the lv personality.
+	907: Staring the first tests. What about the idea of testing with the binary instead of the project? How about a new test project?
+	1047: LV is loading but not giving a response when queried.
+	1100: Empty values for path and template in the error log. Hmm, what is next?
+	1332: Need a compiled build with the pdb information to make debugging realistic.
+	1334: Nevertheless, I will trudge on to see why the conversation does not work.
+	1524: Stinks that I don't have the matching *.pdb file with the binary for debugging purposes. Tomorrow is a black bag day so hope I can make some clear progress shortly.
+	1617: Trying other files packages from the internet, but so far nothing is getting me where I need to be. Rather, only generating circles. Found this: http://rebecca-aiml.sourceforge.net/userGuide.htm
+03.08.2017
+	857: Brought over a v22 dll with matching symbols.
+	901: Looks for the sources on the path from the machine where it was compiled. Hmm, what is next, then? Try and continue in another way over the long weekend.
+	1221: Trying another assembly/pdb which was compiled here which works for debugging. in terms of sum parsing. Need to understand what to change and to bring it intellectually next week.
+	1228: An idea for this afternoon: get two generic chattys talking to each other in a prelude to a kill...uh, I mean...paper. Yes, that is exactly what I mean!
+	1356: 'Tis wired up and now to sort the output(s).
+	1426: Gentlemen, we have talking twos.
+	1619: Some logic is required. How many back-and-forth sequences are required before returning to the testcase input?
+	1622: The analytics file is quite handy here. See how much optimization will help you.
+	2157: On the download and getting setup for the morrow.
+	2201: A paper idea has drifted in from above.
+13.08.2017
+	935: Here visiting because I need some code.
+22.08.2017
+	1001: Here because I can now create some time to play around. And I mean that literally. In fact, this weekend, is fun with haden with an eye to opening them to the possibilities allowed by my implmentation of orchestration and autonomy. D is always talking about papers, how about something there? We DO have talking two. Now I hear I must author a book on robot law, looks like nothing but fun from here on out.
+	1017: One can clearly see from the output that the actual test is running in reverse and the aeons are have a true conversation between themselves. I think I need to understand this test more clearly. A coffee is in order.
+	1444: Would be interesting to reply to the facebook ai story, although overblown, but perhaps somewhere to make it all worthwhile: https://www.forbes.com/sites/jaysondemers/2017/08/17/how-the-facebook-chatbots-story-got-overblown-5-key-lessons-for-marketers/#7687a44cbf66
+	1445: Can test many iterations and set different output files for sets of experiments. The most interesting part is how the conversation (element)-per-aeon get longer and more repetitious. A function of the code (of course), but am pursuing further.
+	1459: Running up to 23 iterations--in five separate files--just for the fun of it. I wonder what an analytic tool would look like?
+	1502: The article associated with the experiments is: https://arxiv.org/abs/1706.05125. Will drop it in a doc folder in this project.
+	1751: Here at the home base to see what happened here today.
+	1756: Sending up a suggestion for the next session in the conversational tests file. Later.
+23.08.2017
+	1343: Spending a bit of time getting the lua-torch to work via a batch file.
+	1407: Got it working.
+	1443: Would like to organize better with folder for scripts but works for now as-is.
+24.08.2017
+	1058: I require a deep-dive into autonomy, a machine which can run itself. Am doing good with old softy but reality is the best teacher. To haden and beyond!
+	1133: In this space, checking out the transcript files from the last set of tests. One can see how the programs repeat themselves, which is not an indication of them inventing a language. That's how I would shape the paper--if it were so wise to author this one, I would say.
+	1459: Build a battery backup: https://raspberrypi.stackexchange.com/questions/1360/how-do-i-build-a-ups-like-battery-backup-system
+30.08.2017
+	930: Am substantially ahead since the last entry. The note about requiring sources has been addressed, especially the probabalistic components. What really remains is to test over the period of a month and tune, tune, tune.
+	1108: Want to be able to create datasets of different: 1. values but same size, 2. size but same values, 3. values and sizes.
+	1311: Got a method to generate data and can push it against the test.
+	1314: Checked all three test scenarios and it works.
+	1318: Adding my study of the learning algorithm here.
+	1315: Will probably now integrate it into animals for safe-keeping.
+	1340: Since time is in abundance this afternoon, will add some timing metrics to the tests.
+	1406: Needless to say, this test runs very fast.
+	1420: Ran out of things to do, bored.
+	1452: Increasing the range of the data created coupled with the TSP problem execution. Good results.
+31.08.2017
+	1039: Doing some testruns to create large datasets and to compute them, writing logs for performance parmeters.
+	1122: Dataset of 150000 too large for the creation of arrays. Tried changing cast to long but didn't work, especially so when rolling back to 15000.
+	1135: Done here. Thanks for the efforts.
+24.02.2023
+	2206: Leverging this code as the baseline for the david bipedal robot.
+
+	

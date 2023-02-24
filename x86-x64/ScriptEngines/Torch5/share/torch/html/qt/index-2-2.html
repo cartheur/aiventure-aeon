@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Qt Objects
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Qt Objects</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Package <code>qt</code></a>&nbsp; > &nbsp; <b>
+ Qt Objects</b>
+</div>
+
+<div id="contents">
+<a name="QObjects"></a>
+
+<p>
+
+<p>
+
+Critical Qt classes are subclasses of class 
+<a href="http://doc.trolltech.com/main-snapshot/qobject.html"><code>QObject</code></a>.
+Qt distinguishes some member functions of these classes,
+namely slots, signals and properties. Qt provides means
+to enumerate these slots, signals and properties at run time.
+Please refer to the Qt documentation on the 
+<a href="http://doc.trolltech.com/main-snapshot/object.html">Qt object model</a>
+for more details.
+<p>
+
+Instances of these classes are known as Qt objects.
+Pointers to Qt objects can be exposed to the Lua interpeter because
+Qt variants can contain values of type <code>QObjectPointer</code>
+which is a guarded pointer to a Qt object.
+<p>
+
+Such values have a special treatment:
+<p>
+
+<ul><li>A distinct metatable is allocated for each Qt object class.
+These metatables are available in the <code>qt</code> package
+and follow the same inheritance pattern as 
+the Qt object class hierarchy.
+Class <a href="index-2-3-2.html#qobject"><code>qt.QObject</code></a> sits at the top
+of this hierarchy.
+</li></ul><p>
+
+<ul><li>Slots, signals and properties are automatically
+exposed to the Lua interpreter. This is achieved 
+using the information collected by the Qt precompiler <code>moc</code>.
+</li></ul><p>
+
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-2-2-1.html">
+ Memory management</a></li>
+<li><a href="index-2-2-2.html">
+ Properties</a></li>
+<li><a href="index-2-2-3.html">
+ Slots and Invokable Methods</a></li>
+<li><a href="index-2-2-4.html">
+ Named Children</a></li>
+<li><a href="index-2-2-5.html">
+ Signals</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-2-1.html">
+ Qt Variants</a></div>
+<div id="footer-right"><a href="index-2-3.html">
+ Classes</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

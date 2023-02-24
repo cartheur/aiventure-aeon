@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Read methods
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Read methods</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ <code>File</code></a>&nbsp; > &nbsp; <b>
+ Read methods</b>
+</div>
+
+<div id="contents">
+<a name="FileReadMethods"></a>
+
+<p>
+
+<p>
+
+They are three types of reading methods:
+<ol><li><code>[number] readTYPE()</code>
+</li><li><code>[TYPEStorage] readTYPE(n)</code>
+</li><li><code>[number] readTYPE(TYPEStorage)</code>
+</li></ol><p>
+
+where <code>TYPE</code> can be either <code>Char</code>, <code>Short</code>, <code>Int</code>, <code>Long</code>, <code>Float</code> or <code>Double</code>.
+<p>
+
+A convenience method also exist for boolean types: <code>[boolean] readBool()</code>. It reads
+a value on the file with <code>readInt()</code> and returns <code>true</code> if and only if this value is <code>1</code>. It is not possible
+to read storages of booleans.
+<p>
+
+All these methods depends on the encoding choice: <a href="index-2-5.html#FileAscii"><code>ASCII</code></a>
+or <a href="index-2-7.html#FileBinary">binary</a> mode.  In <a href="index-2-5.html#FileAscii"><code>ASCII</code></a> mode, the
+option <a href="index-2-6.html#FileAutoSpacing"><code>autoSpacing()</code></a> and
+<a href="index-2-14.html#FileNoAutoSpacing"><code>noAutoSpacing()</code></a> have also an effect on these
+methods.
+<p>
+
+If no parameter is given, one element is returned. This element is
+converted to a <code>Lua</code> number when reading.
+<p>
+
+If <code>n</code> is given, <code>n</code> values of the specified type are read
+and returned in a new <a href="index-5.html#Storage"><code>Storage</code></a> of that particular type.
+The storage size corresponds to the number of elements actually read.
+<p>
+
+If a <code>Storage</code> is given, the method will attempt to read a number of elements
+equals to the size of the given storage, and fill up the storage with these elements.
+The number of elements actually read is returned.
+<p>
+
+In case of read error, these methods will call the <code>Lua</code> error function using the default
+<a href="index-2-16.html#FilePedantic">pedantic</a> option, or stay quiet with the <a href="index-2-18.html#FileQuiet">quiet</a>
+option. In the latter case, one can check if an error occurred with
+<a href="index-2-10.html#FileHasError"><code>hasError()</code></a>.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-2-2.html">
+ Write methods</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

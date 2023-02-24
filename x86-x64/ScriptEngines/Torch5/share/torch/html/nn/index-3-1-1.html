@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [output] forward(input, target)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [output] forward(input, target)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-3.html">
+ Criterions</a>&nbsp; > &nbsp; <a href="index-3-1.html">
+ <code>Criterion</code></a>&nbsp; > &nbsp; <b>
+ <code>[output] forward(input, target)</code></b>
+</div>
+
+<div id="contents">
+<a name="CriterionForward"></a>
+
+<p>
+
+<p>
+
+Given an <code>input</code> and a <code>target</code>, compute the loss function associated to the criterion and return the
+result. In general <code>input</code> and <code>target</code> are <a href="../torch/index-6.html#Tensor">tensors</a>, but some specific criterions
+might require some other type of object.
+<p>
+
+The <code>output</code> returned should be a scalar in general.
+<p>
+
+The state variable <a href="index-3-1-3.html#CriterionOutput"><code>self.output</code></a> should be updated after a call to <code>forward()</code>.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-3-1-2.html">
+ <code>[gradInput] backward(input, target)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Input and Output Facilities
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Input and Output Facilities</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <b>
+  Input and Output Facilities</b>
+</div>
+
+<div id="contents">
+<a name="InputandOutputFacilities"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ The I/O library provides two different styles for file manipulation. The first one uses implicit file descriptors; that is, there are operations to set a default input file and a default output file, and all input/output operations are over these default files. The second style uses explicit file descriptors.   
+<p>
+
+ When using implicit file descriptors, all operations are supplied by table <code>io</code> When using explicit file descriptors, the operation <a href="LuaManual-5-7-5.html#ioopenfilenamemode"><code>io.open (filename [, mode])</code></a> returns a file descriptor and then all operations are supplied as methods of the file descriptor.   
+<p>
+
+ The table <code>io</code> also provides three predefined file descriptors with their usual meanings from C: <code>io.stdin</code> <code>io.stdout</code> and <code>io.stderr</code>   
+<p>
+
+ Unless otherwise stated, all I/O functions return <b>nil</b> on failure (plus an error message as a second result) and some value different from <b>nil</b> on success.   
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="LuaManual-5-7-1.html">
+ <code>io.close ([file])</code></a></li>
+<li><a href="LuaManual-5-7-2.html">
+ <code>io.flush ()</code></a></li>
+<li><a href="LuaManual-5-7-3.html">
+ <code>io.input ([file])</code></a></li>
+<li><a href="LuaManual-5-7-4.html">
+ <code>io.lines ([filename])</code></a></li>
+<li><a href="LuaManual-5-7-5.html">
+ <code>io.open (filename [, mode])</code></a></li>
+<li><a href="LuaManual-5-7-6.html">
+ <code>io.output ([file])</code></a></li>
+<li><a href="LuaManual-5-7-7.html">
+ <code>io.popen (prog [, mode])</code></a></li>
+<li><a href="LuaManual-5-7-8.html">
+ <code>io.read (...)</code></a></li>
+<li><a href="LuaManual-5-7-9.html">
+ <code>io.tmpfile ()</code></a></li>
+<li><a href="LuaManual-5-7-10.html">
+ <code>io.type (obj)</code></a></li>
+<li><a href="LuaManual-5-7-11.html">
+ <code>io.write (...)</code></a></li>
+<li><a href="LuaManual-5-7-12.html">
+ <code>file:close ()</code></a></li>
+<li><a href="LuaManual-5-7-13.html">
+ <code>file:flush ()</code></a></li>
+<li><a href="LuaManual-5-7-14.html">
+ <code>file:lines ()</code></a></li>
+<li><a href="LuaManual-5-7-15.html">
+ <code>file:read (...)</code></a></li>
+<li><a href="LuaManual-5-7-16.html">
+ <code>file:seek ([whence] [, offset])</code></a></li>
+<li><a href="LuaManual-5-7-17.html">
+ <code>file:setvbuf (mode [, size])</code></a></li>
+<li><a href="LuaManual-5-7-18.html">
+ <code>file:write (...)</code></a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-6.html">
+  Mathematical Functions</a></div>
+<div id="footer-right"><a href="LuaManual-5-8.html">
+  Operating System Facilities</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

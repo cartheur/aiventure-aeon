@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_pushcfunction
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_pushcfunction</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_pushcfunction</code></b>
+</div>
+
+<div id="contents">
+<a name="luapushcfunction"></a>
+
+<p>
+
+<p>
+
+<pre>
+void lua_pushcfunction (lua_State *L, lua_CFunction f);
+</pre>
+<p>
+
+<p>
+
+ Pushes a C function onto the stack. This function receives a pointer to a C function and pushes onto the stack a Lua value of type <code>function</code> that, when called, invokes the corresponding C function.   
+<p>
+
+ Any function to be registered in Lua must follow the correct protocol to receive its parameters and return its results (see <a href="LuaManual-3-7-4.html#luaCFunction"><code>lua_CFunction</code></a>).   
+<p>
+
+ <code>lua_pushcfunction</code> is defined as a macro:
+<pre>
+     #define lua_pushcfunction(L,f)  lua_pushcclosure(L,f,0)
+</pre>
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-45.html">
+ <code>lua_pushcclosure</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-47.html">
+ <code>lua_pushfstring</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

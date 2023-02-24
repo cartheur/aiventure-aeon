@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [table] torch.getmetatable(string)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [table] torch.getmetatable(string)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-8.html">
+ Torch utility functions</a>&nbsp; > &nbsp; <b>
+ <code>[table] torch.getmetatable(string)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Given a <code>string</code>, returns a metatable corresponding to the Torch class described
+by <code>string</code>. Returns <code>nil</code> if the class does not exist.
+<p>
+
+A Torch class is a class created with <a href="index-8-1.html#TorchClass"><code>torch.class()</code></a> or
+<a href="index-8-3.html#TorchNewmetatable"><code>torch.newmetatable()</code></a>.
+<p>
+
+Example:
+<pre>
+> for k,v in pairs(torch.getmetatable("torch.CharStorage")) do print(k,v) end
+__index__       function: 0x1a4ba80
+__typename      torch.CharStorage
+write   function: 0x1a49cc0
+__tostring__    function: 0x1a586e0
+__newindex__    function: 0x1a4ba40
+string  function: 0x1a4d860
+__version       1
+copy    function: 0x1a49c80
+read    function: 0x1a4d840
+__len__ function: 0x1a37440
+fill    function: 0x1a375c0
+resize  function: 0x1a37580
+__index table: 0x1a4a080
+size    function: 0x1a4ba20
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-8-4.html">
+ <code>[function] torch.factory(name)</code></a></div>
+<div id="footer-right"><a href="index-8-6.html">
+ <code>[boolean] torch.isequal(object1, object2)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

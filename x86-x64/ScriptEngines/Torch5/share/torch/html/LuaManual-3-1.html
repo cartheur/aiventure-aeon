@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  The Stack
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  The Stack</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <b>
+  The Stack</b>
+</div>
+
+<div id="contents">
+<a name="TheStack"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Lua uses a <i>virtual stack</i> to pass values to and from C. Each element in this stack represents a Lua value (<b>nil</b>, number, string, etc.).   
+<p>
+
+ Whenever Lua calls C, the called function gets a new stack, which is independent of previous stacks and of stacks of C functions that are still active. This stack initially contains any arguments to the C function and it is where the C function pushes its results to be returned to the caller (see <a href="LuaManual-3-7-4.html#luaCFunction"><code>lua_CFunction</code></a>).   
+<p>
+
+ For convenience, most query operations in the API do not follow a strict stack discipline. Instead, they can refer to any element in the stack by using an <i>index</i>: A positive index represents an <i>absolute</i> stack position (starting at 1); a negative index represents an <i>offset</i> relative to the top of the stack. More specifically, if the stack has <i>n</i> elements, then index 1 represents the first element (that is, the element that was pushed onto the stack first) and index <i>n</i> represents the last element; index -1 also represents the last element (that is, the element at the top) and index <i>-n</i> represents the first element. We say that an index is <i>valid</i> if it lies between 1 and the stack top (that is, if <code>1 <</code> abs(index) <= top=).        
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="LuaManual-3-2.html">
+  Stack Size</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

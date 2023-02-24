@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ addT1outT1(value, vec1, vec2)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ addT1outT1(value, vec1, vec2)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-12.html">
+ Basic operations</a>&nbsp; > &nbsp; <b>
+ <code>addT1outT1(value, vec1, vec2)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Performs the outer-product between <code>vec1</code> (1D tensor) and <code>vec2</code> (1D tensor), multiply the resulting matrix
+by the scalar <code>value</code> and add the result to self (which must be a 2D tensor).
+In other words,
+<pre>
+self_ij = self_ij + value * vec1_i * vec2_j
+</pre>
+<p>
+
+If <code>vec1</code> is a vector of size <code>n</code> and <code>vec2</code> is a vector of size <code>m</code>, then self must be a matrix of size
+<code>n x m</code>.
+<pre>
+> x = torch.Tensor(3)        
+> y = torch.Tensor(2)
+> for i=1,3 do x[i] = i end
+> for i=1,2 do y[i] = i end
+> M = torch.Tensor(3, 2):zero()
+> M:addT1outT1(1, x, y)
+> = M
+
+ 1  2
+ 2  4
+ 3  6
+[torch.Tensor of dimension 3x2]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-12-11.html">
+ <code>addT2dotT1(value, mat, vec)</code></a></div>
+<div id="footer-right"><a href="index-6-12-13.html">
+ <code>addT2dotT2(value, mat1, mat2)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

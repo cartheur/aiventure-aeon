@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ image.scale(src,dst,type)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ image.scale(src,dst,type)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Image Package Reference Manual</a>&nbsp; > &nbsp; <b>
+ <code>image.scale(src,dst,type)</code></b>
+</div>
+
+<div id="contents">
+
+<code>image.scale(Tensor src,Tensor dst,string type)</code>
+ scales the <a href="../torch/index-6.html#Tensor"><code>Tensor</code></a> <code>src</code>
+to fit the provided
+destination <a href="../torch/index-6.html#Tensor"><code>Tensor</code></a> <code>dst</code>.
+<p>
+
+The <code>type</code> of scaling can be either <b><i>'bilinear'</i></b> or <b><i>'simple'</i></b>.
+Bilinear gives better images, simple is a simple nearest-neighbor
+approach.
+<p>
+
+<code>src</code> and <code>dst</code> cannot be the same.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2.html">
+ <code>image.save(filename,src,type)</code></a></div>
+<div id="footer-right"><a href="index-4.html">
+ <code>image.rotate(src,dst,theta)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

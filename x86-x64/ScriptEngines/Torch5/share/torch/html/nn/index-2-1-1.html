@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [output] forward(input)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [output] forward(input)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Modules</a>&nbsp; > &nbsp; <a href="index-2-1.html">
+ <code>Module</code></a>&nbsp; > &nbsp; <b>
+ <code>[output] forward(input)</code></b>
+</div>
+
+<div id="contents">
+<a name="ModuleForward"></a>
+
+<p>
+
+<p>
+
+Takes a <code>input</code> object, and computes the corresponding <code>output</code> of the
+module. In general <code>input</code> and <code>output</code> are
+<a href="../torch/index-6.html#Tensor">Tensors</a>. However, some special sub-classes
+like <a href="index-2-6.html#TableLayers">table layers</a> might expect something else. Please,
+refer to each module specification for further information.
+<p>
+
+After a <code>forward()</code>, the <a href="index-2-1-7-1.html#ModuleOutput"><code>ouput</code> state variable</a> should
+have been updated to the new value.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-2-1-2.html">
+ <code>[gradInput] backward(input, gradOutput)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

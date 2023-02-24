@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] cmul(tensor)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] cmul(tensor)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-12.html">
+ Basic operations</a>&nbsp; > &nbsp; <b>
+ <code>[self] cmul(tensor)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Element-wise multiplication of <code>tensor</code> by self. The number of elements must match, but sizes do not matter.
+<pre>
+> x = torch.Tensor(2,2):fill(2)
+> y = torch.Tensor(4):fill(3)
+> x:cmul(y)
+> = x
+
+ 6  6
+ 6  6
+[torch.Tensor of dimension 2x2]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-12-4.html">
+ <code>[self] mul(value)</code></a></div>
+<div id="footer-right"><a href="index-6-12-6.html">
+ <code>[self] addcmul(value, tensor1, tensor2)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

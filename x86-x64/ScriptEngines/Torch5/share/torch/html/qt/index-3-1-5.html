@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Miscellaneous
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Miscellaneous</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <a href="index-3-1.html">
+ Class <code>QtLuaEngine</code></a>&nbsp; > &nbsp; <b>
+ Miscellaneous</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<code>void QtLuaEngine::nameObject(QObject *obj, QString name = QString())</code>
+<p>
+
+<code>QObject* QtLuaEngine::namedObject(QString name)</code>
+<p>
+
+<code>QList<QObjectPointer> QtLuaEngine::allNamedObjects()</code>
+<p>
+
+These functions can be used to make a Qt object
+accessible by name in package <code>qt</code> by Lua programs.
+Function <code>nameObject</code> sets the object's name 
+and declare the object accessible in package <code>qt</code>.
+Function <code>namedObject</code> retrieved an accessible object
+by its name. Function <code>allNamedObjects</code> return
+all accessible objects.  An accessible object
+is always accessed using its object name,
+even if one uses <code>QObject::setObjectName</code> to changed
+it after calling <code>nameObject</code>.
+<p>
+
+<p>
+
+<p>
+
+<code>void QtLuaEngine::registerMetaObject(const QMetaObject *mo)</code>
+<p>
+
+This function declare the Qt class identified by the metaclass <code>mo</code>
+to the QtLua system.  This usually happens automatically when
+an object of that class is passed to QtLua for the first time.
+In rare case, it may be necessary to call this function
+to ensure that the types of slot and signal arguments are 
+properly recognized as an object class.
+<p>
+
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-1-4.html">
+ Execution</a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_pushcclosure
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_pushcclosure</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_pushcclosure</code></b>
+</div>
+
+<div id="contents">
+<a name="luapushcclosure"></a>
+
+<p>
+
+<p>
+
+<pre>
+void lua_pushcclosure (lua_State *L, lua_CFunction fn, int n);
+</pre>
+<p>
+
+<p>
+
+ Pushes a new C closure onto the stack.   
+<p>
+
+ When a C function is created, it is possible to associate some values with it, thus creating a C closure (see <a href="#CClosures">C Closures</a>); these values are then accessible to the function whenever it is called. To associate values with a C function, first these values should be pushed onto the stack (when there are multiple values, the first value is pushed first). Then <a href="LuaManual-3-7-45.html#luapushcclosure"><code>lua_pushcclosure</code></a> is called to create and push the C function onto the stack, with the argument <code>n</code> telling how many values should be associated with the function. <a href="LuaManual-3-7-45.html#luapushcclosure"><code>lua_pushcclosure</code></a> also pops these values from the stack.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-44.html">
+ <code>lua_pushboolean</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-46.html">
+ <code>lua_pushcfunction</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

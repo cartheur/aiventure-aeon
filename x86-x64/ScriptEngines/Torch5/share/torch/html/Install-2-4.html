@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Windows
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Windows</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="Install.html">
+Torch Installation Manual</a>&nbsp; > &nbsp; <a href="Install-2.html">
+ Installing from sources</a>&nbsp; > &nbsp; <b>
+ Windows</b>
+</div>
+
+<div id="contents">
+<a name="Windows"></a>
+
+<p>
+
+<p>
+
+<b>A. Requirements</b>
+<p>
+
+Torch compilation requires a number of standard packages described below:
+<ul><li><b>Mandatory:</b>
+<ul><li>A <code>C/C++</code> compiler
+</li><li><a href="http://www.cmake.org"><code>CMake</code></a>
+</li></ul></li></ul><p>
+
+<ul><li><b>Recommended:</b>
+<ul><li><a href="http://subversion.tigris.org">Subversion</a> (svn) to keep up-to-date sources
+</li><li><a href="http://trolltech.com/products">QT 4.4</a> or newer development libraries
+</li></ul></li></ul><p>
+
+Concerning the compiler, if you do not have already Visual Studio, then
+install the freely available
+<a href="http://www.microsoft.com/express/vc/">Microsoft Visual Studio 2008 (Express Edition)</a>. You need the
+C++ compiler.
+<p>
+
+Download the <a href="http://www.cmake.org">CMake Win32 installer</a> and install CMake.
+<p>
+
+Install <a href="http://tortoisesvn.tigris.org">Tortoise SVN</a>.
+<p>
+
+If you want graphics, you should install QT 4.4. Torch will compile if you do not, but you will not be
+able to produce plots or handle widgets. <a href="http://trolltech.com/products">Trolltech</a> produces
+QT binaries for Windows, but unfortunately they are not compiled with the Microsoft Visual Studio
+compiler. You will have to follow <a href="InstallQTWindows.html">simple instructions</a> to compile and install it.
+<p>
+
+<b>B. Getting Torch sources</b>
+<p>
+
+You can
+<a href="https://sourceforge.net/project/showfiles.php?group_id=183526">download</a>
+the last tarball sources and unpack it using for
+e.g. <a href="http://www.winzip.com">Winzip</a>.
+<p>
+
+However, we recommend to use the subversion repository to keep bleeding edge sources. Start <code>TortoiseSVN</code>
+for that purpose: right-click in the explorer at the place you want to checkout Torch repository. Choose
+<code>TortoiseSVN -> Export ...</code>. Then enter as URL
+<pre>
+https://torch5.svn.sourceforge.net/svnroot/torch5/trunk
+</pre>
+Choose the directory you want for Torch sources, and click <code>Ok</code>.
+<p>
+
+<b>C. Configuring Torch</b>
+<p>
+
+We use <code>CMake</code> for configuring <code>Torch</code>. Start CMake application. Set the
+source path to the directory where you downloaded Torch. Set as a build
+path <i>another</i> directory you like. This eases cleaning up built objects,
+but also allow you to build Torch with <i>various configurations</i>
+(e.g. Release and Debug in two different build directories).
+<p>
+
+Click <code>Configure</code>, choose <code>Visual Studio 9 2008</code> if you downloaded the last
+version of Visual Studio (if not, select the compiler version you have).
+<p>
+
+Make sure you chose the <code>Release</code> and not <code>Debug</code> version (well, except if
+you want the Debug version!) to compile (Variable <code>CMAKE_BUILD_TYPE</code>).
+Also, if you do not have the administrator rights, you might not be able to
+install Torch in the directory set in variable <code>CMAKE_INSTALL_PREFIX</code> which
+is by default <code>C:/Program Files/Torch</code>. Change the variable to the install
+path you would like.
+<p>
+
+Click <code>Configure</code> until <code>Generate</code> is clickable. Click <code>Generate</code>.
+<p>
+
+Please, see <a href="http://www.cmake.org">CMake documentation</a> or <i>at least</i>
+<a href="Install-2-5.html#CMakeHints">some of our CMake hints</a> for more details on configuration.
+<p>
+
+<b>D. Compiling and installing</b>
+<p>
+
+If CMake configuration went fine, a Visual Studio project should have been generated in your
+build directory. Double-click the project. Build the solution. If everything went fine, you
+can then install it by building the target <code>INSTALL</code>.
+<p>
+
+<b>D. Running Torch</b>
+<p>
+
+Now Torch should be installed. If you did not changed
+<code>CMAKE_INSTALL_PREFIX</code>, it should be in <code>C:/Program Files/Torch</code>. Lua
+executables (<code>lua</code> and <code>qlua</code>) are found in the <code>bin</code> sub-directory of these
+installation directories. Start <code>lua</code> by double-clicking it, and try it
+out!
+<pre>
+Lua 5.1.3  Copyright (C) 1994-2008 Lua.org, PUC-Rio
+> require 'torch'
+> = torch.Tensor(5):zero()
+
+0
+0
+0
+0
+0
+[torch.Tensor of dimension 5]
+
+> 
+</pre>
+The executable <code>lua</code> is a simple Lua interpreter (as provided on
+<a href="http://www.lua.org">Lua website</a>), while <code>qlua</code> has enhanced
+interactivity (like completion) and is able to handle graphics and QT
+widgets.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="Install-2-3.html">
+ Cygwin</a></div>
+<div id="footer-right"><a href="Install-2-5.html">
+ CMake hints</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

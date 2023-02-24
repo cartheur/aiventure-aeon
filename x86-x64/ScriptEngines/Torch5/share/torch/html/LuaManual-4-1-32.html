@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_newstate
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_newstate</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_newstate</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLnewstate"></a>
+
+<p>
+
+<p>
+
+<pre>
+lua_State *luaL_newstate (void);
+</pre>
+<p>
+
+<p>
+
+ Creates a new Lua state. It calls <a href="LuaManual-3-7-35.html#luanewstate"><code>lua_newstate</code></a> with an allocator based on the standard C <code>realloc</code> function and then sets a panic function (see <a href="LuaManual-3-7-2.html#luaatpanic"><code>lua_atpanic</code></a>) that prints an error message to the standard error output in case of fatal errors.   
+<p>
+
+ Returns the new state, or <code>NULL</code> if there is a memory allocation error.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-31.html">
+ <code>luaL_newmetatable</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-33.html">
+ <code>luaL_openlibs</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

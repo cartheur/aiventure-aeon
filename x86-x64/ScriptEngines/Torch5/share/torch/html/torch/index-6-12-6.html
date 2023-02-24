@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] addcmul(value, tensor1, tensor2)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] addcmul(value, tensor1, tensor2)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-12.html">
+ Basic operations</a>&nbsp; > &nbsp; <b>
+ <code>[self] addcmul(value, tensor1, tensor2)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Performs the element-wise multiplication of <code>tensor1</code> by <code>tensor1</code>, multiply the result by the scalar <code>value</code>
+and add it to self. The number of elements must match, but sizes do not matter.
+<pre>
+> x = torch.Tensor(2,2):fill(2)
+> y = torch.Tensor(4):fill(3)
+> z = torch.Tensor(2,2):fill(5)
+> x:addcmul(2, y, z)
+> = x
+
+ 32  32
+ 32  32
+[torch.Tensor of dimension 2x2]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-12-5.html">
+ <code>[self] cmul(tensor)</code></a></div>
+<div id="footer-right"><a href="index-6-12-7.html">
+ <code>[self] div(value)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

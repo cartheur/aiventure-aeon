@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_Hook
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_Hook</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-8.html">
+  The Debug Interface</a>&nbsp; > &nbsp; <b>
+ <code>lua_Hook</code></b>
+</div>
+
+<div id="contents">
+<a name="LUAHOOKRET,"></a>
+
+<p>
+
+<p>
+
+<pre>
+typedef void (*lua_Hook) (lua_State *L, lua_Debug *ar);
+</pre>
+<p>
+
+<p>
+
+ Type for debugging hook functions.   
+<p>
+
+ Whenever a hook is called, its <code>ar</code> argument has its field <code>event</code> set to the specific event that triggered the hook. Lua identifies these events with the following constants: <code>LUA_HOOKCALL</code> <code>LUA_HOOKRET</code> <code>LUA_HOOKTAILRET</code> <code>LUA_HOOKLINE</code> and <code>LUA_HOOKCOUNT</code> Moreover, for line events, the field <code>currentline</code> is also set. To get the value of any other field in <code>ar</code>, the hook must call <a href="LuaManual-3-8-5.html#luagetinfo"><code>lua_getinfo</code></a>. For return events, <code>event</code> may be <code>LUA_HOOKRET</code>, the normal value, or <code>LUA_HOOKTAILRET</code>. In the latter case, Lua is simulating a return from a function that did a tail call; in this case, it is useless to call <a href="LuaManual-3-8-5.html#luagetinfo"><code>lua_getinfo</code></a>.   
+<p>
+
+ While Lua is running a hook, it disables other calls to hooks. Therefore, if a hook calls back Lua to execute a function or a chunk, this execution occurs without any calls to hooks.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-8-8.html">
+ <code>lua_getupvalue</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-8-10.html">
+ <code>lua_sethook</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Usage
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Usage</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ Program <code>qlua</code></a>&nbsp; > &nbsp; <b>
+ Usage</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Program <code>qlua</code> accepts
+the same command line options and arguments as 
+the stand-alone Lua interpreter 
+<a href="../LuaManual.hlp#LuaStandalone"><code>lua</code></a>.
+It also accepts all the 
+<a href="http://doc.trolltech.com/main-snapshot/qapplication.html#QApplication">Qt command line options</a> 
+as well as a few specific options.
+<p>
+
+<pre>
+Usage: qlua [options] [script <scriptargs>]
+The lua options are:
+  -e stat       execute string 'stat'
+  -l name       require library 'name'
+  -i            enter interactive mode after executing 'script'
+  -v            show version information
+  --            stop handling options
+  -             execute stdin and stop handling options
+The specific qlua options are:
+  -ide          run the qlua integrated environment
+  -onethread    run lua in the main thread
+  -nographics   disable all the graphical capabilities
+The most important Qt options are:
+  -style s      set the application gui style 's'
+  -session s    restore gui session 's'
+  -display d    set the X display (default is $DISPLAY)
+  -geometry g   set the main window size and position
+  -title s      set the main window title to 's'
+  ...           see the Qt documentation for more options
+</pre>
+<p>
+
+<p>
+
+Option <code>-nographics</code> initializes the Qt 
+library for a text-only application.  
+This can be handy when executing scripts
+because it avoids unnecessary overhead.
+<p>
+
+Option <code>-onethread</code> runs the Lua interpreter
+in the main thread instead of starting a dedicated thread. 
+As a consequence, while Lua is running,
+graphical are not handled, windows are not painted, 
+timers are not honored, etc., unless the Lua program
+calls <a href="index-2-4-5.html#qtdoevents"><code>qt.doevents()</code></a> frequently enough.
+This is not the normal mode of operation of <code>qlua</code>
+but this can be useful for debugging purposes.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-1-2.html">
+ Components</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

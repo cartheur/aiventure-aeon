@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Example of manual training of a neural network
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Example of manual training of a neural network</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-4.html">
+ Training a neural network</a>&nbsp; > &nbsp; <b>
+ Example of manual training of a neural network</b>
+</div>
+
+<div id="contents">
+<a name="DoItYourself"></a>
+
+<p>
+
+<p>
+
+We show an example here on a classical XOR problem.
+<p>
+
+<b>Neural Network</b>
+<p>
+
+We create a simple neural network with one hidden layer.
+<pre>
+require "nn"
+mlp = nn.Sequential();  -- make a multi-layer perceptron
+inputs = 2; outputs = 1; HUs = 20; -- parameters
+mlp:add(nn.Linear(inputs, HUs))
+mlp:add(nn.Tanh())
+mlp:add(nn.Linear(HUs, outputs))
+</pre>
+<p>
+
+<b>Loss function</b>
+<p>
+
+We choose the Mean Squared Error criterion.
+<pre>
+criterion = nn.MSECriterion()  
+</pre>
+<p>
+
+<b>Training</b>
+<p>
+
+We create data <i>on the fly</i> and feed it to the neural network.
+<p>
+
+<pre>
+require "lab"
+for i = 1,2500 do
+  -- random sample
+  local input= lab.randn(2);     -- normally distributed example in 2d
+  local output= torch.Tensor(1);
+  if input[1]*input[2] > 0 then  -- calculate label for XOR function
+    output[1] = -1
+  else
+    output[1] = 1
+  end
+
+  -- feed it to the neural network and the criterion
+  criterion:forward(mlp:forward(input), output)
+
+  -- train over this example in 3 steps
+  -- (1) zero the accumulation of the gradients
+  mlp:zeroGradParameters()
+  -- (2) accumulate gradients
+  mlp:backward(input, criterion:backward(mlp.output, output))
+  -- (3) update parameters with a 0.01 learning rate
+  mlp:updateParameters(0.01)
+end
+</pre>
+<p>
+
+<b>Test the network</b>
+<p>
+
+<pre>
+x = torch.Tensor(2)
+x[1] =  0.5; x[2] =  0.5; print(mlp:forward(x))
+x[1] =  0.5; x[2] = -0.5; print(mlp:forward(x))
+x[1] = -0.5; x[2] =  0.5; print(mlp:forward(x))
+x[1] = -0.5; x[2] = -0.5; print(mlp:forward(x))
+</pre>
+<p>
+
+You should see something like:
+<pre>
+> x = torch.Tensor(2)
+> x[1] =  0.5; x[2] =  0.5; print(mlp:forward(x))
+
+-0.6140
+[torch.Tensor of dimension 1]
+
+> x[1] =  0.5; x[2] = -0.5; print(mlp:forward(x))
+
+ 0.8878
+[torch.Tensor of dimension 1]
+
+> x[1] = -0.5; x[2] =  0.5; print(mlp:forward(x))
+
+ 0.8548
+[torch.Tensor of dimension 1]
+
+> x[1] = -0.5; x[2] = -0.5; print(mlp:forward(x))
+
+-0.5498
+[torch.Tensor of dimension 1]
+</pre>
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-4-2.html">
+ Example of training using <code>StochasticGradient</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

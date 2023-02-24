@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ toTensor(Tensor x)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ toTensor(Tensor x)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Plotting Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ Window</a>&nbsp; > &nbsp; <a href="index-1-13.html">
+ Rendering to/from Tensors</a>&nbsp; > &nbsp; <b>
+ <code>toTensor(Tensor x)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Converts the current graphics image into a tensor, given a tensor.
+<p>
+
+If the window size is m x n then the tensor must also be m x n x 1,
+in which case the image is converted to grey-scale, or else
+m x n x 3 in which case the RGB components are stored in the third
+dimension.
+<p>
+
+Here is a typical example:
+<pre>
+	w=gfx.Window();
+	w:line(0,0,400,400)
+	x=torch.Tensor(w.width,w.height); -- copy contents
+	w:toTensor(x) 
+	w2=gfx.Window(w.width/2,w.height/2); -- create a smaller window
+	w2:blit(x,0.5); -- blit contents to it at half size.
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-1-13-1.html">
+ <code>blit(Tensor x,float scale,int xpos,int ypos)</code></a></div>
+<div id="footer-right"><a href="index-1-13-3.html">
+ <code>loadPNG(string fname,int depth)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

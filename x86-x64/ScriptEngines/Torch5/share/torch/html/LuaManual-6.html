@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Lua Stand-alone
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Lua Stand-alone</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <b>
+  Lua Stand-alone</b>
+</div>
+
+<div id="contents">
+<a name="LUAINIT."></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Although Lua has been designed as an extension language, to be embedded in a host C program, it is also frequently used as a stand-alone language. An interpreter for Lua as a stand-alone language, called simply <code>lua</code>, is provided with the standard distribution. The stand-alone interpreter includes all standard libraries, including the debug library. Its usage is:
+<pre>
+     lua [options] [script [args]]
+</pre>
+<p>
+
+<p>
+
+ The options are:   
+<ul><li><b><code>-e _stat_</code>:</b> executes string <i>stat</i>; 
+</li><li><b><code>-l _mod_</code>:</b> "requires" <i>mod</i>; 
+</li><li><b><code>-i</code>:</b> enters interactive mode after running <i>script</i>; 
+</li><li><b><code>-v</code>:</b> prints version information; 
+</li><li><b><code>--</code>:</b> stops handling options; 
+</li><li><b><code>-</code>:</b> executes <code>stdin</code> as a file and stops handling options. 
+</li></ul><p>
+
+ After handling its options, <code>lua</code> runs the given <i>script</i>, passing to it the given <i>args</i> as string arguments. When called without arguments, <code>lua</code> behaves as <code>lua -v -i</code> when the standard input (<code>stdin</code>) is a terminal, and as <code>lua -</code> otherwise.   
+<p>
+
+ Before running any argument, the interpreter checks for an environment variable <code>LUA_INIT</code> If its format is <code>@_filename_</code>, then <code>lua</code> executes the file. Otherwise, <code>lua</code> executes the string itself.   
+<p>
+
+ All options are handled in order, except <code>-i</code>. For instance, an invocation like
+<pre>
+     $ lua -e'a=1' -e 'print(a)' script.lua
+</pre>
+<p>
+
+<p>
+
+ will first set <code>a</code> to 1, then print the value of <code>a</code> (which is '=1='), and finally run the file <code>script.lua</code> with no arguments. (Here <code>$</code> is the shell prompt. Your prompt may be different.)   
+<p>
+
+ Before starting to run the script, <code>lua</code> collects all arguments in the command line in a global table called <code>arg</code>. The script name is stored at index 0, the first argument after the script name goes to index 1, and so on. Any arguments before the script name (that is, the interpreter name plus the options) go to negative indices. For instance, in the call
+<pre>
+     $ lua -la b.lua t1 t2
+</pre>
+<p>
+
+<p>
+
+ the interpreter first runs the file <code>a.lua</code>, then creates a table
+<pre>
+     arg = { [-2] = "lua", [-1] = "-la",
+             [0] = "b.lua",
+             [1] = "t1", [2] = "t2" }
+</pre>
+<p>
+
+<p>
+
+ and finally runs the file <code>b.lua</code>. The script is called with <code>arg[1]</code>, <code>arg[2]</code>, ... as arguments; it can also access these arguments with the vararg expression '=...='.   
+<p>
+
+ In interactive mode, if you write an incomplete statement, the interpreter waits for its completion by issuing a different prompt.   
+<p>
+
+ If the global variable <code>_PROMPT</code> contains a string, then its value is used as the prompt. Similarly, if the global variable <code>_PROMPT2</code> contains a string, its value is used as the secondary prompt (issued during incomplete statements). Therefore, both prompts can be changed directly on the command line. For instance,
+<pre>
+     $ lua -e"_PROMPT='myprompt> '" -i
+</pre>
+<p>
+
+<p>
+
+ (the outer pair of quotes is for the shell, the inner pair is for Lua), or in any Lua programs by assigning to <code>_PROMPT</code>. Note the use of <code>-i</code> to enter interactive mode; otherwise, the program would just end silently right after the assignment to <code>_PROMPT</code>.   
+<p>
+
+ To allow the use of Lua as a script interpreter in Unix systems, the stand-alone interpreter skips the first line of a chunk if it starts with <code>#</code>. Therefore, Lua scripts can be made into executable programs by using <code>chmod +x</code> and the <code>#!</code> form, as in
+<pre>
+     #!/usr/local/bin/lua
+</pre>
+<p>
+
+<p>
+
+ (Of course, the location of the Lua interpreter may be different in your machine. If <code>lua</code> is in your <code>PATH</code>, then
+<pre>
+     #!/usr/bin/env lua
+</pre>
+<p>
+
+<p>
+
+ is a more portable solution.)     
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5.html">
+  Standard Libraries</a></div>
+<div id="footer-right"><a href="LuaManual-7.html">
+  Incompatibilities with the Previous Version</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

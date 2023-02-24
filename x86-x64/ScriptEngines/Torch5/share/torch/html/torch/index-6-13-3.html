@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Multiplication
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Multiplication</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-13.html">
+ Overloaded operators</a>&nbsp; > &nbsp; <b>
+ Multiplication</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Multiplication between two tensors is supported with the <code>*</code> operators. The result of the multiplication
+depends on the sizes of the tensors.
+<dl><dt> 1D and 1D</dt><dd>Returns the dot product between the two tensors (scalar).
+</dd><dt> 2D and 1D</dt><dd>Returns the matrix-vector operation between the two tensors (1D tensor).
+</dd><dt> 2D and 2D</dt><dd>Returns the matrix-matrix operation between the two tensors (2D tensor).
+</dd><dt> 4D and 2D</dt><dd>Returns a tensor product (2D tensor).
+</dd></dl>Sizes must be relevant for the corresponding operation.
+<p>
+
+A tensor might also be multiplied by a scalar. The scalar might be on the right or left of the operator.
+<p>
+
+Examples:
+<pre>
+> M = torch.Tensor(2,2):fill(2)
+> N = torch.Tensor(2,4):fill(3)
+> x = torch.Tensor(2):fill(4)
+> y = torch.Tensor(2):fill(5)
+> = x*y -- dot product
+40
+> = M*x --- matrix-vector
+
+ 16
+ 16
+[torch.Tensor of dimension 2]
+
+> = M*N -- matrix-matrix
+
+ 12  12  12  12
+ 12  12  12  12
+[torch.Tensor of dimension 2x4]
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-13-2.html">
+ Negation</a></div>
+<div id="footer-right"><a href="index-6-13-4.html">
+ Division</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

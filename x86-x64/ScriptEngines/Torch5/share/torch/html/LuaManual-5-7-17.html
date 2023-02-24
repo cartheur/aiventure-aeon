@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ file:setvbuf (mode [, size])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ file:setvbuf (mode [, size])</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-7.html">
+  Input and Output Facilities</a>&nbsp; > &nbsp; <b>
+ <code>file:setvbuf (mode [, size])</code></b>
+</div>
+
+<div id="contents">
+<a name="filesetvbufmodesize"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Sets the buffering mode for an output file. There are three available modes:    
+<ul><li><b>"no":</b> no buffering; the result of any output operation appears immediately.  
+</li><li><b>"full":</b> full buffering; output operation is performed only when the buffer is full (or when you explicitly <code>flush</code> the file (see <a href="LuaManual-5-7-2.html#ioflush"><code>io.flush ()</code></a>)).  
+</li><li><b>"line":</b> line buffering; output is buffered until a newline is output or there is any input from some special files (such as a terminal device).  
+</li></ul><p>
+
+ For the last two cases, <code>sizes</code> specifies the size of the buffer, in bytes. The default is an appropriate size.     
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-7-16.html">
+ <code>file:seek ([whence] [, offset])</code></a></div>
+<div id="footer-right"><a href="LuaManual-5-7-18.html">
+ <code>file:write (...)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

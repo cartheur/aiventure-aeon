@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ table.sort (table [, comp])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ table.sort (table [, comp])</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-5.html">
+  Table Manipulation</a>&nbsp; > &nbsp; <b>
+ <code>table.sort (table [, comp])</code></b>
+</div>
+
+<div id="contents">
+<a name="tablesorttablecomp"></a>
+
+<p>
+
+ Sorts table elements in a given order, <i>in-place</i>, from <code>table[1]</code> to <code>table[n]</code>, where <code>n</code> is the length of the table. If <code>comp</code> is given, then it must be a function that receives two table elements, and returns true when the first is less than the second (so that <code>not comp(a[i+1],a[i])</code> will be true after the sort). If <code>comp</code> is not given, then the standard Lua operator <code><</code> is used instead.   
+<p>
+
+ The sort algorithm is not stable; that is, elements considered equal by the given order may have their relative positions changed by the sort.        
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-5-4.html">
+ <code>table.remove (table [, pos])</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

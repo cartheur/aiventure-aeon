@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ painter:clip(optnewpath)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ painter:clip(optnewpath)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <a href="index-3-2-3.html">
+ QtLuaPainter Functions</a>&nbsp; > &nbsp; <b>
+ painter:clip(optnewpath)</b>
+</div>
+
+<div id="contents">
+<a name="painterclip"></a>
+
+<p>
+
+<p>
+
+Function <code>painter:clip</code> intersects the 
+<a href="index-3-2-2-4.html#qtluapainterclippath">current clip region</a>
+with the region described by the current path,
+that is the region that would be painted by
+<a href="index-3-2-3-29.html#painterfill"><code>qtpainter.fill</code></a>.
+This intersection becomes the new clip region.
+<p>
+
+The optional boolean <code>optnewpath</code> specifies
+whether this function resets the current path 
+using <a href="index-3-2-3-41.html#painternewpath"><code>painter:newpath()</code></a>.
+The default is to leave the current path unchanged.
+The interior of the current path is determined using the 
+<a href="http://doc.trolltech.com/main-snapshot/qpainterpath.html#setFillRule">winding rule</a>.
+See function <a href="index-3-2-3-27.html#paintereoclip"><code>painter:eoclip</code></a> for an alternative.
+<p>
+
+This function cannot enlarge the clipping path.
+The recommended approach is to call 
+<a href="index-3-2-3-33.html#paintergsave"><code>painter:gsave()</code></a>
+before reducing the clip region and 
+<a href="index-3-2-3-32.html#paintergrestore"><code>painter:grestore()</code></a>
+to restore the initial clip region.
+<p>
+
+See also: PostScript operator <code>clip</code>.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-2-3-4.html">
+ painter:charpath(string)</a></div>
+<div id="footer-right"><a href="index-3-2-3-6.html">
+ painter:close()</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

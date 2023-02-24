@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ painter:closepath()
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ painter:closepath()</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <a href="index-3-2-3.html">
+ QtLuaPainter Functions</a>&nbsp; > &nbsp; <b>
+ painter:closepath()</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Expression <code>painter:closepath()</code> 
+closes the current subpath by appending a 
+straight line segment connecting the
+current point to the subpath to its starting point.
+This function does nothing if the current subpath
+is already closed.
+<p>
+
+Using function <code>painter:closepath</code> is better than specifying
+the line segment using <code>painter:lineto</code> because it will
+ensure that the line segments are joined using the 
+current pen <code>capStyle</code> and <code>joinStyle</code> attributes.
+<p>
+
+After calling this function, 
+the current point is left unset.
+<p>
+
+See also: PostScript operator <code>closepath</code>.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-2-3-6.html">
+ painter:close()</a></div>
+<div id="footer-right"><a href="index-3-2-3-8.html">
+ painter:concat(qtransform)</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

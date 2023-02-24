@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ MarginRankingCriterion
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ MarginRankingCriterion</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-3.html">
+ Criterions</a>&nbsp; > &nbsp; <b>
+ <code>MarginRankingCriterion</code></b>
+</div>
+
+<div id="contents">
+<a name="MarginRankingCriterion"></a>
+
+<p>
+
+<p>
+
+<pre>
+criterion = nn.MarginRankingCriterion(margin)
+</pre>
+<p>
+
+Creates a criterion that measures the loss given  an input
+<code>x</code> = <code>{x1,x2}</code>, a table of two Tensors of size 1 (they contain only scalars),
+ and a label <code>y</code> (1 or -1):
+<p>
+
+If <code>y</code> = <code>1</code> then it assumed the first input should be ranked higher (have a larger value) 
+than the second input, and vice-versa for <code>y</code> = <code>-1</code>.
+<p>
+
+The loss function is:
+<pre>
+loss(x,y) = forward(x,y) = max(0,-y*(x[1]-x[2])+margin)
+</pre>
+<p>
+
+Example:
+<pre>
+
+p1_mlp= nn.Linear(5,2)
+p2_mlp= p1_mlp:clone('weight','bias')
+
+prl=nn.ParallelTable()
+prl:add(p1_mlp)
+prl:add(p2_mlp)
+  
+mlp1=nn.Sequential()
+mlp1:add(prl)
+mlp1:add(nn.DotProduct())
+ 
+mlp2=mlp1:clone('weight','bias')
+
+mlpa=nn.Sequential()
+prla=nn.ParallelTable()
+prla:add(mlp1)
+prla:add(mlp2)
+mlpa:add(prla)
+
+crit=nn.MarginRankingCriterion(0.1)
+
+x=lab.randn(5)
+y=lab.randn(5)
+z=lab.randn(5)
+
+
+-- Use a typical generic gradient update function
+function gradUpdate(mlp, x, y, criterion, learningRate)
+ local pred = mlp:forward(x)
+ local err = criterion:forward(pred, y)
+ local gradCriterion = criterion:backward(pred, y)
+ mlp:zeroGradParameters()
+ mlp:backward(x, gradCriterion)
+ mlp:updateParameters(learningRate)
+end
+
+for i=1,100 do
+ gradUpdate(mlpa,{{x,y},{x,z}},1,crit,0.01)
+ if true then 
+      o1=mlp1:forward{x,y}[1]; 
+      o2=mlp2:forward{x,z}[1]; 
+      o=crit:forward(mlpa:forward{{x,y},{x,z}},1)
+      print(o1,o2,o)
+  end
+end
+
+print "--"
+
+for i=1,100 do
+ gradUpdate(mlpa,{{x,y},{x,z}},-1,crit,0.01)
+ if true then 
+      o1=mlp1:forward{x,y}[1]; 
+      o2=mlp2:forward{x,z}[1]; 
+      o=crit:forward(mlpa:forward{{x,y},{x,z}},-1)
+      print(o1,o2,o)
+  end
+end
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-9.html">
+ <code>CosineEmbeddingCriterion</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ DotProduct
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ DotProduct</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Modules</a>&nbsp; > &nbsp; <a href="index-2-6.html">
+ Layers for manipulating tables</a>&nbsp; > &nbsp; <b>
+ <code>DotProduct</code></b>
+</div>
+
+<div id="contents">
+<a name="DotProduct"></a>
+
+<p>
+
+<p>
+
+<code>module</code> = <code>DotProduct()</code> creates a module that takes a table of two vectors as input and outputs the dot product between them.
+<p>
+
+Example:
+<pre>
+mlp=nn.DotProduct()
+x=lab.new(1,2,3) 
+y=lab.new(4,5,6)
+print(mlp:forward({x,y}))
+</pre>
+gives the output:
+<pre>
+ 32
+[torch.Tensor of dimension 1]
+</pre>
+<p>
+
+<p>
+
+A more complicated example:
+<pre>
+
+-- Train a ranking function so that mlp:forward({x,y},{x,z}) returns a number
+-- which indicates whether x is better matched with y or z (larger score = better match), or vice versa.
+
+mlp1=nn.Linear(5,10)
+mlp2=mlp1:clone('weight','bias')
+
+prl=nn.ParallelTable();
+prl:add(mlp1); prl:add(mlp2)
+
+mlp1=nn.Sequential()
+mlp1:add(prl)
+mlp1:add(nn.DotProduct())
+
+mlp2=mlp1:clone('weight','bias')
+
+mlp=nn.Sequential()
+prla=nn.ParallelTable()
+prla:add(mlp1)
+prla:add(mlp2)
+mlp:add(prla)
+
+x=lab.rand(5); 
+y=lab.rand(5)
+z=lab.rand(5)
+
+
+print(mlp1:forward{x,x})
+print(mlp1:forward{x,y})
+print(mlp1:forward{y,y})
+
+
+crit=nn.MarginRankingCriterion(1); 
+
+-- Use a typical generic gradient update function
+function gradUpdate(mlp, x, y, criterion, learningRate)
+   local pred = mlp:forward(x)
+   local err = criterion:forward(pred, y)
+   local gradCriterion = criterion:backward(pred, y)
+   mlp:zeroGradParameters()
+   mlp:backward(x, gradCriterion)
+   mlp:updateParameters(learningRate)
+end
+
+inp={{x,y},{x,z}}
+
+math.randomseed(1)
+
+-- make the pair x and y have a larger dot product than x and z
+
+for i=1,100 do
+   gradUpdate(mlp,inp,1,crit,0.05)
+   o1=mlp1:forward{x,y}[1]; 
+   o2=mlp2:forward{x,z}[1]; 
+   o=crit:forward(mlp:forward{{x,y},{x,z}},1)
+   print(o1,o2,o)
+end
+
+print "******************"
+
+-- make the pair x and z have a larger dot product than x and y
+
+for i=1,100 do
+   gradUpdate(mlp,inp,-1,crit,0.05)
+   o1=mlp1:forward{x,y}[1]; 
+   o2=mlp2:forward{x,z}[1]; 
+   o=crit:forward(mlp:forward{{x,y},{x,z}},-1)
+   print(o1,o2,o)
+end
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-6-6.html">
+ <code>PairwiseDistance</code> </a></div>
+<div id="footer-right"><a href="index-2-6-8.html">
+ <code>CosineDistance</code> </a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

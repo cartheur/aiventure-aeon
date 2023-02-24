@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_unref
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_unref</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_unref</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLunref"></a>
+
+<p>
+
+<p>
+
+<pre>
+void luaL_unref (lua_State *L, int t, int ref);
+</pre>
+<p>
+
+<p>
+
+ Releases reference <code>ref</code> from the table at index <code>t</code> (see <a href="#luaLref"><code>luaL_ref</code></a>). The entry is removed from the table, so that the referred object can be collected. The reference <code>ref</code> is also freed to be used again.   
+<p>
+
+ If <code>ref</code> is <a href="#LUANOREF"><code>LUA_NOREF</code></a> or <a href="#LUAREFNIL"><code>LUA_REFNIL</code></a>, <a href="LuaManual-4-1-47.html#luaLunref"><code>luaL_unref</code></a> does nothing.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-46.html">
+ <code>luaL_typerror</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-48.html">
+ <code>luaL_where</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

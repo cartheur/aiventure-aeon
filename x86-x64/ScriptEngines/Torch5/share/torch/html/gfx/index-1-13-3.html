@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ loadPNG(string fname,int depth)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ loadPNG(string fname,int depth)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Plotting Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ Window</a>&nbsp; > &nbsp; <a href="index-1-13.html">
+ Rendering to/from Tensors</a>&nbsp; > &nbsp; <b>
+ <code>loadPNG(string fname,int depth)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Loads a PNG file into a tensor.
+<p>
+
+If depth=1 the PNG is converted into a grey-scale image, and the tensor
+is an mxn where m is the width and n is the height of the image.
+<p>
+
+If depth=3 the PNG is converted in RGB color, 
+and the tensor is an m x n x 3, where
+the last dimension indexes the RGB components of the image.
+<p>
+
+If depth=4 the tensor is an m x n x 4 where the last dimension indexes
+the RGBA components of the image.
+<p>
+
+Here is a typical example:
+<pre>
+	w=gfx.Window();
+	x=gfx.loadPNG('logo.png',3);	
+	w:blit(x);
+</pre>
+<p>
+
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-1-13-2.html">
+ <code>toTensor(Tensor x)</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

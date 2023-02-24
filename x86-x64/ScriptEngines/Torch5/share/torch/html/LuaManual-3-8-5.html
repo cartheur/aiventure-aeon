@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_getinfo
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_getinfo</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-8.html">
+  The Debug Interface</a>&nbsp; > &nbsp; <b>
+ <code>lua_getinfo</code></b>
+</div>
+
+<div id="contents">
+<a name="luagetinfo"></a>
+
+<p>
+
+<p>
+
+<pre>
+int lua_getinfo (lua_State *L, const char *what, lua_Debug *ar);
+</pre>
+<p>
+
+<p>
+
+ Returns information about a specific function or function invocation.   
+<p>
+
+ To get information about a function invocation, the parameter <code>ar</code> must be a valid activation record that was filled by a previous call to <a href="LuaManual-3-8-7.html#luagetstack"><code>lua_getstack</code></a> or given as argument to a hook (see <a href="#luaHook"><code>lua_Hook</code></a>).   
+<p>
+
+ To get information about a function you push it onto the stack and start the <code>what</code> string with the character '=>='. (In that case, <code>lua_getinfo</code> pops the function in the top of the stack.) For instance, to know in which line a function <code>f</code> was defined, you can write the following code:
+<pre>
+     lua_Debug ar;
+     lua_getfield(L, LUA_GLOBALSINDEX, "f");  /* get global 'f' */
+     lua_getinfo(L, ">S", &ar);
+     printf("%d\n", ar.linedefined);
+</pre>
+<p>
+
+<p>
+
+ Each character in the string <code>what</code> selects some fields of the structure <code>ar</code> to be filled or a value to be pushed on the stack:    
+<ul><li><b>'=n=':</b> fills in the field <code>name</code> and <code>namewhat</code>;  
+</li><li><b>'=S=':</b> fills in the fields <code>source</code>, <code>short_src</code>, <code>linedefined</code>, <code>lastlinedefined</code>, and <code>what</code>;  
+</li><li><b>'=l=':</b> fills in the field <code>currentline</code>;  
+</li><li><b>'=u=':</b> fills in the field <code>nups</code>;  
+</li><li><b>'=f=':</b> pushes onto the stack the function that is running at the given level;  
+</li><li><b>'=L=':</b> pushes onto the stack a table whose indices are the numbers of the lines that are valid on the function. (A <i>valid line</i> is a line with some associated code, that is, a line where you can put a break point. Non-valid lines include empty lines and comments.)    
+</li></ul><p>
+
+ This function returns 0 on error (for instance, an invalid option in <code>what</code>).      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-8-4.html">
+ <code>lua_gethookmask</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-8-6.html">
+ <code>lua_getlocal</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

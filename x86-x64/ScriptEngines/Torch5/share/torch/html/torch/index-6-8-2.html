@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [Tensor] t()
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [Tensor] t()</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-8.html">
+ Manipulating the tensor view</a>&nbsp; > &nbsp; <b>
+ <code>[Tensor] t()</code></b>
+</div>
+
+<div id="contents">
+<a name="TensorT"></a>
+
+<p>
+
+<p>
+
+Convenience method of <a href="index-6-8-1.html#TensorTranspose"><code>transpose()</code></a> for 2D
+tensors. The given tensor must be 2 dimensional. Swap dimensions 1 and 2.
+<pre>
+> x = torch.Tensor(3,4):zero()
+> x:select(2,3):fill(7)
+> y = x:t()
+> print(y)
+
+ 0  0  0
+ 0  0  0
+ 7  7  7
+ 0  0  0
+[torch.Tensor of dimension 4x3]
+
+> print(x)
+
+ 0  0  7  0
+ 0  0  7  0
+ 0  0  7  0
+[torch.Tensor of dimension 3x4]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-8-1.html">
+ <code>[Tensor] transpose(dim1, dim2)</code></a></div>
+<div id="footer-right"><a href="index-6-8-3.html">
+ <code>[Tensor] unfold(dim, size, step)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

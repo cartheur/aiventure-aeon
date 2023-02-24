@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_typerror
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_typerror</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_typerror</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLtyperror"></a>
+
+<p>
+
+<p>
+
+<pre>
+int luaL_typerror (lua_State *L, int narg, const char *tname);
+</pre>
+<p>
+
+<p>
+
+ Generates an error with a message like the following:
+<pre>
+     _location_: bad argument _narg_ to '_func_' (_tname_ expected, got _rt_)
+</pre>
+<p>
+
+<p>
+
+ where <code>_location_</code> is produced by <a href="LuaManual-4-1-48.html#luaLwhere"><code>luaL_where</code></a>, <code>_func_</code> is the name of the current function, and <code>_rt_</code> is the type name of the actual argument.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-45.html">
+ <code>luaL_typename</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-47.html">
+ <code>luaL_unref</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

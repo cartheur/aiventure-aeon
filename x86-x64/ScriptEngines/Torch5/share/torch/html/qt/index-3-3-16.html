@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaQ_pushqt
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaQ_pushqt</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <a href="index-3-3.html">
+ The <code>luaQ</code> functions </a>&nbsp; > &nbsp; <b>
+ luaQ_pushqt</b>
+</div>
+
+<div id="contents">
+<a name="luaqpushqt"></a>
+
+<p>
+
+<p>
+
+<code>void luaQ_pushqt(lua_State *L)</code>
+<p>
+
+Pushes the table corresponding to the package <code>qt</code>.
+<p>
+
+<code>void luaQ_pushqt(lua_State *L, const QVariant &var)</code>
+<p>
+
+Pushes a representation of the 
+<a href="index-2-1.html#QVariants">Qt variant</a> <code>var</code> onto the Lua stack.
+Numeric types are automatically converted to Lua numbers. 
+String types are automatically converted to Lua strings.
+<p>
+
+<code>void luaQ_pushqt(lua_State *L, QObject *obj, bool owned=false)</code>
+<p>
+
+Pushes a representation of the 
+<a href="index-2-2.html#QObjects">Qt object</a> <code>obj</code> onto the Lua stack.
+By default, objects are not owned by Lua
+and therefore are not automatically deleted
+by the Lua garbage collector.
+To make an object owned by Lua, the optional flag <code>owned</code>
+should be set to <code>true</code> when calling function <code>luaQ_pushqt</code>
+immediately after creating the C++ object.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-3-15.html">
+ luaQ_pushmeta</a></div>
+<div id="footer-right"><a href="index-3-3-17.html">
+ luaQ_register</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

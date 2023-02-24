@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Class QtLuaEngine
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Class QtLuaEngine</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <b>
+ Class <code>QtLuaEngine</code></b>
+</div>
+
+<div id="contents">
+<a name="QtLuaEngine"></a>
+
+<p>
+
+<p>
+
+Class <code>QtLuaEngine</code> is a <code>QObject</code> subclass representing a Lua interpreter.
+This object can be used to add a Lua interpreter to any Qt application
+with capabilities comparable to those of the 
+<a href="http://doc.trolltech.com/main-snapshot/qtscript.html"><code>QtScript</code></a> language
+and additional support for multi-threaded execution.
+<p>
+
+Instances of this class can be in one of three state:
+<ul><li>State <code>QtLuaEngine::Ready</code> indicates that the interpreter
+is ready to accept new Lua commands.
+</li><li>State <code>QtLuaEngine::Running</code> indicates that the interpreter
+is currently executing a Lua program.
+</li><li>State <code>QtLuaEngine::Paused</code> indicates that the interpreter
+was suspended while executing a Lua program. One can then
+use the Lua debug library to investigage the Lua state.
+</li></ul><p>
+
+Class <code>QtLuaEngine</code> provides member functions to 
+submit Lua strings to the interpreter and to collect 
+the evaluation results.  If these functions are invoked
+from the thread owning the Lua engine object,
+the Lua code is executed right away. 
+Otherwise a <a href="index-2-4-7.html#qtqcall">thread hopping</a> operation
+ensures that the execution of a Lua program happens 
+in the thread owning the Lua engine object. 
+<p>
+
+Class <a href="index-3-2.html#QtLuaLocker"><code>QtLuaLocker</code></a> provides means
+to directly access the Lua state 
+<a href="../LuaManual-3-7-74.html#luaState"><code>lua_State*</code></a> using 
+the Lua API.
+<p>
+
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-3-1-1.html">
+ Constructor</a></li>
+<li><a href="index-3-1-2.html">
+ Properties</a></li>
+<li><a href="index-3-1-3.html">
+ Signals</a></li>
+<li><a href="index-3-1-4.html">
+ Execution</a></li>
+<li><a href="index-3-1-5.html">
+ Miscellaneous</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-3-2.html">
+ Class <code>QtLuaLocker</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

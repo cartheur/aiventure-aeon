@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_optinteger
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_optinteger</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_optinteger</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLoptinteger"></a>
+
+<p>
+
+<p>
+
+<pre>
+lua_Integer luaL_optinteger (lua_State *L,
+                             int narg,
+                             lua_Integer d);
+</pre>
+<p>
+
+<p>
+
+ If the function argument <code>narg</code> is a number, returns this number cast to a <a href="LuaManual-3-7-22.html#luaInteger"><code>lua_Integer</code></a>. If this argument is absent or is <b>nil</b>, returns <code>d</code>. Otherwise, raises an error.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-34.html">
+ <code>luaL_optint</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-36.html">
+ <code>luaL_optlong</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

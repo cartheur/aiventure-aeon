@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_toboolean
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_toboolean</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_toboolean</code></b>
+</div>
+
+<div id="contents">
+<a name="luatoboolean"></a>
+
+<p>
+
+<p>
+
+<pre>
+int lua_toboolean (lua_State *L, int index);
+</pre>
+<p>
+
+<p>
+
+ Converts the Lua value at the given acceptable index to a C boolean value (0 or 1). Like all tests in Lua, <a href="LuaManual-3-7-76.html#luatoboolean"><code>lua_toboolean</code></a> returns 1 for any Lua value different from <b>false</b> and <b>nil</b>; otherwise it returns 0. It also returns 0 when called with a non-valid index. (If you want to accept only actual boolean values, use <a href="LuaManual-3-7-23.html#luaisboolean"><code>lua_isboolean</code></a> to test the value's type.)      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-75.html">
+ <code>lua_status</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-77.html">
+ <code>lua_tocfunction</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

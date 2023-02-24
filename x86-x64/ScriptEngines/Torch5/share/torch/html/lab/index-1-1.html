@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lab.new(...)      
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lab.new(...)      </h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Lab Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ Construction or extraction functions</a>&nbsp; > &nbsp; <b>
+ <code>lab.new(...)</code>      </b>
+</div>
+
+<div id="contents">
+<a name="new"></a>
+
+<p>
+
+<p>
+
+<code>x=lab.new([value],[value],...)</code> returns a vector <code>x</code> initialized with the given values.
+<p>
+
+<code>x=lab.new({[value],[value],...},{[value],[value],...},...)</code> returns a matrix <code>x</code> initialized with the given values.
+<p>
+
+<pre>
+> print(lab.new(1,2,3))
+
+ 1
+ 2
+ 3
+[torch.Tensor of dimension 3]
+
+> print(lab.new({1,2},{3,4},{5,6}))
+
+ 1  2
+ 3  4
+ 5  6
+[torch.Tensor of dimension 3x2]
+
+</pre>
+<p>
+
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-1-2.html">
+ <code>lab.diag(x)</code>      </a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

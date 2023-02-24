@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ io.lines ([filename])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ io.lines ([filename])</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-5.html">
+  Standard Libraries</a>&nbsp; > &nbsp; <a href="LuaManual-5-7.html">
+  Input and Output Facilities</a>&nbsp; > &nbsp; <b>
+ <code>io.lines ([filename])</code></b>
+</div>
+
+<div id="contents">
+<a name="iolinesfilename"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Opens the given file name in read mode and returns an iterator function that, each time it is called, returns a new line from the file. Therefore, the construction
+<pre>
+     for line in io.lines(filename) do _body_ end
+</pre>
+<p>
+
+<p>
+
+ will iterate over all lines of the file. When the iterator function detects the end of file, it returns <b>nil</b> (to finish the loop) and automatically closes the file.   
+<p>
+
+ The call <code>io.lines()</code> (with no file name) is equivalent to <code>io.input():lines()</code>; that is, it iterates over the lines of the default input file. In this case it does not close the file when the loop ends.     
+<p>
+
+<p>
+
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-5-7-3.html">
+ <code>io.input ([file])</code></a></div>
+<div id="footer-right"><a href="LuaManual-5-7-5.html">
+ <code>io.open (filename [, mode])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

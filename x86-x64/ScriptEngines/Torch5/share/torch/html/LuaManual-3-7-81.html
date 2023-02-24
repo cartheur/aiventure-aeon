@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_topointer
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_topointer</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_topointer</code></b>
+</div>
+
+<div id="contents">
+<a name="luatopointer"></a>
+
+<p>
+
+<p>
+
+<pre>
+const void *lua_topointer (lua_State *L, int index);
+</pre>
+<p>
+
+<p>
+
+ Converts the value at the given acceptable index to a generic C pointer (<code>void*</code>). The value may be a userdata, a table, a thread, or a function; otherwise, <a href="LuaManual-3-7-81.html#luatopointer"><code>lua_topointer</code></a> returns <code>NULL</code>. Different objects will give different pointers. There is no way to convert the pointer back to its original value.   
+<p>
+
+ Typically this function is used only for debug information.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-80.html">
+ <code>lua_tonumber</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-82.html">
+ <code>lua_tostring</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ torch.TYPEMapStorage(filename)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ torch.TYPEMapStorage(filename)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-5.html">
+ <code>Storage</code> and <code>MapStorage</code></a>&nbsp; > &nbsp; <b>
+ <code>torch.TYPEMapStorage(filename)</code></b>
+</div>
+
+<div id="contents">
+<a name="MapStorage"></a>
+
+<p>
+
+<p>
+
+Returns a new kind of <code>Storage</code> which maps the contents of the given
+<code>filename</code> to memory. Valid <code>TYPE</code> are <code>Char</code>, <code>Short</code>, <code>Int</code>, <code>Long</code>,
+<code>Float</code>, and <code>Double</code>.
+<p>
+
+The <a href="index-5-7.html#StorageSize"><code>size</code></a> of the returned <code>Storage</code> will be
+<pre>
+(size of file in byte)/(size of TYPE).
+</pre>
+<p>
+
+Example:
+<pre>
+$ echo "Hello World" > hello.txt
+$ lua
+Lua 5.1.3  Copyright (C) 1994-2008 Lua.org, PUC-Rio
+> require 'torch'
+> x = torch.CharMapStorage('hello.txt')
+> = x
+  72
+ 101
+ 108
+ 108
+ 111
+  32
+  87
+ 111
+ 114
+ 108
+ 100
+  10
+[torch.CharMapStorage of size 12]
+
+> = x:string()
+Hello World
+
+> x:fill(42)
+> 
+$ cat hello.txt 
+************
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-5-9.html">
+ <code>[string] string()</code></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

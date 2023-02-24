@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_Buffer
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_Buffer</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_Buffer</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLBuffer"></a>
+
+<p>
+
+<p>
+
+<pre>
+typedef struct luaL_Buffer luaL_Buffer;
+</pre>
+<p>
+
+<p>
+
+ Type for a <i>string buffer</i>.   
+<p>
+
+ A string buffer allows C code to build Lua strings piecemeal. Its pattern of use is as follows:    
+<ul><li>First you declare a variable <code>b</code> of type <a href="LuaManual-4-1-8.html#luaLBuffer"><code>luaL_Buffer</code></a>.  
+</li><li>Then you initialize it with a call <code>luaL_buffinit(L, &b)</code>.  
+</li><li>Then you add string pieces to the buffer calling any of the <code>luaL_add*</code> functions.  
+</li><li>You finish by calling <code>luaL_pushresult(&b)</code>. This call leaves the final string on the top of the stack.    
+</li></ul><p>
+
+ During its normal operation, a string buffer uses a variable number of stack slots. So, while using a buffer, you cannot assume that you know where the top of the stack is. You can use the stack between successive calls to buffer operations as long as that use is balanced; that is, when you call a buffer operation, the stack is at the same level it was immediately after the previous buffer operation. (The only exception to this rule is <a href="LuaManual-4-1-5.html#luaLaddvalue"><code>luaL_addvalue</code></a>.) After calling <a href="LuaManual-4-1-41.html#luaLpushresult"><code>luaL_pushresult</code></a> the stack is back to its level when the buffer was initialized, plus the final string on its top.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-7.html">
+ <code>luaL_argerror</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-9.html">
+ <code>luaL_buffinit</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

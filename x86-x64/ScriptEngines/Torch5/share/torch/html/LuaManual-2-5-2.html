@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Relational Operators
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Relational Operators</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <a href="LuaManual-2-5.html">
+  Expressions</a>&nbsp; > &nbsp; <b>
+  Relational Operators</b>
+</div>
+
+<div id="contents">
+<a name="RelationalOperators"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ The relational operators in Lua are
+<pre>
+     ==    ~=    <     >     <=    >=
+</pre>
+<p>
+
+<p>
+
+ These operators always result in <b>false</b> or <b>true</b>.   
+<p>
+
+ Equality (<code>==</code>) first compares the type of its operands. If the types are different, then the result is <b>false</b>. Otherwise, the values of the operands are compared. Numbers and strings are compared in the usual way. Objects (tables, userdata, threads, and functions) are compared by <i>reference</i>: two objects are considered equal only if they are the <i>same</i> object. Every time you create a new object (a table, userdata, thread, or function), this new object is different from any previously existing object.   
+<p>
+
+ You can change the way that Lua compares tables and userdata  by using the "eq" metamethod (see <a href="LuaManual-2-8.html#Metatables">Metatables</a>).   
+<p>
+
+ The conversion rules of <a href="LuaManual-2-2-1.html#Coercion">Coercion</a> <i>do not</i> apply to equality comparisons. Thus, <code>"0"==0</code> evaluates to <b>false</b>, and <code>t[0]</code> and <code>t["0"]</code> denote different entries in a table.   
+<p>
+
+ The operator <code>~=</code> is exactly the negation of equality (<code>==</code>).   
+<p>
+
+ The order operators work as follows. If both arguments are numbers, then they are compared as such. Otherwise, if both arguments are strings, then their values are compared according to the current locale. Otherwise, Lua tries to call the "lt" or the "le" metamethod (see <a href="LuaManual-2-8.html#Metatables">Metatables</a>).      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-2-5-1.html">
+  Arithmetic Operators</a></div>
+<div id="footer-right"><a href="LuaManual-2-5-3.html">
+  Logical Operators</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

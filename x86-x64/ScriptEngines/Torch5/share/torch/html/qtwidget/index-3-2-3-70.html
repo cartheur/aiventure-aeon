@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ painter:showpage()
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ painter:showpage()</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <a href="index-3-2-3.html">
+ QtLuaPainter Functions</a>&nbsp; > &nbsp; <b>
+ painter:showpage()</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Expression <code>painter:showpage()</code> 
+clears the current drawing
+and paints the background all white.  
+<p>
+
+Things are a bit different when the painting device is a printer.
+Function <code>painter:showpage</code> ensures that the next drawing operation
+will first print the current page and initialize a new page.
+Successive calls of <code>painter:showpage()</code> do not print multiple pages
+unless some drawing operation is performed on each page.
+<p>
+
+See also: PostScript operator <code>showpage</code>.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-2-3-69.html">
+ painter:show(string,[x,y,w,h,textflags])</a></div>
+<div id="footer-right"><a href="index-3-2-3-71.html">
+ painter:size()</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+Neural Network Package
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+Neural Network Package</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <b>
+Neural Network Package</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+This package provides an easy way to build and train simple or complex
+neural networks.
+<p>
+
+Each module of a network is composed of <a href="index-2.html#Modules"><code>Modules</code></a> and there
+are several sub-classes of <code>Module</code> available: container classes like
+<a href="index-2-2-2.html#Sequential"><code>Sequential</code></a>, <a href="index-2-2-3.html#Parallel"><code>Parallel</code></a> and
+<a href="index-2-2-1.html#Concat"><code>Concat</code></a> , which can contain simple layers like
+<a href="index-2-3-1.html#Linear"><code>Linear</code></a>, <a href="index-2-3-8.html#Mean"><code>Mean</code></a>, <a href="index-2-3-6.html#Max"><code>Max</code></a> and
+<a href="index-2-3-11.html#Reshape"><code>Reshape</code></a>, as well as convolutional layers, and transfer
+functions like <a href="index-2-4-8.html#Tanh"><code>Tanh</code></a>.
+<p>
+
+Loss functions are implemented as sub-classes of <a href="index-3.html#Criterions"><code>Criterion</code></a>. They are helpful to train neural network on classical tasks. 
+Common criterions are the
+Mean Squared Error criterion implemented in <a href="index-3-5.html#MSECriterion"><code>MSECriterion</code></a>
+and the cross-entropy criterion implemented in <a href="index-3-3.html#ClassNLLCriterion"><code>ClassNLLCriterion</code></a>.
+<p>
+
+Finally, the <a href="index-4-1.html#StochasticGradient"><code>StochasticGradient</code></a> class provides a
+high level way to train the neural network of choice, even though it is
+easy with a simple for loop to <a href="index-4-3.html#DoItYourself">train a neural network yourself</a>.
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-1.html">
+ Detailed Overview of the Neural Network Package</a></li>
+<li><a href="index-2.html">
+ Modules</a></li>
+<li><a href="index-3.html">
+ Criterions</a></li>
+<li><a href="index-4.html">
+ Training a neural network</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href=""></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

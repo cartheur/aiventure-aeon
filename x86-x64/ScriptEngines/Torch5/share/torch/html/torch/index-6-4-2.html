@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] set(storage, storageOffset, sizes, [strides])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] set(storage, storageOffset, sizes, [strides])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-4.html">
+ Referencing a tensor to an existing tensor or chunk of memory</a>&nbsp; > &nbsp; <b>
+ <code>[self] set(storage, storageOffset, sizes, [strides])</code></b>
+</div>
+
+<div id="contents">
+<a name="TensorSetStorageStorageOffsetSizesStrides"></a>
+
+<p>
+
+<p>
+
+The <code>Tensor</code> is now going to "view" the given
+<a href="index-5.html#Storage"><code>DoubleStorage</code></a>, starting at position <code>storageOffset</code> (>=1)
+with the given <a href="index-6-2-4.html#TensorSize">dimension <code>sizes</code></a> and the optional given
+<a href="index-6-2-7.html#TensorStride"><code>strides</code></a>. As the result, any modification in the
+elements of the <code>Storage</code> will have a impact on the elements of the
+<code>Tensor</code>, and vice-versa. This is an efficient method, as there is no
+memory copy!
+<pre>
+  -- creates a storage with 10 elements
+> s = torch.DoubleStorage(10):fill(1)
+
+  -- we want to see it as a 2x5 tensor
+> sz = torch.LongStorage(2)
+> sz[1] = 2; sz[2] = 5;
+> x = torch.Tensor()
+> x:set(s, 1, sz)
+> print(x)
+
+ 1  1  1  1  1
+ 1  1  1  1  1
+[torch.Tensor of dimension 2x5]
+> x:zero()
+> print(s) -- the storage contents have been modified
+> print(s)
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+[torch.DoubleStorage of size 10]
+</pre>
+<p>
+
+A shorcut which works up to 4 dimensional tensors <a href="index-6-4-3.html#TensorSetStorageStorageOffsetSzxStx">exists</a>.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-4-1.html">
+ <code>[self] set(tensor)</code></a></div>
+<div id="footer-right"><a href="index-6-4-3.html">
+ <code>[self] set(storage, storageOffset, sz1 [, st1 ... [, sz4 [, st4]]])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

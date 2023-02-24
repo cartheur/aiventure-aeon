@@ -1,0 +1,10 @@
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\Core.BinaryUnitTests.dll
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\Core.BinaryUnitTests.pdb
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\Cartheur.Animals.dll
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\GenericParsing.dll
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\nunit.framework.dll
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\Cartheur.Animals.pdb
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\bin\Debug\GenericParsing.pdb
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\obj\Debug\Core.BinaryUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\obj\Debug\Core.BinaryUnitTests.dll
+C:\Users\tuckchr01\Documents\myne\animals\core\Core.BinaryUnitTests\obj\Debug\Core.BinaryUnitTests.pdb

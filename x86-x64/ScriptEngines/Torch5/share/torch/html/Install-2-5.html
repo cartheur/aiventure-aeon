@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ CMake hints
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ CMake hints</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="Install.html">
+Torch Installation Manual</a>&nbsp; > &nbsp; <a href="Install-2.html">
+ Installing from sources</a>&nbsp; > &nbsp; <b>
+ CMake hints</b>
+</div>
+
+<div id="contents">
+<a name="CMakeHints"></a>
+
+<p>
+
+<p>
+
+CMake is well documented on <a href="http://www.cmake.org">http://www.cmake.org</a>.
+<p>
+
+<b>CMake GUI</b>
+<p>
+
+Under Windows, CMake comes by default with a GUI. Under Unix system it is
+quite handy to use the <i>text GUI</i> available through <code>ccmake</code>.
+<code>ccmake</code> works in the same way than <code>cmake</code>: go in your build directory and
+<pre>
+ccmake /path/to/torch/source
+</pre>
+<p>
+
+Windows and Unix GUI works in the same way: you <code>configure</code>, <i>possibly several times</i>,
+until CMake has detected everything and proposes to <code>generate</code> the configuration.
+<p>
+
+After each configuration step, you can modify CMake variables to suit your needs.
+<p>
+
+<b>CMake variables</b>
+<p>
+
+CMake is highly configurable thanks to <i>variables</i> you can set when
+executing it. It is really easy to change these variables with CMake GUI. If you want
+to stick with the command line you can also change a variable by doing:
+<pre>
+cmake /path/to/torch/source -DMY_VARIABLE=MY_VALUE
+</pre>
+where <code>MY_VARIABLE</code> is the name of the variable you want to set and
+<code>MY_VALUE</code> is its corresponding value.
+<p>
+
+<b>CMake caches everything</b>
+<p>
+
+As soon as CMake performed a test to detect an external library, it saves
+the result of this test in a cache and will not test it again.
+<p>
+
+If you forgot to install a library (like QT or Readline), and install it
+after having performed a CMake configuration, it will not be used by Torch
+when compiling.
+<p>
+
+<b><i>In doubt</i></b>, if you changed, updated, added some libraries that should be used by Torch, you should
+<b><i>erase your build directory and perform CMake configuration again</i></b>.
+<p>
+
+<b>Interesting standard CMake variables</b>
+<p>
+
+<ul><li><code>CMAKE_INSTALL_PREFIX</code>: directory where Torch is going to be installed
+</li><li><code>CMAKE_BUILD_TYPE</code>: <code>Release</code> for optimized compilation, <code>Debug</code> for debug compilation.
+</li><li><code>CMAKE_C_FLAGS</code>: add here the flags you want to pass to the C compiler (like <code>-Wall</code> for e.g.)
+</li></ul><p>
+
+<b>Interesting Torch CMake variables</b>
+<p>
+
+<ul><li><code>HTML_DOC</code>: set to 1 if you want to generate HTML documentation.
+</li><li><code>OWN_LUA</code>: If at <code>1</code>, compile our own Lua.
+Default value is <code>1</code>. It is not recommended to put <code>0</code> here, except if you know what you are doing.
+If at <code>0</code>, CMake will attempt to find Lua on your system (should be in your path).
+</li></ul><p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="Install-2-4.html">
+ Windows</a></div>
+<div id="footer-right"><a href="Install-2-6.html">
+ Contrib packages</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ torch.MemoryFile(storage, mode)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ torch.MemoryFile(storage, mode)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ <code>MemoryFile</code></a>&nbsp; > &nbsp; <b>
+ <code>torch.MemoryFile(storage, mode)</code></b>
+</div>
+
+<div id="contents">
+<a name="TorchMemoryFileStorage"></a>
+
+<p>
+
+<p>
+
+<i>Constructor</i> which returns a new <code>MemoryFile</code> object, using the given
+<a href="index-5.html#Storage"><code>storage</code></a> (which must be a <code>CharStorage</code>) and <code>mode</code>. Valid
+<code>mode</code> are <code>'r'</code> (read), <code>'w'</code> (write) or <code>'rw'</code> (read-write). The last character
+in this storage <i>must</i> be <code>NULL</code> or an error will be generated. This allow
+to read existing memory. If used for writing, not that the <code>storage</code> might
+be resized by this class if needed. 
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-1.html">
+ <code>torch.MemoryFile([mode])</code></a></div>
+<div id="footer-right"><a href="index-3-3.html">
+ <code>[CharStorage] storage()</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

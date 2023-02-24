@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ share(mlp,s1,s2,...,sn)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ share(mlp,s1,s2,...,sn)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Modules</a>&nbsp; > &nbsp; <a href="index-2-1.html">
+ <code>Module</code></a>&nbsp; > &nbsp; <b>
+ <code>share(mlp,s1,s2,...,sn)</code></b>
+</div>
+
+<div id="contents">
+<a name="ModuleShare"></a>
+
+<p>
+
+<p>
+
+This function modifies the parameters of the module named <code>s1</code>,..<code>sn</code> (if they exist) so that they are shared with (pointers to) the parameters with the same names in the given module <code>mlp</code>. 
+<p>
+
+The parameters have to be Tensors. This function is typically used if you want to have modules that share the same weights or biases.
+<p>
+
+Note that this function if called on a <a href="index-2-2.html#Containers">Container</a> module will share the same parameters for all the contained modules as well.
+<p>
+
+Example:
+<pre>
+
+-- make an mlp
+mlp1=nn.Sequential(); 
+mlp1:add(nn.Linear(100,10));
+
+-- make a second mlp
+mlp2=nn.Sequential(); 
+mlp2:add(nn.Linear(100,10)); 
+
+-- the second mlp shares the bias of the first
+mlp2:share(mlp1,'bias');
+
+-- we change the bias of the first
+mlp1:get(1).bias[1]=99;
+
+-- and see that the second one's bias has also changed..
+print(mlp2:get(1).bias[1])
+
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-1-4.html">
+ <code>updateParameters(learningRate)</code></a></div>
+<div id="footer-right"><a href="index-2-1-6.html">
+ <code>clone(mlp,...)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

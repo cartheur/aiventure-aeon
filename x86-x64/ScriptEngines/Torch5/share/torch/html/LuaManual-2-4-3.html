@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Assignment
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Assignment</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <a href="LuaManual-2-4.html">
+  Statements</a>&nbsp; > &nbsp; <b>
+  Assignment</b>
+</div>
+
+<div id="contents">
+<a name="Assignment"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Lua allows multiple assignment. Therefore, the syntax for assignment defines a list of variables on the left side and a list of expressions on the right side. The elements in both lists are separated by commas:
+<pre>
+	stat ::= varlist1 `*=*` explist1
+	varlist1 ::= var {`*,*` var}
+	explist1 ::= exp {`*,*` exp}
+</pre>
+<p>
+
+<p>
+
+ Expressions are discussed in <a href="LuaManual-2-5.html#Expressions">Expressions</a>.   
+<p>
+
+ Before the assignment, the list of values is <i>adjusted</i> to the length of the list of variables. If there are more values than needed, the excess values are thrown away. If there are fewer values than needed, the list is extended with as many  *nil*'s as needed. If the list of expressions ends with a function call, then all values returned by this call enter in the list of values, before the adjustment (except when the call is enclosed in parentheses; see <a href="LuaManual-2-5.html#Expressions">Expressions</a>).   
+<p>
+
+ The assignment statement first evaluates all its expressions and only then are the assignments performed. Thus the code
+<pre>
+     i = 3
+     i, a[i] = i+1, 20
+</pre>
+<p>
+
+<p>
+
+ sets <code>a[3]</code> to 20, without affecting <code>a[4]</code> because the <code>i</code> in <code>a[i]</code> is evaluated (to 3) before it is assigned 4. Similarly, the line
+<pre>
+     x, y = y, x
+</pre>
+<p>
+
+<p>
+
+ exchanges the values of <code>x</code> and <code>y</code>.   
+<p>
+
+ The meaning of assignments to global variables and table fields can be changed via metatables. An assignment to an indexed variable <code>t[i] = val</code> is equivalent to <code>settable_event(t,i,val)</code>. (See <a href="LuaManual-2-8.html#Metatables">Metatables</a> for a complete description of the <code>settable_event</code> function. This function is not defined or callable in Lua. We use it here only for explanatory purposes.)   
+<p>
+
+ An assignment to a global variable <code>x = val</code> is equivalent to the assignment <code>_env.x = val</code>, which in turn is equivalent to
+<pre>
+     settable_event(_env, "x", val)
+</pre>
+<p>
+
+<p>
+
+ where <code>_env</code> is the environment of the running function. (The <code>_env</code> variable is not defined in Lua. We use it here only for explanatory purposes.)      
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-2-4-2.html">
+  Blocks</a></div>
+<div id="footer-right"><a href="LuaManual-2-4-4.html">
+  Control Structures</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_pushlightuserdata
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_pushlightuserdata</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_pushlightuserdata</code></b>
+</div>
+
+<div id="contents">
+<a name="luapushlightuserdata"></a>
+
+<p>
+
+<p>
+
+<pre>
+void lua_pushlightuserdata (lua_State *L, void *p);
+</pre>
+<p>
+
+<p>
+
+ Pushes a light userdata onto the stack.   
+<p>
+
+ Userdata represents C values in Lua. A <i>light userdata</i> represents a pointer. It is a value (like a number): you do not create it, it has no individual metatable, and it is not collected (as it was never created). A light userdata is equal to "any" light userdata with the same C address.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-48.html">
+ <code>lua_pushinteger</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-50.html">
+ <code>lua_pushlstring</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

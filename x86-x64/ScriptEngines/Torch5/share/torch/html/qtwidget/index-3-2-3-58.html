@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ painter:setdash([sizes,[offset]])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ painter:setdash([sizes,[offset]])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <a href="index-3-2-3.html">
+ QtLuaPainter Functions</a>&nbsp; > &nbsp; <b>
+ painter:setdash([sizes,[offset]])</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Function <code>painter:setdash</code> changes the 
+style of the <a href="index-3-2-2-11.html#qtluapainterpen">current pen</a>.
+<p>
+
+When this function is called without argument,
+or when argument <code>sizes</code> is <code>nil</code>,
+this function sets the current pen style 
+to <code>"SolidLine"</code>.
+<p>
+
+Otherwise argument <code>sizes</code> can be a single number or a table containing a list of numbers.
+The number or the list of numbers represent the length of 
+<a href="http://doc.trolltech.com/main-snapshot/qpen.html#setDashPattern">successive dashes and blanks</a> 
+along the drawn curve, expressed in units of the line width.  
+When the size of the sequence is odd, the last blank
+is assumed to have the same size as the last dash.
+The optional argument <code>offset</code> is a length 
+representing the starting position of the dash sequence.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-2-3-57.html">
+ painter:setcolor(...)</a></div>
+<div id="footer-right"><a href="index-3-2-3-59.html">
+ painter:setfont(qfont)</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ painter:setcolor(...)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ painter:setcolor(...)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua Classes</a>&nbsp; > &nbsp; <a href="index-3-2.html">
+ qt.QtLuaPainter</a>&nbsp; > &nbsp; <a href="index-3-2-3.html">
+ QtLuaPainter Functions</a>&nbsp; > &nbsp; <b>
+ painter:setcolor(...)</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Function <code>painter:setcolor</code> sets the color of both the 
+<a href="index-3-2-2-3.html#qtluapainterbrush">current brush</a>
+and <a href="index-3-2-2-11.html#qtluapainterpen">current pen</a>.
+<p>
+
+There are several ways to specify a color:
+<p>
+
+<ul><li><code>painter:setcolor(qcolor)</code>
+</li></ul><p>
+
+     Argument <code>qcolor</code> is a Qt variant of class <a href="index-2-2.html#qcolor"><code>qt.QColor</code></a>.
+<p>
+
+<ul><li><code>painter:setcolor(string)</code> 
+</li></ul><p>
+
+     Argument <code>string</code> is a string representing a color name.
+     All <a href="http://www.w3.org/TR/SVG/types.html#ColorKeywords">SVG color names</a>
+     are recognized.Color names can have also the format <code>"#RGB"</code>, 
+     <code>"#RRGGBB"</code>, <code>"#RRRGGGBBB"</code>, or ="#RRRRGGGGBBBB"
+     where letters <code>R</code>, <code>G</code>, or <code>B</code> represent hexadecimal 
+     digits for each of the color component.
+<p>
+
+<ul><li><code>painter:setcolor(r,g,b,[a])</code>
+</li></ul><p>
+
+     Arguments <code>r</code>, <code>g</code>, <code>b</code>, and <code>a</code> are numbers in range <code>[0,1]</code>
+     representing the intensities of the red, green, blue, and alpha channels.
+     The default value for argument <code>a</code> is <code>1</code> for a fully opaque color.
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-2-3-56.html">
+ painter:setclip(qpainterpath)</a></div>
+<div id="footer-right"><a href="index-3-2-3-58.html">
+ painter:setdash([sizes,[offset]])</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

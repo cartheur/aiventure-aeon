@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [number] dot(tensor)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [number] dot(tensor)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-12.html">
+ Basic operations</a>&nbsp; > &nbsp; <b>
+ <code>[number] dot(tensor)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Performs the dot product between <code>tensor</code> and self. The number of elements must match: both tensors are seen
+as a 1D vector.
+<pre>
+> x = torch.Tensor(2,2):fill(2)
+> y = torch.Tensor(4):fill(3)
+> = x:dot(y)
+24
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-12-9.html">
+ <code>[self] addcdiv(value, tensor1, tensor2)</code></a></div>
+<div id="footer-right"><a href="index-6-12-11.html">
+ <code>addT2dotT1(value, mat, vec)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [Tensor] sub(dim1s, dim1e ... [, dim4s [, dim4e]])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [Tensor] sub(dim1s, dim1e ... [, dim4s [, dim4e]])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-7.html">
+ Extracting sub-tensors</a>&nbsp; > &nbsp; <b>
+ <code>[Tensor] sub(dim1s, dim1e ... [, dim4s [, dim4e]])</code></b>
+</div>
+
+<div id="contents">
+<a name="TensorSub"></a>
+
+<p>
+
+<p>
+
+This method is equivalent to do a serie of
+<a href="index-6-7-1.html#TensorNarrow"><code>narrow</code></a> up to the first 4 dimensions.  It returns
+a new <code>Tensor</code> which is a sub-tensor going from index <code>dimis</code> to <code>dimie</code> in
+the =i=-th dimension. Negative values are interpreted index starting from the end:
+<code>-1</code> is the last index, <code>-2</code> is the index before the last index, ...
+<p>
+
+<pre>
+> x = torch.Tensor(5, 6):zero()
+> print(x)
+
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+[torch.Tensor of dimension 5x6]
+
+> y = x:sub(2,4):fill(1) -- y is sub-tensor of x: 
+> print(y)               -- dimension 1 starts at index 2, ends at index 4
+
+ 1  1  1  1  1  1
+ 1  1  1  1  1  1
+ 1  1  1  1  1  1
+[torch.Tensor of dimension 3x6]
+
+> print(x)               -- x has been modified!
+
+ 0  0  0  0  0  0
+ 1  1  1  1  1  1
+ 1  1  1  1  1  1
+ 1  1  1  1  1  1
+ 0  0  0  0  0  0
+[torch.Tensor of dimension 5x6]
+
+> z = x:sub(2,4,3,4):fill(2) -- we now take a new sub-tensor
+> print(z)                   -- dimension 1 starts at index 2, ends at index 4
+                             -- dimension 2 starts at index 3, ends at index 4
+ 2  2
+ 2  2
+ 2  2
+[torch.Tensor of dimension 3x2]
+
+> print(x)                  -- x has been modified
+
+ 0  0  0  0  0  0
+ 1  1  2  2  1  1
+ 1  1  2  2  1  1
+ 1  1  2  2  1  1
+ 0  0  0  0  0  0
+[torch.Tensor of dimension 5x6]
+
+> print(y:sub(-1, -1, 3, 4)) -- negative values = bounds
+
+ 2  2
+[torch.Tensor of dimension 1x2]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-7-1.html">
+ <code>[Tensor] narrow(dim, index, size)</code></a></div>
+<div id="footer-right"><a href="index-6-7-3.html">
+ <code>[Tensor] select(dim, index)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

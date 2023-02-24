@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ Applying a function to a tensor
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ Applying a function to a tensor</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <b>
+ Applying a function to a tensor</b>
+</div>
+
+<div id="contents">
+<a name="TensorApplyFunction"></a>
+
+<p>
+
+<p>
+
+These functions apply a function to each element of the tensor on which the
+method is called (self). These methods are much faster than using a <code>for</code>
+loop in <code>Lua</code>. The results is stored in <code>self</code> (if the function returns
+something). A similar function exists in the <a href="../lab/index-2-11.html#map">lab</a>
+package, but where a new tensor containing the result is returned instead.
+<p>
+
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="index-6-9-1.html">
+ <code>[self] apply(function(x))</code></a></li>
+<li><a href="index-6-9-2.html">
+ <code>[self] map(tensor, function(xs, xt))</code></a></li>
+<li><a href="index-6-9-3.html">
+ <code>[self] map2(tensor1, tensor2, function(x, xt1, xt2))</code></a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="index-6-8.html">
+ Manipulating the tensor view</a></div>
+<div id="footer-right"><a href="index-6-10.html">
+ Math functions</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Changes in the Libraries
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Changes in the Libraries</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-7.html">
+  Incompatibilities with the Previous Version</a>&nbsp; > &nbsp; <b>
+  Changes in the Libraries</b>
+</div>
+
+<div id="contents">
+<a name="ChangesintheLibraries"></a>
+
+<p>
+
+<p>
+
+<ul><li>Function <code>string.gfind</code> was renamed <a href="LuaManual-5-4-6.html#stringgmatchspattern"><code>string.gmatch (s, pattern)</code></a>. (See compile-time option <code>LUA_COMPAT_GFIND</code> in <code>luaconf.h</code>.)  
+</li><li>When <a href="LuaManual-5-4-7.html#stringgsubspatternrepln"><code>string.gsub (s, pattern, repl [, n])</code></a> is called with a function as its third argument, whenever this function returns <b>nil</b> or <b>false</b> the replacement string is the whole match, instead of the empty string.  
+</li><li>Function <code>table.setn</code> was deprecated. Function <code>table.getn</code> corresponds to the new length operator (<code>#</code>); use the operator instead of the function. (See compile-time option <code>LUA_COMPAT_GETN</code> in <code>luaconf.h</code>.)  
+</li><li>Function <code>loadlib</code> was renamed <a href="LuaManual-5-3-5.html#packageloadliblibnamefuncname"><code>package.loadlib (libname, funcname)</code></a>. (See compile-time option <code>LUA_COMPAT_LOADLIB</code> in <code>luaconf.h</code>.)  
+</li><li>Function <code>math.mod</code> was renamed <a href="LuaManual-5-6-12.html#mathfmodxy"><code>math.fmod (x, y)</code></a>. (See compile-time option <code>LUA_COMPAT_MOD</code> in <code>luaconf.h</code>.)  
+</li><li>Functions <code>table.foreach</code> and <code>table.foreachi</code> are deprecated. You can use a for loop with <code>pairs</code> or <code>ipairs</code> instead.  
+</li><li>There were substantial changes in function <a href="LuaManual-5-3-2.html#requiremodname"><code>require (modname)</code></a> due to the new module system. However, the new behavior is mostly compatible with the old, but <code>require</code> gets the path from <a href="LuaManual-5-3-6.html#packagepath"><code>package.path</code></a> instead of from <code>LUA_PATH</code>.  
+</li><li>Function <a href="LuaManual-5-1-2.html#collectgarbageoptarg"><code>collectgarbage (opt [, arg])</code></a> has different arguments. Function <code>gcinfo</code> is deprecated; use <code>collectgarbage("count")</code> instead.       </li></ul>
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-7-1.html">
+  Changes in the Language</a></div>
+<div id="footer-right"><a href="LuaManual-7-3.html">
+  Changes in the API</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

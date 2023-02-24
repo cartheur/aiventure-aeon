@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ torch.Tensor(tensor)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ torch.Tensor(tensor)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-1.html">
+ Tensor constructors</a>&nbsp; > &nbsp; <b>
+ <code>torch.Tensor(tensor)</code></b>
+</div>
+
+<div id="contents">
+<a name="TorchTensorTensor"></a>
+
+<p>
+
+<p>
+
+Returns a new tensor which reference the same <a href="index-6-2-8.html#TensorStorage"><code>Storage</code></a>
+than the given <code>tensor</code>. The <a href="index-6-2-4.html#TensorSize">size</a>,
+<a href="index-6-2-7.html#TensorStride">stride</a>, and <a href="index-6-2-12.html#TensorStorageOffset">storage offset</a> are
+the same than the given tensor.
+<p>
+
+The new <code>Tensor</code> is now going to "view" the same
+<a href="index-6-2-8.html#TensorStorage"><code>storage</code></a> than the given <code>tensor</code>. As the result, any
+modification in the elements of the <code>Tensor</code> will have a impact on the
+elements of the given <code>tensor</code>, and vice-versa. No memory copy!
+<pre>
+> x = torch.Tensor(2,5):fill(3.14)
+> print(x)
+
+ 3.1400  3.1400  3.1400  3.1400  3.1400
+ 3.1400  3.1400  3.1400  3.1400  3.1400
+[torch.Tensor of dimension 2x5]
+
+> y = torch.Tensor(x)
+> print(y)
+
+ 3.1400  3.1400  3.1400  3.1400  3.1400
+ 3.1400  3.1400  3.1400  3.1400  3.1400
+[torch.Tensor of dimension 2x5]
+
+> y:zero()
+> print(x) -- elements of x are the same than y!
+
+0 0 0 0 0
+0 0 0 0 0
+[torch.Tensor of dimension 2x5]
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-1-1.html">
+ <code>torch.Tensor()</code></a></div>
+<div id="footer-right"><a href="index-6-1-3.html">
+ <code>torch.Tensor(sz1 [,sz2 [,sz3 [,sz4]]]])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

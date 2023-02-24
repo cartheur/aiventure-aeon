@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+  Values and Types
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+  Values and Types</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-2.html">
+  The Language</a>&nbsp; > &nbsp; <b>
+  Values and Types</b>
+</div>
+
+<div id="contents">
+<a name="ValuesandTypes"></a>
+
+<p>
+
+<p>
+
+<p>
+
+ Lua is a <i>dynamically typed language</i>. This means that variables do not have types; only values do. There are no type definitions in the language. All values carry their own type.   
+<p>
+
+ All values in Lua are <i>first-class values</i>. This means that all values can be stored in variables, passed as arguments to other functions, and returned as results.   
+<p>
+
+ There are eight basic types in Lua: <i>nil</i>, <i>boolean</i>, <i>number</i>, <i>string</i>, <i>function</i>, <i>userdata</i>, <i>thread</i>, and <i>table</i>. <i>Nil</i> is the type of the value <b>nil</b>, whose main property is to be different from any other value; it usually represents the absence of a useful value. <i>Boolean</i> is the type of the values <b>false</b> and <b>true</b>. Both <b>nil</b> and <b>false</b> make a condition false; any other value makes it true. <i>Number</i> represents real (double-precision floating-point) numbers. (It is easy to build Lua interpreters that use other internal representations for numbers, such as single-precision float or long integers; see file <code>luaconf.h</code>.) <i>String</i> represents arrays of characters.  Lua is 8-bit clean: strings may contain any 8-bit character, including embedded zeros ('=\0=') (see <a href="LuaManual-2-1.html#LexicalConventions">Lexical Conventions</a>).   
+<p>
+
+ Lua can call (and manipulate) functions written in Lua and functions written in C (see <a href="LuaManual-2-5-8.html#FunctionCalls">Function Calls</a>).   
+<p>
+
+ The type <i>userdata</i> is provided to allow arbitrary C data to be stored in Lua variables. This type corresponds to a block of raw memory and has no pre-defined operations in Lua, except assignment and identity test. However, by using <i>metatables</i>, the programmer can define operations for userdata values (see <a href="LuaManual-2-8.html#Metatables">Metatables</a>). Userdata values cannot be created or modified in Lua, only through the C API. This guarantees the integrity of data owned by the host program.   
+<p>
+
+ The type <i>thread</i> represents independent threads of execution and it is used to implement coroutines (see <a href="LuaManual-2-11.html#Coroutines">Coroutines</a>). Do not confuse Lua threads with operating-system threads. Lua supports coroutines on all systems, even those that do not support threads.   
+<p>
+
+ The type <i>table</i> implements associative arrays, that is, arrays that can be indexed not only with numbers, but with any value (except <b>nil</b>). Tables can be <i>heterogeneous</i>; that is, they can contain values of all types (except <b>nil</b>). Tables are the sole data structuring mechanism in Lua; they may be used to represent ordinary arrays, symbol tables, sets, records, graphs, trees, etc. To represent records, Lua uses the field name as an index. The language supports this representation by providing <code>a.name</code> as syntactic sugar for <code>a["name"]</code>. There are several convenient ways to create tables in Lua (see <a href="LuaManual-2-5-7.html#TableConstructors">Table Constructors</a>).   
+<p>
+
+ Like indices, the value of a table field can be of any type (except <b>nil</b>). In particular, because functions are first-class values, table fields may contain functions. Thus tables may also carry <i>methods</i> (see <a href="LuaManual-2-5-9.html#FunctionDefinitions">Function Definitions</a>).   
+<p>
+
+ Tables, functions, threads, and (full) userdata values are <i>objects</i>: variables do not actually <i>contain</i> these values, only <i>references</i> to them. Assignment, parameter passing, and function returns always manipulate references to such values; these operations do not imply any kind of copy.   
+<p>
+
+ The library function <a href="LuaManual-5-1-24.html#typev"><code>type (v)</code></a> returns a string describing the type of a given value.    
+</div>
+
+<div id="subsections">
+<h3>Subsections</h3>
+<ol>
+<li><a href="LuaManual-2-2-1.html">
+  Coercion</a></li>
+</ol>
+
+</div>
+
+<div id="footer-left">&nbsp;<a href="LuaManual-2-1.html">
+  Lexical Conventions</a></div>
+<div id="footer-right"><a href="LuaManual-2-3.html">
+  Variables</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

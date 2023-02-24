@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaQ_disconnect
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaQ_disconnect</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtLua and Qt Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-3.html">
+ QtLua API</a>&nbsp; > &nbsp; <a href="index-3-3.html">
+ The <code>luaQ</code> functions </a>&nbsp; > &nbsp; <b>
+ luaQ_disconnect</b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<code>bool luaQ_disconnect(lua_State*L, QObject*o, const char *s, int fi)</code>
+<p>
+
+Disconnects the signal with signature <code>s</code> of Qt object <code>o</code>
+from the function located at index <code>fi</code> in the stack.
+When argument <code>fi</code> is zero, this function removes
+all connections from the specified signal to a Lua function.
+When argument <code>s</code> is null, this function removes
+all connections from the specified object to the specified function.
+<p>
+
+See also <a href="index-2-4-3.html#qtdisconnectf"><code>qt.disconnect(...)</code></a>.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-3-3-6.html">
+ luaQ_connect</a></div>
+<div id="footer-right"><a href="index-3-3-8.html">
+ luaQ_doevents</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

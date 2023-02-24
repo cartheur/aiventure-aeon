@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ qt.QFont(arg)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ qt.QFont(arg)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+QtWidget Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Qt Classes</a>&nbsp; > &nbsp; <a href="index-2-3.html">
+ qt.QFont</a>&nbsp; > &nbsp; <b>
+ qt.QFont(arg)</b>
+</div>
+
+<div id="contents">
+<a name="qfontfromtable"></a>
+
+<p>
+
+<p>
+
+Expression <code>qt.QFont(arg)</code> returns a new font object.
+Argument <code>arg</code> may be a string previously returned
+by <a href="index-2-3-3.html#qfonttostring"><code>qfont:tostring()</code></a> or
+a table whose fields specify the desired font characteristics. 
+The following fields are recognized, listed in order of priority:
+<p>
+
+<ul><li>String field <code>family</code> may contain a comma 
+separated list of the desired font families.  
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>sans</code> to <code>true</code> indicates
+a preference for sans serif font families such as "Helvetica".
+This is more portable than specifying a family.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>serif</code> to <code>true</code> indicates
+a preference for serif font families such as "Times".
+This is more portable than specifying a family.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>typewriter</code> to <code>true</code> 
+indicates a preference for a fixed width font families 
+such as "Courier".
+This is more portable than specifying a family.
+</li></ul><p>
+
+<ul><li>Numerical field <code>size</code> specify the desired size of the font.
+The default size is 10 points.
+</li></ul><p>
+
+<ul><li>Numerical fields <code>pixelSize</code> and <code>pointSize</code> also 
+indicates the desired size of the font. Field <code>pixelSize</code>
+is an alias for <code>size</code>. Field <code>pointSize</code> includes a correction 
+factor corresponding to the actual resolution of the target device. 
+</li></ul><p>
+
+<ul><li>Numerical field <code>weight</code> defines the weight of the font.
+Weight 50 corresponds to a normal font and weight 75 corresponds
+to a bold font. 
+</li></ul><p>
+
+<ul><li>Numerical field <code>stretch</code> is a percentage applied to the 
+width of all characters. Value 100 corresponds to a normal width.
+Value 150 increases all width by 50 percent.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>bold</code> to <code>true</code> requests a bold font
+if the selected font family defines a bold variant.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>italic</code> to <code>true</code> requests and italic font
+if the selected font family defines an italic or oblique variant.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>fixedPitch</code> to <code>true</code> requests a fixed pitch
+font if the selected font family defines such a variant (rare).
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>underline</code> to <code>true</code> draws a line
+below all the character at a font-specified position.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>overline</code> to <code>true</code> draws a line
+above all the character at a font-specified position.
+</li></ul><p>
+
+<ul><li>Setting boolean field <code>strikeOut</code> to <code>true</code> draws a line
+that crosses the character at a font-specified position.
+</li></ul><p>
+
+Example:
+<pre>
+  require 'qtwidget'
+  w=qtwidget.newwindow(300,300)
+  w:moveto(20,20)
+  w:setfont(qt.QFont{serif=true,size=12,italic=true})
+  w:show("foo")
+  w:setfont(qt.QFont{serif=true,size=12,italic=true,underline=true})
+  w:setcolor("blue")
+  w:show("bar")
+</pre>
+<p>
+
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-2-3-2.html">
+ qfont:totable()</a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ lua_tonumber
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ lua_tonumber</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-3.html">
+  The Application Program Interface</a>&nbsp; > &nbsp; <a href="LuaManual-3-7.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>lua_tonumber</code></b>
+</div>
+
+<div id="contents">
+<a name="luatonumber"></a>
+
+<p>
+
+<p>
+
+<pre>
+lua_Number lua_tonumber (lua_State *L, int index);
+</pre>
+<p>
+
+<p>
+
+ Converts the Lua value at the given acceptable index to the C type <a href="LuaManual-3-7-40.html#luaNumber"><code>lua_Number</code></a> (see <a href="LuaManual-3-7-40.html#luaNumber"><code>lua_Number</code></a>). The Lua value must be a number or a string convertible to a number (see <a href="LuaManual-2-2-1.html#Coercion">Coercion</a>); otherwise, <a href="LuaManual-3-7-80.html#luatonumber"><code>lua_tonumber</code></a> returns 0.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-3-7-79.html">
+ <code>lua_tolstring</code></a></div>
+<div id="footer-right"><a href="LuaManual-3-7-81.html">
+ <code>lua_topointer</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

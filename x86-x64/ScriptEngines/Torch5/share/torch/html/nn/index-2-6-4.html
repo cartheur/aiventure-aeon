@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ JoinTable  
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ JoinTable  </h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Neural Network Package</a>&nbsp; > &nbsp; <a href="index-2.html">
+ Modules</a>&nbsp; > &nbsp; <a href="index-2-6.html">
+ Layers for manipulating tables</a>&nbsp; > &nbsp; <b>
+ <code>JoinTable</code>  </b>
+</div>
+
+<div id="contents">
+
+<p>
+
+<code>module</code> = <code>JoinTable(dimension)</code>
+<p>
+
+Creates a module that takes a list of Tensors as input and outputs a Tensor by joining them together along dimension <code>dimension</code>.
+<p>
+
+Example:
+<pre>
+require "lab"
+x=lab.randn(5,1)
+y=lab.randn(5,1)
+z=lab.randn(2,1)
+
+print(nn.JoinTable(1):forward{x,y})
+print(nn.JoinTable(2):forward{x,y})
+print(nn.JoinTable(1):forward{x,z})
+</pre>
+gives the output:
+<pre>
+1.3965
+ 0.5146
+-1.5244
+-0.9540
+ 0.4256
+ 0.1575
+ 0.4491
+ 0.6580
+ 0.1784
+-1.7362
+ 
+ 1.3965  0.1575
+ 0.5146  0.4491
+-1.5244  0.6580
+-0.9540  0.1784
+ 0.4256 -1.7362
+
+ 1.3965
+ 0.5146
+-1.5244
+-0.9540
+ 0.4256
+-1.2660
+ 1.0869
+[torch.Tensor of dimension 7x1]
+</pre>
+<p>
+
+A more complicated example:
+<pre>
+require "lab"
+
+mlp=nn.Sequential();       --Create a network that takes a Tensor as input
+ c=nn.ConcatTable()        --The same Tensor goes through two different Linear
+ c:add(nn.Linear(10,3))	   --Layers in Parallel
+ c:add(nn.Linear(10,7))
+mlp:add(c)                 --Outputing a table with 2 elements
+ p=nn.ParallelTable()      --These tables go through two more linear layers
+ p:add(nn.Linear(3,2))	   -- separately.
+ p:add(nn.Linear(7,1)) 
+mlp:add(p) 
+mlp:add(nn.JoinTable(1))   --Finally, the tables are joined together and output. 
+
+pred=mlp:forward(lab.randn(10))
+print(pred)
+
+for i=1,100 do             -- A few steps of training such a network.. 
+ x=lab.ones(10);
+ y=torch.Tensor(3); y:copy(x:narrow(1,1,3))
+ pred=mlp:forward(x)
+
+ criterion= nn.MSECriterion()
+ local err=criterion:forward(pred,y)
+ local gradCriterion = criterion:backward(pred,y);
+ mlp:zeroGradParameters();
+ mlp:backward(x, gradCriterion); 
+ mlp:updateParameters(0.05);
+
+ print(err)
+end
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-2-6-3.html">
+ <code>SplitTable</code> </a></div>
+<div id="footer-right"><a href="index-2-6-5.html">
+ <code>Identity</code> </a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

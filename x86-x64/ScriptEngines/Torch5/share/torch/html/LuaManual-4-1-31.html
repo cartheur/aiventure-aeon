@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_newmetatable
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_newmetatable</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_newmetatable</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLnewmetatable"></a>
+
+<p>
+
+<p>
+
+<pre>
+int luaL_newmetatable (lua_State *L, const char *tname);
+</pre>
+<p>
+
+<p>
+
+ If the registry already has the key <code>tname</code>, returns 0. Otherwise, creates a new table to be used as a metatable for userdata, adds it to the registry with key <code>tname</code>, and returns 1.   
+<p>
+
+ In both cases pushes onto the stack the final value associated with <code>tname</code> in the registry.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-30.html">
+ <code>luaL_loadstring</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-32.html">
+ <code>luaL_newstate</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

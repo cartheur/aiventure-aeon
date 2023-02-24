@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ luaL_loadstring
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ luaL_loadstring</h3>
+</div>
+
+<div id="navline">
+<a href="index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="LuaManual.html">
+Lua 5.1 Reference Manual</a>&nbsp; > &nbsp; <a href="LuaManual-4.html">
+  The Auxiliary Library</a>&nbsp; > &nbsp; <a href="LuaManual-4-1.html">
+  Functions and Types</a>&nbsp; > &nbsp; <b>
+ <code>luaL_loadstring</code></b>
+</div>
+
+<div id="contents">
+<a name="luaLloadstring"></a>
+
+<p>
+
+<p>
+
+<pre>
+int luaL_loadstring (lua_State *L, const char *s);
+</pre>
+<p>
+
+<p>
+
+ Loads a string as a Lua chunk. This function uses <a href="LuaManual-3-7-34.html#luaload"><code>lua_load</code></a> to load the chunk in the zero-terminated string <code>s</code>.   
+<p>
+
+ This function returns the same results as <a href="LuaManual-3-7-34.html#luaload"><code>lua_load</code></a>.   
+<p>
+
+ Also as <a href="LuaManual-3-7-34.html#luaload"><code>lua_load</code></a>, this function only loads the chunk; it does not run it.      
+<hr>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="LuaManual-4-1-29.html">
+ <code>luaL_loadfile</code></a></div>
+<div id="footer-right"><a href="LuaManual-4-1-31.html">
+ <code>luaL_newmetatable</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

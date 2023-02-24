@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ torch.Tensor(sizes, [strides])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ torch.Tensor(sizes, [strides])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-1.html">
+ Tensor constructors</a>&nbsp; > &nbsp; <b>
+ <code>torch.Tensor(sizes, [strides])</code></b>
+</div>
+
+<div id="contents">
+<a name="TorchTensorSizesStrides"></a>
+
+<p>
+
+<p>
+
+Create a tensor of any number of dimensions. The <a href="index-5.html#Storage"><code>LongStorage</code></a>
+<code>sizes</code> gives the size in each dimension of the tensor. The optional
+<a href="index-5.html#Storage"><code>LongStorage</code></a> <code>strides</code> gives the jump necessary to go from
+one element to the next one in the each dimension. Of course, <code>sizes</code> and
+<code>strides</code> must have the same size. If not given, or if some elements of
+<code>strides</code> are negative, the <a href="index-6-2-7.html#TensorStride"><code>stride()</code></a> will be computed
+such that the tensor is as contiguous as possible in memory.
+<p>
+
+A <a href="index-6-1-3.html#TorchTensorSzx">convenience method</a> exists for a number of dimensions
+up to 4.
+<p>
+
+Example, create a 4D 4x4x3x2 tensor:
+<pre>
+s = torch.LongStorage(4)
+s[1] = 4; s[2] = 4; s[3] = 3; s[4] = 2;
+x = torch.Tensor(s)
+</pre>
+<p>
+
+Playing with the strides can give some interesting things:
+<pre>
+sz = torch.LongStorage(1); sz[1] = 4
+st = torch.LongStorage(1); st[1] = 0
+x = torch.Tensor(sz, st):zero() -- zeroes the tensor
+x[1] = 1 -- all elements point to the same address!
+print(x)
+
+ 1
+ 1
+ 1
+ 1
+[torch.Tensor of dimension 4]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-1-3.html">
+ <code>torch.Tensor(sz1 [,sz2 [,sz3 [,sz4]]]])</code></a></div>
+<div id="footer-right"><a href="index-6-1-5.html">
+ <code>torch.Tensor(storage, storageOffset, sizes, [strides])</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

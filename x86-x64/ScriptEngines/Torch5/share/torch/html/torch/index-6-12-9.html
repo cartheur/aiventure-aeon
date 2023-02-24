@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ [self] addcdiv(value, tensor1, tensor2)
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ [self] addcdiv(value, tensor1, tensor2)</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-6.html">
+ <code>Tensor</code></a>&nbsp; > &nbsp; <a href="index-6-12.html">
+ Basic operations</a>&nbsp; > &nbsp; <b>
+ <code>[self] addcdiv(value, tensor1, tensor2)</code></b>
+</div>
+
+<div id="contents">
+
+<p>
+
+Performs the element-wise division of <code>tensor1</code> by <code>tensor1</code>, multiply the result by the scalar <code>value</code>
+and add it to self. The number of elements must match, but sizes do not matter.
+<pre>
+> x = torch.Tensor(2,2):fill(1)
+> y = torch.Tensor(4)
+> z = torch.Tensor(2,2):fill(5)
+> for i=1,4 do y[i] = i end
+> x:addcdiv(2, y, z)
+> = x
+
+ 1.4000  2.2000
+ 1.8000  2.6000
+[torch.Tensor of dimension 2x2]
+</pre>
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href="index-6-12-8.html">
+ <code>[self] cdiv(tensor)</code></a></div>
+<div id="footer-right"><a href="index-6-12-10.html">
+ <code>[number] dot(tensor)</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>

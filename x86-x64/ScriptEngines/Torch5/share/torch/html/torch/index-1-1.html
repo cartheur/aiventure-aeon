@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+
+ torch.DiskFile(fileName, [mode], [quiet])
+</title>
+<link href="doctorch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="torchdoc">
+<div id="container">
+
+<div id="header">
+<h3>
+ torch.DiskFile(fileName, [mode], [quiet])</h3>
+</div>
+
+<div id="navline">
+<a href="../index.html">Torch Manual</a>&nbsp; > &nbsp; <a href="index.html">
+Torch Package Reference Manual</a>&nbsp; > &nbsp; <a href="index-1.html">
+ <code>DiskFile</code></a>&nbsp; > &nbsp; <b>
+ <code>torch.DiskFile(fileName, [mode], [quiet])</code></b>
+</div>
+
+<div id="contents">
+<a name="TorchDiskFile"></a>
+
+<p>
+
+<p>
+
+<i>Constructor</i> which opens <code>fileName</code> on disk, using the given <code>mode</code>. Valid <code>mode</code> are
+<code>'r'</code> (read), <code>'w'</code> (write) or <code>'rw'</code> (read-write). Default is read mode.
+<p>
+
+If read-write mode, the file <i>will be created</i> if it does not exists. If it
+exists, it will be positionned at the beginning of the file after opening.
+<p>
+
+If (and only if) <code>quiet</code> is <code>true</code>, no error will be raised in case of
+problem opening the file: instead <code>nil</code> will be returned.
+<p>
+
+The file is opened in <a href="index-2-5.html#FileAscii"><code>ASCII</code></a> mode by default.
+<p>
+
+</div>
+
+
+
+<div id="footer-left">&nbsp;<a href=""></a></div>
+<div id="footer-right"><a href="index-1-2.html">
+ <code>bigEndianEncoding()</code></a>&nbsp;</div>
+
+<div id="last-modified">
+
+</div>
+
+</div>
+</body>
+</html>
