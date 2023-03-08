@@ -113,4 +113,6 @@ A Kantian test core
 	2206: Leverging this code as the baseline for the david bipedal robot.
 08.03.2023
 	1224: Cleaned the project to the baseline of illustration of an example runtime.
+	1329: Tests are now passing.
+
 	
