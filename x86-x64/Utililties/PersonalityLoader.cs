@@ -80,11 +80,11 @@ namespace Animals.Core.Utililties
                     LoadPlatformFiles(_platformPath);
                     break;
                 case Aeon.Platform.Basic:
-                    _platformPath = Path.Combine(_aeon.PathToPersonalityFiles, @"sum");
+                    _platformPath = Path.Combine(_aeon.PathToPersonalityFiles, @"basic");
                     LoadPlatformFiles(_platformPath);
                     break;
                 case Aeon.Platform.Variant:
-                    _platformPath = Path.Combine(_aeon.PathToPersonalityFiles, @"summy");
+                    _platformPath = Path.Combine(_aeon.PathToPersonalityFiles, @"variant");
                     LoadPlatformFiles(_platformPath);
                     break;
 
