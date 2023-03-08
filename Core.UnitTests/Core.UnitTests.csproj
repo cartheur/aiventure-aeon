@@ -43,18 +43,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="KopiLua">
-      <HintPath>..\..\runtime\KopiLua.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="NLua">
-      <HintPath>..\..\runtime\NLua.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework, Version=2.5.3.9345, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+    <Reference Include="NLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Core.BinaryUnitTests\bin\lib\nunit.framework.dll</HintPath>
+      <HintPath>bin\Debug\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>bin\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -72,53 +66,27 @@
   <ItemGroup>
     <Compile Include="BasicUnitTest.cs" />
     <Compile Include="ConversationalAeonTests.cs" />
-    <Compile Include="SimulatedAnnealing\Issues\GH1.cs" />
-    <Compile Include="SimulatedAnnealing\Optimizers\BobyqaTests.cs" />
-    <Compile Include="SimulatedAnnealing\Optimizers\CobylaTests.cs" />
-    <Compile Include="SimulatedAnnealing\Optimizers\LincoaTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NeuralNetworkTests.cs" />
-    <Compile Include="SimulatedAnnealing\SanityChecks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\logs\20170420.log" />
     <None Include="bin\Debug\logs\20170427.log" />
     <None Include="bin\Debug\logs\20170505.log" />
-    <None Include="nn_training.lua" />
-    <None Include="startup.lua" />
-    <None Include="torchy.bat" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\algo-data\Cities.txt" />
-    <Content Include="bin\Debug\algo-data\Datafile.txt" />
-    <Content Include="bin\Debug\algo-data\Datafile2.txt" />
-    <Content Include="bin\Debug\algo-data\Datafile3.txt" />
-    <Content Include="bin\Debug\algo-data\Datafile4.txt" />
-    <Content Include="bin\Debug\algo-data\tsp.txt" />
     <Content Include="bin\Debug\logs\analytics.txt" />
     <Content Include="bin\Debug\logs\analytics_old.txt" />
     <Content Include="bin\Debug\logs\resultstorage.txt" />
     <Content Include="bin\Debug\logs\transcript.txt" />
     <Content Include="bin\Debug\logs\logfile.txt" />
-    <Content Include="literature\LiteratureNotes.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core.Algorithms\SimulatedAnnealing\Algorithms.SimulatedAnnealing.csproj">
-      <Project>{acdeebfe-2aef-49a0-bca6-eea5196262a7}</Project>
-      <Name>Algorithms.SimulatedAnnealing</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Core.NeuralNetwork\Core.NeuralNetwork.csproj">
-      <Project>{56d7ac79-339f-4016-b454-322902993e38}</Project>
-      <Name>Core.NeuralNetwork</Name>
-    </ProjectReference>
     <ProjectReference Include="..\x86-x64\Core.csproj">
       <Project>{9c87d82c-0e27-4995-a2cb-72bcb84ef2e2}</Project>
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
