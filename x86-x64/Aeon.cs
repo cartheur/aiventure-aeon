@@ -19,7 +19,7 @@ namespace Animals.Core
         public string Name { get; set; }
         public enum Platform
         {
-            WinMobile, Liva, Laptop, Sum, Summy
+            WinMobile, Liva, Laptop, Basic, Variant
         }
         public enum Language
         {

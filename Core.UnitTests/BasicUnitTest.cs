@@ -28,9 +28,9 @@ namespace Core.UnitTests
             Presence = new Aeon();
             PureReasonActive = true;
             ThisLanguage = Aeon.Language.English;
-            ThisPlatform = Aeon.Platform.Sum;
+            ThisPlatform = Aeon.Platform.Basic;
             // Todo: Presence.LoadFromBinaryFile(Path.Combine(Environment.CurrentDirectory, "bins"), "newt.bph");
-            if (!Presence.BinaryFileLoadedIntoMemory && ThisPlatform != Aeon.Platform.WinMobile && ThisPlatform != Aeon.Platform.Liva && ThisPlatform != Aeon.Platform.Sum && ThisPlatform != Aeon.Platform.Summy)
+            if (!Presence.BinaryFileLoadedIntoMemory && ThisPlatform != Aeon.Platform.WinMobile && ThisPlatform != Aeon.Platform.Liva && ThisPlatform != Aeon.Platform.Basic && ThisPlatform != Aeon.Platform.Variant)
             {
                 var loader = new PersonalityLoader(Presence);
                 Presence.LoadSettings();
@@ -76,7 +76,7 @@ namespace Core.UnitTests
                             }
                         }
                         break;
-                    case Aeon.Platform.Sum:
+                    case Aeon.Platform.Basic:
                         {
                             var loader = new PersonalityLoader(Presence);
                             Presence.LoadSettings();
@@ -91,7 +91,7 @@ namespace Core.UnitTests
                             }
                         }
                         break;
-                        case Aeon.Platform.Summy:
+                        case Aeon.Platform.Variant:
                     {
                             var loader = new PersonalityLoader(Presence);
                             Presence.LoadSettings();

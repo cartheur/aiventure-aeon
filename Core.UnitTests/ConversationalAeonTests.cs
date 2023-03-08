@@ -57,7 +57,7 @@ namespace Core.UnitTests
         [TestCase(@"My name is aeon.")]
         public void GetThemTalking(string input)
         {
-            // This version runs backwards, e.g., the outputs are not from the flow you think it is the result of.
+            // This method runs backwards, e.g., the outputs are not from the flow you think it is the result of.
             PresenceOne = new Aeon();
             Intialize(@"AeonOne", PresenceOne);
             PresenceTwo = new Aeon();
@@ -72,10 +72,8 @@ namespace Core.UnitTests
             Console.WriteLine(PresenceTwo.Name + @" says: " + ThisTwoResult);
         }
 
-        //
         // Value for creating sequential transcript files.
         const int FileNumber = 6;
-        // How about creating lists of loaded values? How about reproducing what is found in the github repo from the paper? Bring the scripts and data here.
 
         [TestCase(@"Hello.", FileNumber)]
         [TestCase(@"How are you?", FileNumber)]
