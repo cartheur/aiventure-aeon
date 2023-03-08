@@ -19,7 +19,7 @@ namespace Core.UnitTests
         public bool Platform;
 
         #region Fixture - using m.e. as user
-        [TestFixtureSetUp]
+        [SetUp]
         public void Intialize()
         {
             Platform = false;
@@ -110,7 +110,7 @@ namespace Core.UnitTests
 
         }
 
-        [TestFixtureTearDown]
+        [TearDown]
         public void SaveState()
         {
             // Todo: Presence.SaveToBinaryFile(Path.Combine(Presence.ServerPathConfigFiles, "bins"), "newt.bph");
