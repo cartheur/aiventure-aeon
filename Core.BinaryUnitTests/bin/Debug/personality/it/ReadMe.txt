@@ -1,1 +1,0 @@
-Get from: http://alicebot.wikidot.com/aiml:it-it:sandro:maria
