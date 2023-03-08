@@ -13,3 +13,7 @@ Another interesting feature is the usage of Lua-Torch rather than Py-Torch to le
 ## Peculiarities of some source projects
 
 The test projects have their _bin_ and _obj_ folders as (in the current version) code needed by the program to set its configuration and set parameters are stored in the Debug folder, since the projects are built only for a debug configuration. This will be sorted in future versions before a release is scheduled.
+
+## Code cleaned and fixed
+
+The codebase has had some projects removed and fixed the Nunit package, adding a test adapter for Visual Studio projects.
